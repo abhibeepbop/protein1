@@ -1,0 +1,763 @@
+product_id,item_name,item_price,original_weight_g,protein_100g,protein_total,calories_100g,calories_total,url
+250168194,Warburtons Farmhouse Thick Sliced White Bread 800g,1.5,800,9,72,0,0,https://www.tesco.com/groceries/en-GB/products/250168194
+250499118,Warburtons Soft Pancakes 6 Pack,1.2,100,6.3,6.3,0,0,https://www.tesco.com/groceries/en-GB/products/250499118
+250774576,New York Bakery Co The Original Plain Bagels 5 Pack,1.9,100,9.8,9.8,271,271,https://www.tesco.com/groceries/en-GB/products/250774576
+250810338,McVitie's Toasting Waffles 8 Pack,1.9,200,5.7,11.4,0,0,https://www.tesco.com/groceries/en-GB/products/250810338
+250829858,Hovis Tasty Wholemeal Medium Sliced Bread 400g,1,400,10,40,0,0,https://www.tesco.com/groceries/en-GB/products/250829858
+250871708,Hovis Authentic Granary Thick Bread 800g,1.95,800,10.3,82.4,0,0,https://www.tesco.com/groceries/en-GB/products/250871708
+250915629,Warburtons Soft White Sandwich Rolls 12 Pack,1.95,100,9.7,9.7,0,0,https://www.tesco.com/groceries/en-GB/products/250915629
+251250935,Warburtons Potato Cakes 6 Pack,1,100,5.1,5.1,0,0,https://www.tesco.com/groceries/en-GB/products/251250935
+251558848,Galaxy Chocolate Sponge Cake Bars with Cream Centre 5 Pack,2.75,100,5,5,0,0,https://www.tesco.com/groceries/en-GB/products/251558848
+251807007,Tesco White Batch Rolls 6 Pack,0.45,100,8.4,8.4,258,258,https://www.tesco.com/groceries/en-GB/products/251807007
+251816699,Mr Kipling Mini Battenbergs Cakes 5 Pack,2.5,100,3.7,3.7,0,0,https://www.tesco.com/groceries/en-GB/products/251816699
+251818288,Tesco Soft White Hot Dog Rolls 6 Pack,0.99,100,8.1,8.1,254,254,https://www.tesco.com/groceries/en-GB/products/251818288
+251931548,Tesco Butter Brioche Rolls 8 Pack,1.65,100,9.1,9.1,346,346,https://www.tesco.com/groceries/en-GB/products/251931548
+251933448,Tesco Seeded Large Burger Buns 4 Pack,0.95,100,7.9,7.9,271,271,https://www.tesco.com/groceries/en-GB/products/251933448
+251938134,Soreen Original Fruited Malt Loaf 260g,1.5,260,7.8,20.28,0,0,https://www.tesco.com/groceries/en-GB/products/251938134
+251945119,Tesco All Butter Plain Scones 6 Pack,1.75,100,8.4,8.4,369,369,https://www.tesco.com/groceries/en-GB/products/251945119
+252109642,Tesco Cheese & Tomato Flatbread 225G,2,225,10.7,24.07,266,598.5,https://www.tesco.com/groceries/en-GB/products/252109642
+252109688,Tesco Garlic & Parsley Flatbread 210G,2,210,9.1,19.11,279,585.9,https://www.tesco.com/groceries/en-GB/products/252109688
+252479773,Real Lancashire Eccles Cakes 4 pack,2.5,100,4,4,426,426,https://www.tesco.com/groceries/en-GB/products/252479773
+252657128,Mr Kipling Exceedingly Good Battenberg Cake,1.75,230,4.7,10.81,384,883.2,https://www.tesco.com/groceries/en-GB/products/252657128
+252668267,Warburtons Super Toastie Extra Thick Sliced White Bread 800g,1.4,800,9.1,72.8,0,0,https://www.tesco.com/groceries/en-GB/products/252668267
+252846644,Warburtons Crumpets 6 Pack,0.9,100,6,6,0,0,https://www.tesco.com/groceries/en-GB/products/252846644
+252937387,Hovis Best of Both Medium Bread 800g,1.15,800,9.5,76,0,0,https://www.tesco.com/groceries/en-GB/products/252937387
+252958742,Mr Kipling Viennese Whirls Cakes 6 Pack,2,100,3.8,3.8,0,0,https://www.tesco.com/groceries/en-GB/products/252958742
+253018385,Tesco Finest Chocolate Cake 6 Servings,3.85,100,4.3,4.3,405,405,https://www.tesco.com/groceries/en-GB/products/253018385
+253140037,Tesco Finest Coffee and Walnut Cake,3.85,100,3.7,3.7,435,435,https://www.tesco.com/groceries/en-GB/products/253140037
+253294471,Hovis Best of Both Thick Bread 800g,1.15,800,9.5,76,0,0,https://www.tesco.com/groceries/en-GB/products/253294471
+253432971,Tesco Vanilla Creme Crown 2 Pack,1.9,100,5.4,5.4,365,365,https://www.tesco.com/groceries/en-GB/products/253432971
+253551789,Tesco Homebake Part Baked White Baguettes 2 Pack,1.2,300,8.9,26.7,295,885,https://www.tesco.com/groceries/en-GB/products/253551789
+253552538,"Tesco Fresh Cream Raspberry Turnover 2 Pack, 148 G",1.7,148,4.7,6.96,342,506.16,https://www.tesco.com/groceries/en-GB/products/253552538
+253738348,Kingsmill Scotch Pancakes 6 Pack,1.1,6,6.5,0.39,0,0,https://www.tesco.com/groceries/en-GB/products/253738348
+253829047,New York Bakery Co Cinnamon & Raisin Bagels 5 Pack,1.9,100,8.9,8.9,269,269,https://www.tesco.com/groceries/en-GB/products/253829047
+253846591,Tesco Finest All Butter Sultana Scones 4 Pack,2,4,6.7,0.27,359,14.36,https://www.tesco.com/groceries/en-GB/products/253846591
+253846631,Tesco Finest All Butter & Cheddar Scones 4 Pack,2,100,12,12,335,335,https://www.tesco.com/groceries/en-GB/products/253846631
+254550817,Hovis Soft White Thick Sliced Bread 800g,1.39,800,8.7,69.6,0,0,https://www.tesco.com/groceries/en-GB/products/254550817
+254576286,Cadbury Caramel Chocolate Cake Bars 5 pack,2.5,100,5.2,5.2,0,0,https://www.tesco.com/groceries/en-GB/products/254576286
+254735283,Tesco Rhubarb Pie,2,100,2.9,2.9,255,255,https://www.tesco.com/groceries/en-GB/products/254735283
+254942325,Warburtons Medium Sliced Soft White Bread 800g,1.4,800,9.1,72.8,0,0,https://www.tesco.com/groceries/en-GB/products/254942325
+254942331,Warburtons Small Medium Sliced White Bread 400G,0.99,400,9.1,36.4,0,0,https://www.tesco.com/groceries/en-GB/products/254942331
+254942348,Warburtons Toastie Thick Sliced White Bread 800g,1.4,800,9.1,72.8,0,0,https://www.tesco.com/groceries/en-GB/products/254942348
+254942354,Warburtons Toastie Thick and Small Sliced White Bread 400g,0.99,400,9.1,36.4,0,0,https://www.tesco.com/groceries/en-GB/products/254942354
+254942734,Warburtons Milk Roll Soft White Bread 400g,1.45,400,9.4,37.6,0,0,https://www.tesco.com/groceries/en-GB/products/254942734
+254944133,Hovis Authentic Granary Wholemeal Sliced Bread 800g,1.95,800,10.6,84.8,0,0,https://www.tesco.com/groceries/en-GB/products/254944133
+254944260,Warburtons Wholemeal Medium Sliced Bread 800g,1.35,800,10.6,84.8,0,0,https://www.tesco.com/groceries/en-GB/products/254944260
+254944283,Warburtons Wholemeal Medium Sliced Bread 400g,0.99,400,10.6,42.4,0,0,https://www.tesco.com/groceries/en-GB/products/254944283
+254944968,Tesco Wholemeal Batch Rolls 6 Pack,0.45,100,11,11,239,239,https://www.tesco.com/groceries/en-GB/products/254944968
+254945512,Tesco All Butter Croissants 8 Pack,2.25,100,9,9,380,380,https://www.tesco.com/groceries/en-GB/products/254945512
+254945564,Tesco White Plain Pitta Bread 6 Pack,0.5,100,9.4,9.4,254,254,https://www.tesco.com/groceries/en-GB/products/254945564
+254945610,Tesco Wholemeal Pitta Bread 6 Pack,0.5,100,10.3,10.3,241,241,https://www.tesco.com/groceries/en-GB/products/254945610
+254946102,Tesco Sliced Fruit Loaf 400g,1.75,400,7.9,31.6,281,1124,https://www.tesco.com/groceries/en-GB/products/254946102
+254946119,Tesco Hot Cross Buns 6 pack,1.35,100,7.7,7.7,251,251,https://www.tesco.com/groceries/en-GB/products/254946119
+254946632,Mr Kipling Manor House Sultanas Sponge Cake,2.95,390,5.3,20.67,0,0,https://www.tesco.com/groceries/en-GB/products/254946632
+254946816,McVitie's Lyle's Golden Syrup Sticky Pudding Cake,1.75,100,3.8,3.8,0,0,https://www.tesco.com/groceries/en-GB/products/254946816
+254946839,McVitie's Jamaica Ginger Sticky Pudding Cake,1.75,100,3.6,3.6,0,0,https://www.tesco.com/groceries/en-GB/products/254946839
+254946995,Tesco Angel Layer Cake - Vanilla,1.85,100,5,5,387,387,https://www.tesco.com/groceries/en-GB/products/254946995
+254947026,Tesco Genoa Fruit Cake,2.5,100,4.5,4.5,340,340,https://www.tesco.com/groceries/en-GB/products/254947026
+254947124,Tesco Walnut Cake with Buttercream,1.85,100,6,6,397,397,https://www.tesco.com/groceries/en-GB/products/254947124
+254947251,Tesco Coconut Macaroons 6 Pack,1.29,100,4.5,4.5,432,432,https://www.tesco.com/groceries/en-GB/products/254947251
+254947308,Mr Kipling Almond Cake Slices 6 Pack,2.75,100,5.8,5.8,0,0,https://www.tesco.com/groceries/en-GB/products/254947308
+254947337,Mr Kipling Bakewell Cake Slices 6 Pack,2.75,100,4.1,4.1,0,0,https://www.tesco.com/groceries/en-GB/products/254947337
+254947389,Mr Kipling Country Cake Slices 6 pack,2.75,100,4,4,0,0,https://www.tesco.com/groceries/en-GB/products/254947389
+254947412,Mr Kipling French Fancies Cakes 8 Pack,3,100,2.7,2.7,0,0,https://www.tesco.com/groceries/en-GB/products/254947412
+254947838,Mr Kipling Cherry Bakewell Cake Tarts 6 Pack,3,100,3.4,3.4,0,0,https://www.tesco.com/groceries/en-GB/products/254947838
+254947867,Mr Kipling Jam Tarts Cakes 6 Pack,3,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/254947867
+254947936,"Tesco Assorted Jam Tarts - Strawberry, Apricot, Blackcurrant 6 Pack",0.89,100,3.8,3.8,405,405,https://www.tesco.com/groceries/en-GB/products/254947936
+254948250,Mr Kipling Bramley Apple & Blackcurrant Pies 6 Pack,3.25,100,3.5,3.5,0,0,https://www.tesco.com/groceries/en-GB/products/254948250
+254948273,Mr Kipling Bramley Apple Pies 6 Pack,3.25,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/254948273
+254948307,"Mr Kipling Bramley Apple & Blackcurrant, Bramley Apple and Cherry Pies 6 Pack",3.25,100,3.5,3.5,0,0,https://www.tesco.com/groceries/en-GB/products/254948307
+254949335,Cadbury Mini Eggs Easter Chocolate Gateau Cake,5,100,4.9,4.9,0,0,https://www.tesco.com/groceries/en-GB/products/254949335
+255000362,Hovis Wholemeal Tasty Medium Bread 800g,1.35,800,10,80,0,0,https://www.tesco.com/groceries/en-GB/products/255000362
+255503493,Tesco Lemon Curd Tarts 6 Pack,0.89,100,4.2,4.2,428,428,https://www.tesco.com/groceries/en-GB/products/255503493
+255650611,Tesco Deli Multiseed White Rolls 4 Pack,1.2,100,9.7,9.7,275,275,https://www.tesco.com/groceries/en-GB/products/255650611
+255727936,Warburtons Danish Lighter Small White Sliced Bread 400g,1.25,400,9.5,38,0,0,https://www.tesco.com/groceries/en-GB/products/255727936
+255778823,Tesco All Butter Croissants 4 Pack,1.45,100,9,9,380,380,https://www.tesco.com/groceries/en-GB/products/255778823
+255779661,Tesco All Butter Dark Chocolate Pain Au Chocolat 2 Pack,1.9,100,7.8,7.8,430,430,https://www.tesco.com/groceries/en-GB/products/255779661
+255874565,Tesco Pink Iced Ring Doughnut 4 Pack,0.95,100,6,6,425,425,https://www.tesco.com/groceries/en-GB/products/255874565
+255874939,Tesco Chocolate Iced Ring Doughnuts 4 Pack,0.95,100,6.6,6.6,459,459,https://www.tesco.com/groceries/en-GB/products/255874939
+255985687,Warburtons Fruit Loaf With Cinnamon & Raisin 400G,2.2,400,7,28,0,0,https://www.tesco.com/groceries/en-GB/products/255985687
+256174499,Hovis Soft White Medium Sliced Bread 800g,1.39,800,8.7,69.6,0,0,https://www.tesco.com/groceries/en-GB/products/256174499
+256186519,Tesco Iced Madeira Cake with Vanilla and Raspberry,1.85,100,3.9,3.9,378,378,https://www.tesco.com/groceries/en-GB/products/256186519
+256186525,Tesco Cherry Madeira Cake with Glace Cherries,1.85,100,4,4,353,353,https://www.tesco.com/groceries/en-GB/products/256186525
+256592522,New York Bakery Co Plain and Sesame Bagels 5 Pack,1.9,85,9.3,7.91,266,226.1,https://www.tesco.com/groceries/en-GB/products/256592522
+256627241,Tesco Large Wholemeal Baps 4 Pack,0.95,100,10.2,10.2,242,242,https://www.tesco.com/groceries/en-GB/products/256627241
+256682675,Tesco Free From Bramley Apple Pies 4 Pack,2.35,100,1.3,1.3,377,377,https://www.tesco.com/groceries/en-GB/products/256682675
+256859922,Tesco Bramley Apple Pie,2,100,2.6,2.6,254,254,https://www.tesco.com/groceries/en-GB/products/256859922
+256943177,Tesco All Butter Almond Croissant 2 Pack,1.9,100,9.1,9.1,398,398,https://www.tesco.com/groceries/en-GB/products/256943177
+256943223,Tesco Cinnamon Swirls 2 Pack,1.9,100,5.6,5.6,444,444,https://www.tesco.com/groceries/en-GB/products/256943223
+256943275,Tesco Maple And Pecan Plait 2 Pack,1.9,100,5.5,5.5,453,453,https://www.tesco.com/groceries/en-GB/products/256943275
+256943373,Tesco All Butter Chocolate Croissant 2 Pack,1.9,100,7.8,7.8,436,436,https://www.tesco.com/groceries/en-GB/products/256943373
+257002345,Tesco All Butter Pain Au Chocolat 4 Pack,2,100,8.1,8.1,403,403,https://www.tesco.com/groceries/en-GB/products/257002345
+257005808,Tesco Finest All Butter Croissants 4 Pack,2.5,100,9.4,9.4,407,407,https://www.tesco.com/groceries/en-GB/products/257005808
+257269645,Warburtons Thick Sliced Seeded Batch Bread 800g,1.9,800,10.6,84.8,0,0,https://www.tesco.com/groceries/en-GB/products/257269645
+257313927,Tesco Bramley Apple Pies 6 Pack,1.29,100,3.1,3.1,360,360,https://www.tesco.com/groceries/en-GB/products/257313927
+257373377,Tesco Happy Birthday Cake - Vanilla with Raspberry Jam,10.5,100,3,3,376,376,https://www.tesco.com/groceries/en-GB/products/257373377
+257617038,Tesco Small Chocolate Party Cake,9.5,100,4.7,4.7,443,443,https://www.tesco.com/groceries/en-GB/products/257617038
+257800633,Tesco All Butter Pain Aux Raisin Pastry 2 Pack,1.9,100,6.8,6.8,312,312,https://www.tesco.com/groceries/en-GB/products/257800633
+257983824,Mr Kipling Easter Lemon Bakewell Tarts Cakes 6 Pack,3,100,3.5,3.5,0,0,https://www.tesco.com/groceries/en-GB/products/257983824
+258178699,Schneiderbrot Whole Grain Vollkornbrot Rye Bread 500g,1.55,500,5,25,201,1005,https://www.tesco.com/groceries/en-GB/products/258178699
+258263068,"Tesco Fresh Cream Horns 2 Pack, 110 G",1.65,110,4.6,5.06,408,448.8,https://www.tesco.com/groceries/en-GB/products/258263068
+258296697,Tesco Continental Classic Sweet Pancakes 8 Pack,3.2,100,5.3,5.3,265,265,https://www.tesco.com/groceries/en-GB/products/258296697
+258300895,Tesco Happy Birthday Chocolate Cake,12,100,4.5,4.5,425,425,https://www.tesco.com/groceries/en-GB/products/258300895
+258871840,McVitie's Jaffa Cakes Zingy Orangey Bars 5 Pack,2,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/258871840
+259404984,Tesco Stars Party Cake - Buttercream and Raspberry Jam,9.5,100,2.6,2.6,389,389,https://www.tesco.com/groceries/en-GB/products/259404984
+259405113,Tesco Slinky Caterpillar Cake,9,100,4.7,4.7,412,412,https://www.tesco.com/groceries/en-GB/products/259405113
+259747508,Hovis Authentic Granary Small Bread 400g,1.15,400,10.3,41.2,0,0,https://www.tesco.com/groceries/en-GB/products/259747508
+259805066,Warburtons Fruit Teacakes 4 Pack,1.2,100,8.7,8.7,0,0,https://www.tesco.com/groceries/en-GB/products/259805066
+260606024,Schar Pizza Base 300G,3.35,300,3,9,0,0,https://www.tesco.com/groceries/en-GB/products/260606024
+260630288,Kingsmill 50/50 No Crusts Bread Loaf 400g,1.95,400,8.1,32.4,0,0,https://www.tesco.com/groceries/en-GB/products/260630288
+261331312,Tesco Finest Extra Fruity Hot Cross Buns 4 pack,2,100,7.4,7.4,254,254,https://www.tesco.com/groceries/en-GB/products/261331312
+261722967,Tesco Triple Layer Chocolate Cake 24 Servings,18,100,4.3,4.3,437,437,https://www.tesco.com/groceries/en-GB/products/261722967
+261738730,Kingsmill 50/50 Medium Soft White Bread Loaf 800g,1.05,800,9.4,75.2,0,0,https://www.tesco.com/groceries/en-GB/products/261738730
+262203117,Warburtons Soft White Sandwich Rolls 6 Pack,1.2,100,9.7,9.7,0,0,https://www.tesco.com/groceries/en-GB/products/262203117
+262963639,Dina Paninette 5 Large Traditional Lebanese White Bread Wraps,1.2,100,5.9,5.9,225,225,https://www.tesco.com/groceries/en-GB/products/262963639
+263518014,Hovis Wholemeal Thick Sliced Bread 800g,1.35,800,10,80,0,0,https://www.tesco.com/groceries/en-GB/products/263518014
+263905005,Tesco Chocolate Muffins 4 Pack,2,100,5.6,5.6,420,420,https://www.tesco.com/groceries/en-GB/products/263905005
+264155470,Mrs Crimble's Bakewell Slices 4 Pack,1.85,100,3.6,3.6,475,475,https://www.tesco.com/groceries/en-GB/products/264155470
+264369712,Tesco Almond Fingers Sponge Cakes 5 Pack,1.19,100,5.3,5.3,379,379,https://www.tesco.com/groceries/en-GB/products/264369712
+264601115,Warburtons Wholemeal Soft Sliced Rolls 6 Pack,1.2,100,10.5,10.5,0,0,https://www.tesco.com/groceries/en-GB/products/264601115
+264983216,Tesco Celebration Cake - Buttercream and Raspberry Jam,13,100,2.8,2.8,390,390,https://www.tesco.com/groceries/en-GB/products/264983216
+265169072,Brioche Pasquier Pain Au Chocolat 6 Pack,2,270,7.2,19.44,0,0,https://www.tesco.com/groceries/en-GB/products/265169072
+265217995,Tesco Madeira Party Cake - Vanilla,10,100,4.2,4.2,401,401,https://www.tesco.com/groceries/en-GB/products/265217995
+265322645,Tesco Finest All Butter Scones 4 Pack,2,100,7.5,7.5,369,369,https://www.tesco.com/groceries/en-GB/products/265322645
+265391781,Cadbury Flake Chocolate Celebration Cake,13,100,5.1,5.1,0,0,https://www.tesco.com/groceries/en-GB/products/265391781
+265913996,Tesco Madeira Cake,1.85,100,5.8,5.8,393,393,https://www.tesco.com/groceries/en-GB/products/265913996
+265914056,Tesco Iced Coffee Madeira Cake with Buttercream,1.85,100,4.2,4.2,398,398,https://www.tesco.com/groceries/en-GB/products/265914056
+266243155,Warburtons Toasting Breakfast Muffins 4 Pack,1.25,100,8.7,8.7,0,0,https://www.tesco.com/groceries/en-GB/products/266243155
+266712608,Tesco Free From Cherry Bakewell Tarts 4 Pack,2.35,100,1.5,1.5,421,421,https://www.tesco.com/groceries/en-GB/products/266712608
+266712960,Tesco Free From Assorted Jam Tarts 6 Pack,2.35,100,1.8,1.8,416,416,https://www.tesco.com/groceries/en-GB/products/266712960
+267207059,Tesco Party Cake Selection Vanilla 12 Pack,2.5,100,4,4,428,428,https://www.tesco.com/groceries/en-GB/products/267207059
+267257949,Soreen Banana Fruit Loaf 260g,1.5,260,7.8,20.28,0,0,https://www.tesco.com/groceries/en-GB/products/267257949
+267452787,Sheldon's White Oven Bottom Muffins 6 Pack,1.6,100,9.8,9.8,0,0,https://www.tesco.com/groceries/en-GB/products/267452787
+268004113,Mission Mini Wheat & White Tortilla Wraps 6 Pack,1.25,186,8.1,15.07,0,0,https://www.tesco.com/groceries/en-GB/products/268004113
+268064818,Tesco Finest Lemon Drizzle Cake,3.85,100,3.8,3.8,387,387,https://www.tesco.com/groceries/en-GB/products/268064818
+268104801,Warburtons Tiger Bread Bloomer 600g,1.65,600,10.1,60.6,0,0,https://www.tesco.com/groceries/en-GB/products/268104801
+268283743,Warburtons Hot Dog Rolls 6 Pack Sliced,1,100,8.8,8.8,0,0,https://www.tesco.com/groceries/en-GB/products/268283743
+268319311,Warburtons White Sandwich Bread Thins 6 Pack,1,100,9,9,0,0,https://www.tesco.com/groceries/en-GB/products/268319311
+268405088,"Tesco Cherry Bakewell Tarts - Almond, Plum, Raspberry 6 Pack",1.35,100,3.2,3.2,413,413,https://www.tesco.com/groceries/en-GB/products/268405088
+268563873,Tesco Soft & Fluffy Triple Chocolate Muffins 4 Pack,2,100,5.6,5.6,420,420,https://www.tesco.com/groceries/en-GB/products/268563873
+268579198,Tesco Panini 4 Pack,1.5,100,8.3,8.3,250,250,https://www.tesco.com/groceries/en-GB/products/268579198
+271832044,Tesco Finest Hand Plaited Brioche Loaf 400g,2.85,400,7.8,31.2,366,1464,https://www.tesco.com/groceries/en-GB/products/271832044
+272080844,Thorntons Celebration Triple Layer Chocolate Cake,16,100,5.1,5.1,0,0,https://www.tesco.com/groceries/en-GB/products/272080844
+272652497,Brioche Pasquier Pitch Chocolate Hazelnut Filled Brioche 6 Pack,1.9,230,5.9,13.57,0,0,https://www.tesco.com/groceries/en-GB/products/272652497
+272652543,Brioche Pasquier Pitch Chocolate Chip Brioche 6 Pack,1.9,225,7.8,17.55,0,0,https://www.tesco.com/groceries/en-GB/products/272652543
+272902283,Tesco Plain Pretzel,1.2,100,9.3,9.3,285,285,https://www.tesco.com/groceries/en-GB/products/272902283
+272914228,Tesco Sourdough Bloomer 400G,2.1,400,10.7,42.8,245,980,https://www.tesco.com/groceries/en-GB/products/272914228
+273349129,Warburtons Brown Sandwich Thins 6 Pack,1,100,9.9,9.9,0,0,https://www.tesco.com/groceries/en-GB/products/273349129
+273420937,Soreen Banana Lunchbox Loaves 5 Pack,1.8,150,8,12,311,466.5,https://www.tesco.com/groceries/en-GB/products/273420937
+273421003,Soreen Malt Lunchbox Loaves 5 Pack,1.8,100,8.4,8.4,294,294,https://www.tesco.com/groceries/en-GB/products/273421003
+273889083,Tesco Mini Danish Pastries Selection 5 Pack,1.95,100,5.6,5.6,386,386,https://www.tesco.com/groceries/en-GB/products/273889083
+273913049,Thorntons Toffee Cake,12,100,3,3,0,0,https://www.tesco.com/groceries/en-GB/products/273913049
+274026924,Warburtons Crumpets 9 Pack,1.15,100,6,6,0,0,https://www.tesco.com/groceries/en-GB/products/274026924
+274147482,Mrs Crimble's Large Coconut Jam Rings 6 Pack,2,100,3.9,3.9,428,428,https://www.tesco.com/groceries/en-GB/products/274147482
+274769241,Tesco Single Scottish Morning Roll,0.5,100,9.6,9.6,265,265,https://www.tesco.com/groceries/en-GB/products/274769241
+274811214,Hovis Seed Sensations Seven Seeds Sliced Bread 800g,1.95,800,10,80,0,0,https://www.tesco.com/groceries/en-GB/products/274811214
+275156325,Tesco Double Chocolate Cookies 5 Pack,1.5,100,5.8,5.8,461,461,https://www.tesco.com/groceries/en-GB/products/275156325
+275218092,Jacksons of Yorkshire Soft Champion White Bloomer Bread 800g,1.85,800,9.3,74.4,0,0,https://www.tesco.com/groceries/en-GB/products/275218092
+275218161,Jacksons of Yorkshire Champion Multigrain Brown Bloomer Bread 800g,1.85,800,10,80,0,0,https://www.tesco.com/groceries/en-GB/products/275218161
+276131923,Tesco Milk Chocolate Cookies 5 Pack,1.5,100,4.6,4.6,478,478,https://www.tesco.com/groceries/en-GB/products/276131923
+276132127,Tesco White Chocolate Cookies 5 Pack,1.5,100,4.1,4.1,463,463,https://www.tesco.com/groceries/en-GB/products/276132127
+276132657,Tesco Cinnamon Tear & Share Bun,3.5,100,6.7,6.7,324,324,https://www.tesco.com/groceries/en-GB/products/276132657
+278702176,Bonne Maman La Madeleine 7 Pack,2.9,175,5.9,10.33,0,0,https://www.tesco.com/groceries/en-GB/products/278702176
+279422851,Bonne Maman Chocolate Madeleines with Milk 7 Pack,2.9,210,5.9,12.39,0,0,https://www.tesco.com/groceries/en-GB/products/279422851
+279448636,Mission Mini Original Tortilla Wraps 6 Pack,1.25,186,8,14.88,0,0,https://www.tesco.com/groceries/en-GB/products/279448636
+279666936,Mr Kipling Toffee Viennese Whirls Cakes 6 Pack,2.5,100,3.6,3.6,0,0,https://www.tesco.com/groceries/en-GB/products/279666936
+279841965,Tesco Sultana Scones 6 Pack,1.75,100,7.7,7.7,351,351,https://www.tesco.com/groceries/en-GB/products/279841965
+281823783,Tesco Free From Cinnamon Spiced Hot Cross Buns 4 Pack,2.5,100,4,4,231,231,https://www.tesco.com/groceries/en-GB/products/281823783
+282073090,Genius Gluten Free Cinnamon & Raisin Spicy Loaf 400g,3.1,400,0.3,1.2,0,0,https://www.tesco.com/groceries/en-GB/products/282073090
+282979202,Tesco Chocolate Chip Madeleines 400G,2.8,400,5.3,21.2,462,1848,https://www.tesco.com/groceries/en-GB/products/282979202
+282979274,Tesco Madeleines - French Inspired 400g,2.8,400,4.8,19.2,484,1936,https://www.tesco.com/groceries/en-GB/products/282979274
+283292715,Tesco Oat And Raisin Cookies 5 Pack,1.5,100,5.6,5.6,422,422,https://www.tesco.com/groceries/en-GB/products/283292715
+283390081,Cadbury Milk Chocolate Mini Rolls Cakes 5 pack,2.5,100,4.8,4.8,0,0,https://www.tesco.com/groceries/en-GB/products/283390081
+284275907,Genius Gluten Free Crumpets 4 pack,2.35,100,4.1,4.1,206,206,https://www.tesco.com/groceries/en-GB/products/284275907
+284508478,McVitie's Jaffa Cakes Zingy Orangey Bars 10 Pack,3.7,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/284508478
+284515383,Tesco Birthday Cake Cubes - Chocolate Sponge 15 Pack,15,100,5.1,5.1,447,447,https://www.tesco.com/groceries/en-GB/products/284515383
+286069135,Genius Gluten Free Blueberry Muffins 2 Pack,2,100,4.1,4.1,391,391,https://www.tesco.com/groceries/en-GB/products/286069135
+286519456,Tesco All Butter Croissant 2 Pack,1.9,100,7.9,7.9,421,421,https://www.tesco.com/groceries/en-GB/products/286519456
+286671239,Tesco Finest Apple & Cinnamon Hot Cross Buns 4 Pack,2,100,7.9,7.9,266,266,https://www.tesco.com/groceries/en-GB/products/286671239
+286865327,Tesco Blueberry Muffins 4 Pack,2,100,4.1,4.1,367,367,https://www.tesco.com/groceries/en-GB/products/286865327
+287424635,Hovis Seed Sensations Seven Seeds Sliced Bread 400g,1.15,400,10,40,0,0,https://www.tesco.com/groceries/en-GB/products/287424635
+287504132,Cadbury Raspberry Chocolate Mini Roll Cakes 5 Pack,2.5,100,4.5,4.5,0,0,https://www.tesco.com/groceries/en-GB/products/287504132
+287853081,Warburtons Thin Plain Bagels 6 Pack,1.85,100,10,10,0,0,https://www.tesco.com/groceries/en-GB/products/287853081
+287853207,Warburtons Thin Cinnamon & Raisin Bagels 6 Pack,1.85,100,9.7,9.7,0,0,https://www.tesco.com/groceries/en-GB/products/287853207
+287937944,Tesco Finest Free From Victoria Sponge Cake 6 Serves,4.35,100,3.6,3.6,390,390,https://www.tesco.com/groceries/en-GB/products/287937944
+287938223,Tesco Finest Free From Chocolate Sponge Cake,4.35,100,3.7,3.7,416,416,https://www.tesco.com/groceries/en-GB/products/287938223
+287938338,Tesco Finest Free From Carrot Cake,4.35,100,3.1,3.1,412,412,https://www.tesco.com/groceries/en-GB/products/287938338
+290239349,Tesco Bake at Home Part Baked Mini White Rolls 6 Pack,1.2,300,8.9,26.7,295,885,https://www.tesco.com/groceries/en-GB/products/290239349
+290339409,Simply Doughnuts Mini Classic and Sugar Ring 8 Pack,1.25,100,8.4,8.4,0,0,https://www.tesco.com/groceries/en-GB/products/290339409
+290819746,Schar Gluten-Free Soft Seeded Loaf Bread 300g,2.8,300,4.5,13.5,249,747,https://www.tesco.com/groceries/en-GB/products/290819746
+290819809,Schar Gluten-Free Soft White Sliced Bread Loaf,2.8,300,3.5,10.5,0,0,https://www.tesco.com/groceries/en-GB/products/290819809
+291228310,Schar Every Day Gluten-free Soft Rolls - White Ciabatta 200g,2.3,200,4.6,9.2,0,0,https://www.tesco.com/groceries/en-GB/products/291228310
+291228401,Schar Buckwheat Brown Ciabatta Rolls 200g,2.3,200,6.8,13.6,0,0,https://www.tesco.com/groceries/en-GB/products/291228401
+291243774,BFree Gluten Free Stone Baked Pitta Bread 220g,2.95,220,7.6,16.72,238,523.6,https://www.tesco.com/groceries/en-GB/products/291243774
+291376220,Tesco Folded Flatbreads Plain 6 Pack,1.5,210,10.1,21.21,304,638.4,https://www.tesco.com/groceries/en-GB/products/291376220
+291443226,Genius Gluten Free Pancakes 6 pack,2.35,100,0,0,261,0,https://www.tesco.com/groceries/en-GB/products/291443226
+291481382,St Pierre Chocolate Filled French Crepes 6 Pack,2.2,100,6.2,6.2,0,0,https://www.tesco.com/groceries/en-GB/products/291481382
+291569521,New York Bakery Co Wholemeal Bagels 5 Pack,1.9,100,11.8,11.8,260,260,https://www.tesco.com/groceries/en-GB/products/291569521
+291880664,Warburtons Thin Bagels - Sesame 6 Pack,1.85,100,10.5,10.5,0,0,https://www.tesco.com/groceries/en-GB/products/291880664
+292832035,Mrs Crimble's Classic French Madeleines - Gluten Free Sponge Cakes 180g,2.75,180,4.8,8.64,0,0,https://www.tesco.com/groceries/en-GB/products/292832035
+292885006,New York Bakery Co Red Onion & Chive Bagels 5 Pack,1.9,100,9.7,9.7,259,259,https://www.tesco.com/groceries/en-GB/products/292885006
+292891822,Tesco All Butter Croissant,1.2,100,7.9,7.9,421,421,https://www.tesco.com/groceries/en-GB/products/292891822
+292891880,Tesco All Butter Almond Croissant,1.2,100,9.1,9.1,398,398,https://www.tesco.com/groceries/en-GB/products/292891880
+292891943,Tesco All Butter Chocolate Croissant,1.2,100,7.8,7.8,436,436,https://www.tesco.com/groceries/en-GB/products/292891943
+292891966,Tesco All Butter Pain Au Chocolat,1.2,100,7.8,7.8,430,430,https://www.tesco.com/groceries/en-GB/products/292891966
+292891989,Tesco All Butter Pain Au Raisin,1.2,100,6.8,6.8,312,312,https://www.tesco.com/groceries/en-GB/products/292891989
+292892026,Tesco Cinnamon Swirl,1.2,100,5.6,5.6,444,444,https://www.tesco.com/groceries/en-GB/products/292892026
+292892101,Tesco Maple And Pecan Plait,1.2,100,5.5,5.5,453,453,https://www.tesco.com/groceries/en-GB/products/292892101
+293459809,Tesco Banana Loaf Cake,2,100,4.4,4.4,363,363,https://www.tesco.com/groceries/en-GB/products/293459809
+293459844,Tesco Coconut & Raspberry Loaf Cake,2,100,4,4,390,390,https://www.tesco.com/groceries/en-GB/products/293459844
+293459907,Tesco Lemon Loaf Cake Baked in the Tray,2,100,5.6,5.6,395,395,https://www.tesco.com/groceries/en-GB/products/293459907
+293609944,Tesco Blackcurrant Sundae Tarts 4 Pack,2,100,3,3,436,436,https://www.tesco.com/groceries/en-GB/products/293609944
+293612012,Genius Gluten Free Double Chocolate Muffins 2 Pack,2,100,4.9,4.9,425,425,https://www.tesco.com/groceries/en-GB/products/293612012
+293672920,BFree Gluten Free Sweet Potato Wraps 6 Pack 42g,3.8,42,1.8,0.76,187,78.54,https://www.tesco.com/groceries/en-GB/products/293672920
+293673002,Dr Schar Gluten Free Vitality Loaf 350G,2.8,350,4.6,16.1,0,0,https://www.tesco.com/groceries/en-GB/products/293673002
+295057130,Biona Organic Rye Bread Chia & Flax 500g,2.95,500,6,30,211,1055,https://www.tesco.com/groceries/en-GB/products/295057130
+295360140,Pagen Gifflar Cinnamon Pastry Rolls 260g,2.15,260,7,18.2,373,969.8,https://www.tesco.com/groceries/en-GB/products/295360140
+295848818,Cadbury Raspberry Chocolate Mini Rolls Cakes 10 Pack,3.95,100,4.5,4.5,440,440,https://www.tesco.com/groceries/en-GB/products/295848818
+295848830,Cadbury Milk Chocolate Mini Roll Cakes 10 Pack,3.95,100,4.8,4.8,0,0,https://www.tesco.com/groceries/en-GB/products/295848830
+295848853,Mr Kipling Angel Cake Slices 8 Pack,3,100,2.8,2.8,0,0,https://www.tesco.com/groceries/en-GB/products/295848853
+295848876,Mr Kipling Lemon Cake Slices 8 Pack,3,100,2.6,2.6,0,0,https://www.tesco.com/groceries/en-GB/products/295848876
+295848899,Mr Kipling Milk Chocolate Cake Slices 8 Pack,3,100,3.4,3.4,0,0,https://www.tesco.com/groceries/en-GB/products/295848899
+296902776,Tesco White Iced Ring Doughnuts 4 Pack,0.95,100,5.6,5.6,431,431,https://www.tesco.com/groceries/en-GB/products/296902776
+296983673,Mr Kipling Angel Cake Slices 6 Pack,2.75,100,2.8,2.8,0,0,https://www.tesco.com/groceries/en-GB/products/296983673
+296983713,Mr Kipling Lemon Cake Slices 6 Pack,2.75,100,2.6,2.6,0,0,https://www.tesco.com/groceries/en-GB/products/296983713
+297297274,Tesco Fresh Cream Bramley Apple Turnovers 2 Pack 160g,1.7,160,3.9,6.24,314,502.4,https://www.tesco.com/groceries/en-GB/products/297297274
+297385855,Soreen Apple Lunchbox Loaves 5 Pack 150g,1.8,150,8.1,12.15,308,462,https://www.tesco.com/groceries/en-GB/products/297385855
+297570814,Pokemon Pikachu Celebration Party Cake - Raspberry and Vanilla,14,100,2.7,2.7,0,0,https://www.tesco.com/groceries/en-GB/products/297570814
+297673670,Schar Gluten Free Waffles 100G,2.3,100,4.8,4.8,0,0,https://www.tesco.com/groceries/en-GB/products/297673670
+297689029,Tesco All Butter Chocolate Twist,1.2,100,6.5,6.5,382,382,https://www.tesco.com/groceries/en-GB/products/297689029
+297696821,Tiger Sliced Bloomer 400G,1.25,400,9.2,36.8,259,1036,https://www.tesco.com/groceries/en-GB/products/297696821
+297696838,Tesco White Bloomer 400G,1.25,400,9.3,37.2,264,1056,https://www.tesco.com/groceries/en-GB/products/297696838
+297795623,White Farmhouse Loaf 400G,1.25,400,9.2,36.8,272,1088,https://www.tesco.com/groceries/en-GB/products/297795623
+297795630,White Farmhouse Loaf Sliced 400G,1.25,400,9.2,36.8,272,1088,https://www.tesco.com/groceries/en-GB/products/297795630
+297795646,White Farmhouse Loaf 800G,1.55,800,8.5,68,250,2000,https://www.tesco.com/groceries/en-GB/products/297795646
+297795652,White Farmhouse Loaf Sliced 800G,1.55,800,8.5,68,250,2000,https://www.tesco.com/groceries/en-GB/products/297795652
+297795669,Tiger Bloomer Loaf 800G,1.55,800,9.2,73.6,268,2144,https://www.tesco.com/groceries/en-GB/products/297795669
+299045558,H.W. Nevill's Medium Sliced Wholemeal Bread 800g,0.55,800,10.1,80.8,226,1808,https://www.tesco.com/groceries/en-GB/products/299045558
+299045570,H.W. Nevill's Medium Sliced White Bread 800g,0.55,800,8.4,67.2,239,1912,https://www.tesco.com/groceries/en-GB/products/299045570
+299384571,Warburtons Gluten Free Multiseed Loaf Bread 300g,1.75,300,6,18,0,0,https://www.tesco.com/groceries/en-GB/products/299384571
+299384611,Warburtons Gluten Free Artisan Tiger Loaf 400G,3.5,400,4,16,0,0,https://www.tesco.com/groceries/en-GB/products/299384611
+299384657,Warburtons Gluten Free White Thins 4 Pack 200g,2.9,200,6,12,0,0,https://www.tesco.com/groceries/en-GB/products/299384657
+299384732,Warburtons Gluten Free White Loaf 300G,1.75,300,4.1,12.3,0,0,https://www.tesco.com/groceries/en-GB/products/299384732
+299389116,Tesco Medium Sliced White Bread 800g,0.74,800,8.4,67.2,240,1920,https://www.tesco.com/groceries/en-GB/products/299389116
+299425748,Tesco White Toastie Bread Thick Sliced 800g,0.75,800,8.4,67.2,240,1920,https://www.tesco.com/groceries/en-GB/products/299425748
+299425783,Tesco Wholemeal Medium Sliced Bread 800g,0.75,800,10.3,82.4,231,1848,https://www.tesco.com/groceries/en-GB/products/299425783
+299597320,Tesco Farmhouse Thick Sliced White Bread 800g,1,800,8.4,67.2,241,1928,https://www.tesco.com/groceries/en-GB/products/299597320
+299598842,Tesco White Sub Rolls 4 Pack,1.2,100,8.7,8.7,265,265,https://www.tesco.com/groceries/en-GB/products/299598842
+299650135,"It’s not you, it’s us.",0,4,0,0,0,0,https://www.tesco.com/groceries/en-GB/products/299650135
+299668276,H.W. Nevill's Part Baked White Baguette 2 Pack,0.85,100,8.8,8.8,298,298,https://www.tesco.com/groceries/en-GB/products/299668276
+299773970,Cadbury Mini Eggs Easter Chocolate Nest Cakes 4 pack,3,100,5.1,5.1,0,0,https://www.tesco.com/groceries/en-GB/products/299773970
+299965523,Ms Molly's Chocolate Chip Cake Bars 5 Pack,0.75,100,6.3,6.3,425,425,https://www.tesco.com/groceries/en-GB/products/299965523
+299999454,Tesco White English Muffins 4 Pack,0.85,100,11.4,11.4,239,239,https://www.tesco.com/groceries/en-GB/products/299999454
+299999490,Tesco Deli Wholemeal Rolls 4 Pack,1.2,100,9.2,9.2,250,250,https://www.tesco.com/groceries/en-GB/products/299999490
+299999517,Tesco Finest Wholemeal Rolls 4 Pack,1.35,100,9.1,9.1,221,221,https://www.tesco.com/groceries/en-GB/products/299999517
+299999575,Ms Molly's Jumbo Chocolate & Vanilla Swiss Roll,1.8,100,4,4,390,390,https://www.tesco.com/groceries/en-GB/products/299999575
+299999598,Ms Molly's Jumbo Strawberry & Vanilla Swiss Roll,1.8,100,4.2,4.2,364,364,https://www.tesco.com/groceries/en-GB/products/299999598
+299999615,Ms Molly's Raspberry Swiss Roll,1.15,100,4.4,4.4,303,303,https://www.tesco.com/groceries/en-GB/products/299999615
+300017050,H.W. Nevills Pain Au Chocolat 8 Pack,1.39,100,6.8,6.8,412,412,https://www.tesco.com/groceries/en-GB/products/300017050
+300120975,"Ms Molly's Iced Fairy Cakes - Plain, Lemon, Strawberry 12 Pack",1.99,100,4.4,4.4,416,416,https://www.tesco.com/groceries/en-GB/products/300120975
+300120998,Ms Molly's Fairy Cakes 12 Pack,0.99,100,5.4,5.4,448,448,https://www.tesco.com/groceries/en-GB/products/300120998
+300134354,Tesco Finest Sunflower & Pumpkin Sliced White Bread Loaf 600g,1.35,600,11.1,66.6,301,1806,https://www.tesco.com/groceries/en-GB/products/300134354
+300134377,Tesco Finest Wholemeal Loaf 800G,1.5,800,9.2,73.6,227,1816,https://www.tesco.com/groceries/en-GB/products/300134377
+300134417,Tesco Finest Super Seeded Sliced Farmhouse Loaf 800g,1.5,800,10.4,83.2,284,2272,https://www.tesco.com/groceries/en-GB/products/300134417
+300134452,Tesco Finest Dark Rye & Sunflower Farmhouse Sliced Bread 600g,1.35,600,10.3,61.8,282,1692,https://www.tesco.com/groceries/en-GB/products/300134452
+300134671,Tesco Multiseed Batch Medium Sliced White Loaf 800g,1.25,800,9.7,77.6,261,2088,https://www.tesco.com/groceries/en-GB/products/300134671
+300644286,Warburtons Thin Sliced Seeded Protein Bagels 4 Pack,1.85,100,13.5,13.5,0,0,https://www.tesco.com/groceries/en-GB/products/300644286
+300716052,Ms Molly's Lightly Fruited Cake 440g,1.25,440,5,22,345,1518,https://www.tesco.com/groceries/en-GB/products/300716052
+300810579,Warburtons Premium Old English Sliced White Bread 400g,1.8,400,9.4,37.6,0,0,https://www.tesco.com/groceries/en-GB/products/300810579
+301044637,Thorntons Indulgent Chocolate Gift Cake,6.5,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/301044637
+301227329,Old El Paso 6 Regular Gluten Free Tortilla Wraps 216G,2.85,216,1.9,4.1,268,578.88,https://www.tesco.com/groceries/en-GB/products/301227329
+301767513,Warburtons Gluten Free White Wraps 4 Pack,2.9,100,3.9,3.9,0,0,https://www.tesco.com/groceries/en-GB/products/301767513
+301810791,Genius Gluten Free Brioche Style Burger Buns 2 Pack,2,100,4.4,4.4,236,236,https://www.tesco.com/groceries/en-GB/products/301810791
+301971576,St Pierre Plain Brioche Burger Buns 6 Pack,2.9,100,11,11,0,0,https://www.tesco.com/groceries/en-GB/products/301971576
+301971599,St Pierre Sesame Seeds Brioche Burger Buns 4 Pack,2.9,100,9.9,9.9,0,0,https://www.tesco.com/groceries/en-GB/products/301971599
+302088635,Warburtons White Farmhouse Bread 400G,1.3,400,9,36,0,0,https://www.tesco.com/groceries/en-GB/products/302088635
+302143680,Soreen Lunchbox Loaves - Strawberry 5 Pack,1.8,150,8,12,308,462,https://www.tesco.com/groceries/en-GB/products/302143680
+302385928,Warburtons Gluten Free White Sourdough Bloomer 400g,3.5,400,4.1,16.4,0,0,https://www.tesco.com/groceries/en-GB/products/302385928
+302707653,McVitie's Chocolate Toasting Waffles 8 Pack 200g,1.9,200,6.7,13.4,0,0,https://www.tesco.com/groceries/en-GB/products/302707653
+303299925,Tesco Mini Garlic & Coriander Naans 6 pack,1.65,100,7.6,7.6,273,273,https://www.tesco.com/groceries/en-GB/products/303299925
+303299948,Tesco Mini Plain Naan Breads 6 Pack 282g,1.65,282,7.4,20.87,261,736.02,https://www.tesco.com/groceries/en-GB/products/303299948
+303315815,Tesco Plain Naan Bread 2 Pack,1.35,100,7.4,7.4,261,261,https://www.tesco.com/groceries/en-GB/products/303315815
+303316048,Tesco Garlic & Coriander Naan Bread 2 Pack,1.35,100,7.6,7.6,273,273,https://www.tesco.com/groceries/en-GB/products/303316048
+303350352,Tesco Plain White Tortilla Wraps 8 Pack,1.3,100,8.2,8.2,284,284,https://www.tesco.com/groceries/en-GB/products/303350352
+303350398,Tesco Wholemeal Tortilla Wraps 8 pack,1.3,100,9,9,279,279,https://www.tesco.com/groceries/en-GB/products/303350398
+303350415,Tesco Mini White Tortilla Wraps Plain 8 Pack,1.1,100,8.2,8.2,284,284,https://www.tesco.com/groceries/en-GB/products/303350415
+303351247,Warburtons Soft & Sliced Original Bagels 5 Pack,1.9,100,10.6,10.6,0,0,https://www.tesco.com/groceries/en-GB/products/303351247
+303351662,Warburtons Cinnamon & Raisin Bagels Sliced 5 Pack,1.9,100,10.1,10.1,0,0,https://www.tesco.com/groceries/en-GB/products/303351662
+303433600,Just Love Food Indulgent Vegan Chocolate Cake,8.5,100,4.3,4.3,443,443,https://www.tesco.com/groceries/en-GB/products/303433600
+303629450,Tesco Finest White Sourdough Loaf 400G,2,400,7.5,30,238,952,https://www.tesco.com/groceries/en-GB/products/303629450
+303629473,Tesco Finest Rye & Mixed Seed Sourdough loaf 400G,2,400,8.6,34.4,263,1052,https://www.tesco.com/groceries/en-GB/products/303629473
+303749146,H.W. Nevills Plain Croissants 8 Pack,1.39,100,7.2,7.2,375,375,https://www.tesco.com/groceries/en-GB/products/303749146
+304074406,Promise Gluten Free Soft White Sliced Bread 480g,3.25,480,2.1,10.08,0,0,https://www.tesco.com/groceries/en-GB/products/304074406
+304074752,Promise Gluten FreeBread Multi Grain Loaf 480g,3.25,480,3.3,15.84,0,0,https://www.tesco.com/groceries/en-GB/products/304074752
+304075630,Promise Gluten Free Chia & Quinoa Sliced Bread Loaf 480g,3.25,480,4,19.2,0,0,https://www.tesco.com/groceries/en-GB/products/304075630
+304369179,Pagen Gifflar Rolls - Vanilla 260g,2.15,260,7,18.2,360,936,https://www.tesco.com/groceries/en-GB/products/304369179
+304371279,Warburtons Half And Half Medium Bread 800G,1.35,800,10,80,0,0,https://www.tesco.com/groceries/en-GB/products/304371279
+304377935,Tesco Classic Crumpets 6 Pack,0.45,100,6,6,181,181,https://www.tesco.com/groceries/en-GB/products/304377935
+304403151,H.W. Nevills Wholemeal Tortilla Wraps 8 Pack,0.99,100,8.8,8.8,284,284,https://www.tesco.com/groceries/en-GB/products/304403151
+304404864,Galaxy Ripple Indulgent Chocolate Cake Portions,15,100,4.1,4.1,0,0,https://www.tesco.com/groceries/en-GB/products/304404864
+304414570,Warburtons Soft & Sliced Sesame Bagels 5 Pack,1.9,100,10.4,10.4,0,0,https://www.tesco.com/groceries/en-GB/products/304414570
+304416929,H.W. Nevills Plain White Tortilla Wraps 8 Pack,0.99,100,7.7,7.7,287,287,https://www.tesco.com/groceries/en-GB/products/304416929
+304783575,Tesco Free From Hot Dog Rolls 4 pack,2.75,100,4,4,195,195,https://www.tesco.com/groceries/en-GB/products/304783575
+304795578,Tesco Finest Salted Caramel & Belgian Chocolate Hot Cross Buns 4 Pack,2,100,7.7,7.7,322,322,https://www.tesco.com/groceries/en-GB/products/304795578
+304795958,New York Bakery Co. Gluten Free Plain Bagels 4 Pack,2.55,100,3.5,3.5,241,241,https://www.tesco.com/groceries/en-GB/products/304795958
+305036860,Tesco Finest Brioche Burger Buns 4 pack,1.45,100,9.6,9.6,283,283,https://www.tesco.com/groceries/en-GB/products/305036860
+305038777,Tesco Finest Hot Cross Buns - 4 St Clements,2,100,6.9,6.9,274,274,https://www.tesco.com/groceries/en-GB/products/305038777
+305045169,Tesco Finest Sourdough Crumpets 6 pack,1.25,100,5.7,5.7,186,186,https://www.tesco.com/groceries/en-GB/products/305045169
+305047759,Tesco Brioche Burger Buns 4 Pack,0.99,100,8.3,8.3,273,273,https://www.tesco.com/groceries/en-GB/products/305047759
+305519681,Tesco Tiger Baton 200G,0.8,200,8.7,17.4,284,568,https://www.tesco.com/groceries/en-GB/products/305519681
+305522388,Tesco White Baton 200G,0.8,200,8.7,17.4,247,494,https://www.tesco.com/groceries/en-GB/products/305522388
+305528785,Deli Kitchen Brioche Style Tortilla Wraps 6 Pack 366g,1.9,366,7.7,28.18,0,0,https://www.tesco.com/groceries/en-GB/products/305528785
+305530793,Deli Kitchen Greek Style Plain Flatbreads 4 Pack 320g,1.9,320,11.3,36.16,0,0,https://www.tesco.com/groceries/en-GB/products/305530793
+305727889,Warburtons Half & Half Thick Sliced Bread 800g,1.35,800,10,80,0,0,https://www.tesco.com/groceries/en-GB/products/305727889
+305733449,Clay Oven Bakery Hand Stretched Garlic & Coriander Naan Bread 2 Pack 360g,1.85,360,8.1,29.16,251,903.6,https://www.tesco.com/groceries/en-GB/products/305733449
+305737088,Tesco Finest Wholemeal Seeds & Grains Loaf 800g,1.5,800,11.7,93.6,254,2032,https://www.tesco.com/groceries/en-GB/products/305737088
+305836218,Tesco Finest Wholemeal Seeds and Grains Loaf 400g,1.15,400,11.7,46.8,254,1016,https://www.tesco.com/groceries/en-GB/products/305836218
+305836662,Mission Deli Wheat & White Wraps 6 Pack 367G,1.8,367,8.1,29.73,0,0,https://www.tesco.com/groceries/en-GB/products/305836662
+305838752,Warburtons Baker's Bloomer White Bread 800g,1.8,800,9.2,73.6,0,0,https://www.tesco.com/groceries/en-GB/products/305838752
+305838815,Mission Original Tortilla Wraps 6 Pack,1.8,367,8,29.36,0,0,https://www.tesco.com/groceries/en-GB/products/305838815
+305838965,Tesco Finest Brioche Hot Dog Rolls 4 pack,1.45,100,8.4,8.4,278,278,https://www.tesco.com/groceries/en-GB/products/305838965
+305948748,Tesco Petit Pain 4 Pack,1.5,100,8.7,8.7,260,260,https://www.tesco.com/groceries/en-GB/products/305948748
+305949534,Tesco Free From Sultana Scones 2 pack,2.2,100,3.3,3.3,309,309,https://www.tesco.com/groceries/en-GB/products/305949534
+305953436,Soreen Sliced Fruited Malt Loaf 290g,1.75,290,8.7,25.23,0,0,https://www.tesco.com/groceries/en-GB/products/305953436
+305967495,Tesco Chocolate Brownie Slices 240g,1.95,240,5.7,13.68,423,1015.2,https://www.tesco.com/groceries/en-GB/products/305967495
+305968062,Tesco Granola Flapjack Slices 240g,1.95,240,7.3,17.52,410,984,https://www.tesco.com/groceries/en-GB/products/305968062
+305972367,Mr Kipling Lemon French Fancies Cake 8 pack,3,100,2.3,2.3,0,0,https://www.tesco.com/groceries/en-GB/products/305972367
+305988320,Tesco Chocolate Mega Loaf,2,100,6.1,6.1,399,399,https://www.tesco.com/groceries/en-GB/products/305988320
+305990374,Galaxy Treat Cake - Chocolate,10,100,4.4,4.4,0,0,https://www.tesco.com/groceries/en-GB/products/305990374
+306661336,Tesco Ancient Grain Rolls 4 Pack,1.25,100,12.5,12.5,274,274,https://www.tesco.com/groceries/en-GB/products/306661336
+306661492,Tesco Chunky Cheese Rolls 4 Pack,1.25,100,11.1,11.1,261,261,https://www.tesco.com/groceries/en-GB/products/306661492
+306798939,Clay Oven Bakery Plain Naan Bread 2 Pack 360g,1.85,360,8.3,29.88,234,842.4,https://www.tesco.com/groceries/en-GB/products/306798939
+306928539,Cadbury Crunchie Chocolate Cake Bars 5 Pack,2.5,100,4.4,4.4,0,0,https://www.tesco.com/groceries/en-GB/products/306928539
+306929292,Warburtons Sliced White Sandwich Rolls 4 Pack,1.6,100,8.8,8.8,0,0,https://www.tesco.com/groceries/en-GB/products/306929292
+306938619,Tesco Scotch Rolls 4 Pack,0.8,100,8.4,8.4,245,245,https://www.tesco.com/groceries/en-GB/products/306938619
+306943297,Tesco Scotch Pancakes 6 pack,0.48,100,5.2,5.2,248,248,https://www.tesco.com/groceries/en-GB/products/306943297
+307154463,Xbox Celebration Cake Raspberry and vanilla,15,100,2.5,2.5,0,0,https://www.tesco.com/groceries/en-GB/products/307154463
+307345335,Hoppers Farmhouse Bakeries Chocolate Mini Rolls (Family Pack) 10 Pack,1.9,100,5.3,5.3,462,462,https://www.tesco.com/groceries/en-GB/products/307345335
+307740299,Tesco Easter Simnel Cake 400g,4,400,5.3,21.2,381,1524,https://www.tesco.com/groceries/en-GB/products/307740299
+307741436,Maltesers Cake Bars 5 Pack,2.75,100,4.6,4.6,0,0,https://www.tesco.com/groceries/en-GB/products/307741436
+307748141,Tesco Finest All Butter Simnel Cake - Easter 850g,12.5,850,5.6,47.6,397,3374.5,https://www.tesco.com/groceries/en-GB/products/307748141
+307758273,Tesco Gingerbread Biscuit,1.2,100,6.1,6.1,437,437,https://www.tesco.com/groceries/en-GB/products/307758273
+308081322,Tesco Free From Chocolate Chip Brioche Rolls 4 Pack,2.2,100,4.1,4.1,250,250,https://www.tesco.com/groceries/en-GB/products/308081322
+308089855,Tesco Tiger Rolls 4 Pack,0.8,100,9.3,9.3,265,265,https://www.tesco.com/groceries/en-GB/products/308089855
+308091765,Tesco Finest Brioche Sesame Seed Burger Buns 4 pack,1.45,100,9.3,9.3,287,287,https://www.tesco.com/groceries/en-GB/products/308091765
+308095231,Cadbury Creme Egg Nest Cakes 4 Pack,3,100,4.4,4.4,0,0,https://www.tesco.com/groceries/en-GB/products/308095231
+308110243,Tesco White Finger Rolls 6 Pack,0.9,100,8.1,8.1,249,249,https://www.tesco.com/groceries/en-GB/products/308110243
+308110796,Tesco Crusty Rolls 4 Pack,0.8,100,9.3,9.3,261,261,https://www.tesco.com/groceries/en-GB/products/308110796
+308452137,Tesco Free From Confetti Cake 12 Serves,12,100,1.7,1.7,464,464,https://www.tesco.com/groceries/en-GB/products/308452137
+308457489,Tesco Finest Large Teacakes 4 pack,2,100,6.8,6.8,294,294,https://www.tesco.com/groceries/en-GB/products/308457489
+308459216,Tesco Sliced Brioche Loaf 500G,1.69,500,8,40,352,1760,https://www.tesco.com/groceries/en-GB/products/308459216
+308463055,Tesco Large White Baps 4 pack,0.95,100,8,8,248,248,https://www.tesco.com/groceries/en-GB/products/308463055
+308475104,Deli Kitchen Carb Lite Wheat Tortilla Wraps 6 Pack 300g,1.9,300,13.8,41.4,0,0,https://www.tesco.com/groceries/en-GB/products/308475104
+308477321,Soreen Malt Lunchbox Loaves - Family Pack 10 Pack,2.5,300,8.4,25.2,294,882,https://www.tesco.com/groceries/en-GB/products/308477321
+308478994,BFree Gluten Free High Protein Wraps 4 x 42g (168g),3.8,42,27,11.34,228,95.76,https://www.tesco.com/groceries/en-GB/products/308478994
+308493802,Tesco Fuzzy Caterpillar Cake - Chocolate 230g,9,230,4.9,11.27,398,915.4,https://www.tesco.com/groceries/en-GB/products/308493802
+308494277,Warburtons Gluten Free Super Soft Sliced Square Rolls 4 pack,2.9,100,5.8,5.8,0,0,https://www.tesco.com/groceries/en-GB/products/308494277
+308868043,St Pierre Brioche Hot Dog Rolls 4 pack,2.25,100,10,10,0,0,https://www.tesco.com/groceries/en-GB/products/308868043
+309177980,Tesco Rocky Road Bites 195G,3,195,4.2,8.19,562,1095.9,https://www.tesco.com/groceries/en-GB/products/309177980
+309205458,Dina Handmade Classic Baklawa Selection 200G,2.5,200,5.4,10.8,473,946,https://www.tesco.com/groceries/en-GB/products/309205458
+309453578,Tesco Finest Apple & Blackberry Crumble Danish 2 Pack,2.65,100,5.7,5.7,333,333,https://www.tesco.com/groceries/en-GB/products/309453578
+309454139,Heat & Eat Seeded Baguette 3 Pack,1.6,100,9.7,9.7,263,263,https://www.tesco.com/groceries/en-GB/products/309454139
+309459514,Tesco Finest Bakewell Tarts 2 Pack,2.9,100,8.3,8.3,471,471,https://www.tesco.com/groceries/en-GB/products/309459514
+309461614,Heat & Eat White Baguette 3 Pack,1.6,100,8.9,8.9,254,254,https://www.tesco.com/groceries/en-GB/products/309461614
+309461902,Thorntons Caramel Shortcake Bites 10 Pack,2.1,100,5.3,5.3,0,0,https://www.tesco.com/groceries/en-GB/products/309461902
+309743961,Tesco Iced Finger Buns 6 Pack,1.65,100,7.1,7.1,345,345,https://www.tesco.com/groceries/en-GB/products/309743961
+309748691,Disney Cars Lightning McQueen Chocolate Celebration Cake,15.5,100,2.8,2.8,0,0,https://www.tesco.com/groceries/en-GB/products/309748691
+309757379,Tesco Finest Part Baked White Baguettes with Sourdough 2 Pack 250g,1.85,250,10.1,25.25,290,725,https://www.tesco.com/groceries/en-GB/products/309757379
+309759862,Tesco Finest Trillionaire Cake 16 Servings,18,100,3.7,3.7,456,456,https://www.tesco.com/groceries/en-GB/products/309759862
+309764855,Tesco Pastel De Nata 4 Pack,2.6,100,4.2,4.2,279,279,https://www.tesco.com/groceries/en-GB/products/309764855
+309769936,McVitie's Digestives Milk Chocolate Slices 5 Pack 114.1g,1.5,114.1,4.6,5.25,0,0,https://www.tesco.com/groceries/en-GB/products/309769936
+309770339,Tesco Finest Multigrain Part Baked Baguettes with Sourdough 2 Pack 250g,1.85,250,10,25,297,742.5,https://www.tesco.com/groceries/en-GB/products/309770339
+309776616,McVitie's Hobnobs Oaty Flapjacks 5 Pack 131.8g,1.5,131.8,5.9,7.78,0,0,https://www.tesco.com/groceries/en-GB/products/309776616
+309779659,Tesco Half & Half Cake - Vanilla and Chocolate,16.5,100,3.2,3.2,439,439,https://www.tesco.com/groceries/en-GB/products/309779659
+310109865,Jason's Recipe No 01 The Great White Straight Up Sourdough Loaf 450g,2.15,450,9.7,43.65,0,0,https://www.tesco.com/groceries/en-GB/products/310109865
+310121170,Tesco Egg Waffles 8 pack,1.75,200,8.1,16.2,476,952,https://www.tesco.com/groceries/en-GB/products/310121170
+310123337,Crosta & Mollica Wholeblend Piadina Midi Flatbreads 240g,2,240,8.1,19.44,0,0,https://www.tesco.com/groceries/en-GB/products/310123337
+310129173,Tesco Finest All Butter Pain Au Chocolat  4 Pack,2.5,100,8.1,8.1,436,436,https://www.tesco.com/groceries/en-GB/products/310129173
+310144528,Warburtons Gluten Free Soft Brioche Rolls 4 pack,2.9,100,6.1,6.1,0,0,https://www.tesco.com/groceries/en-GB/products/310144528
+310145648,McVitie's Hobnobs Oaty Flapjacks Milk Chocolate 5 Pack 131.8g,1.5,131.8,5.8,7.64,0,0,https://www.tesco.com/groceries/en-GB/products/310145648
+310147623,Jason's Superb Sprouted Grains Sourdough Bread 450g,2.15,450,9.3,41.85,0,0,https://www.tesco.com/groceries/en-GB/products/310147623
+310149172,McVitie's Digestives Caramel Millionaire Slices 5 Pack 109.9g,1.5,109.9,4.4,4.84,0,0,https://www.tesco.com/groceries/en-GB/products/310149172
+310167392,Mrs Crimble's Gluten Free Chocolate Coconut Macaroons 6 Pack 195g,1.75,195,3.7,7.21,448,873.6,https://www.tesco.com/groceries/en-GB/products/310167392
+310178511,Mrs Crimble's Big Gluten Free Coconut Macaroons 180g,1.75,180,3.8,6.84,442,795.6,https://www.tesco.com/groceries/en-GB/products/310178511
+310190490,Tesco Free From Chocolate Cornflake Clusters 16 Pack,3.65,160,6.2,9.92,476,761.6,https://www.tesco.com/groceries/en-GB/products/310190490
+310664917,Tesco Finest Flame Baked Flatbreads Plain 2 Pack,1.75,100,8.2,8.2,303,303,https://www.tesco.com/groceries/en-GB/products/310664917
+310665159,Tesco Banana Pancakes 6 pack,1.4,100,5.1,5.1,239,239,https://www.tesco.com/groceries/en-GB/products/310665159
+310685247,Tesco Classic Egg Waffles 6 pack,2.1,250,8.1,20.25,476,1190,https://www.tesco.com/groceries/en-GB/products/310685247
+310686128,Warburtons Gluten Free Super Soft Seeded Sliced Rolls 4 Pack,2.95,100,6.5,6.5,0,0,https://www.tesco.com/groceries/en-GB/products/310686128
+310844495,Lazyday Foods Rocky Road Slices 5 Pack 150g,2.8,150,2.5,3.75,0,0,https://www.tesco.com/groceries/en-GB/products/310844495
+311206190,Marvel Spiderman Nut Free Cake - Vanilla and Raspberry,15.5,100,2.3,2.3,0,0,https://www.tesco.com/groceries/en-GB/products/311206190
+311214139,We Love Cake Free From Sticky Toffee Slices 4 Pack 158g,2.45,158,3.3,5.21,430,679.4,https://www.tesco.com/groceries/en-GB/products/311214139
+311257353,Soreen Easter Raspberry & White Chocolate Mini Loaves 150g,1.5,150,8,12,0,0,https://www.tesco.com/groceries/en-GB/products/311257353
+311269120,Mr Kipling Reduced Sugar Chocolate Cake Slices 6 pack,2.75,100,4.5,4.5,0,0,https://www.tesco.com/groceries/en-GB/products/311269120
+311272720,Tesco Free From Dark Chocolate Brownie Slices 5 Pack 145g,3.2,145,5.5,7.97,478,693.1,https://www.tesco.com/groceries/en-GB/products/311272720
+311274758,Minions Chocolate Celebration Cake,14.5,100,2.7,2.7,0,0,https://www.tesco.com/groceries/en-GB/products/311274758
+311421942,LazyDay Vegan & Free From Belgian Chocolate Cake Bars 120g,3.75,120,4.7,5.64,0,0,https://www.tesco.com/groceries/en-GB/products/311421942
+311432042,Mr Kipling Reduced Sugar Bramley Apple Pies 6 Pack,3,100,3.3,3.3,0,0,https://www.tesco.com/groceries/en-GB/products/311432042
+311433974,We Love Cake Free From Raspberry Ripple Cake Slices 4 Pack 150g,2.45,150,2.7,4.05,432,648,https://www.tesco.com/groceries/en-GB/products/311433974
+311440470,Mr Kipling Reduced Sugar Angel Cake Slices 6 pack,2.75,100,3.8,3.8,0,0,https://www.tesco.com/groceries/en-GB/products/311440470
+311443553,Mr Kipling Bramley Apple & Blackcurrant Pie 30% Less Sugar 6 Pack,3,100,3.4,3.4,0,0,https://www.tesco.com/groceries/en-GB/products/311443553
+311449155,Crosta & Mollica Durum Wheat Piadina Midi Flatbreads 6 Pack 240g,2,240,8.9,21.36,0,0,https://www.tesco.com/groceries/en-GB/products/311449155
+311684889,Tesco Apple & Cinnamon Turnover 2 Pack,1.9,100,4.3,4.3,351,351,https://www.tesco.com/groceries/en-GB/products/311684889
+311692580,Tesco Finest Belgian Sugar Waffles 4 Pack 200g,2.55,200,6,12,466,932,https://www.tesco.com/groceries/en-GB/products/311692580
+311787537,St. Pierre Sliced Brioche Burger Buns 4 pack,2.5,100,9.5,9.5,0,0,https://www.tesco.com/groceries/en-GB/products/311787537
+311932274,Tesco Angel Cake Slices - Vanilla 6 Pack 160g,1.25,160,3.2,5.12,402,643.2,https://www.tesco.com/groceries/en-GB/products/311932274
+311932781,Tesco Finest Belgian Chocolate Coated Sugar Waffles 4 Pack 240g,2.55,240,5.5,13.2,480,1152,https://www.tesco.com/groceries/en-GB/products/311932781
+312083896,Just Love Food Nut Free Happy Birthday Cake - Vanilla and jam (Gluten Free),9,100,2.2,2.2,391,391,https://www.tesco.com/groceries/en-GB/products/312083896
+312093285,Tesco Lemon Cake Slices 6 Pack 160g,1.25,160,3.3,5.28,416,665.6,https://www.tesco.com/groceries/en-GB/products/312093285
+312109326,Tesco Finest Sourdough with Sundried Tomato & Oregano 400g,2,400,7.6,30.4,240,960,https://www.tesco.com/groceries/en-GB/products/312109326
+312226967,Jason's Recipe Majestic Malted No. 06 Sourdough Bread 450g,2.15,450,9.3,41.85,0,0,https://www.tesco.com/groceries/en-GB/products/312226967
+312231897,Tesco 5 Jam Doughnuts,1.3,100,5.9,5.9,333,333,https://www.tesco.com/groceries/en-GB/products/312231897
+312355707,Tesco Finest Carrot Cake 6 Servings,3.85,100,4,4,386,386,https://www.tesco.com/groceries/en-GB/products/312355707
+312359692,Tesco Celebration Cupcakes - Vanilla 6 Pack,4.5,100,2.3,2.3,458,458,https://www.tesco.com/groceries/en-GB/products/312359692
+312361509,Soreen The Original Fruited Malt Loaf 390g,1.75,390,7.5,29.25,0,0,https://www.tesco.com/groceries/en-GB/products/312361509
+312365632,Tesco Finest Chocolate And Salted Caramel Cake,6.25,100,3.4,3.4,447,447,https://www.tesco.com/groceries/en-GB/products/312365632
+312558796,Tesco Finest Stonebaked White Crusty Bloomer 600G,2.5,600,8.9,53.4,231,1386,https://www.tesco.com/groceries/en-GB/products/312558796
+312559187,Tesco Finest Chocolate Selection Mini Cupcakes 9 Pack,4,100,3.8,3.8,434,434,https://www.tesco.com/groceries/en-GB/products/312559187
+312567629,Tesco Finest Stonebaked Ciabatta 320G,2,320,8.1,25.92,261,835.2,https://www.tesco.com/groceries/en-GB/products/312567629
+312573368,Tesco Chocolate Fudge Cupcakes 2 Pack,2,100,4.1,4.1,441,441,https://www.tesco.com/groceries/en-GB/products/312573368
+312579270,Tesco 18 Cupcakes,8,100,3.1,3.1,471,471,https://www.tesco.com/groceries/en-GB/products/312579270
+312580198,Tesco Half & Half Cupcakes - Vanilla and Chocolate 6 Pack,4.5,100,2.7,2.7,465,465,https://www.tesco.com/groceries/en-GB/products/312580198
+312582121,Tesco 5 Custard Doughnuts,1.3,100,5.7,5.7,324,324,https://www.tesco.com/groceries/en-GB/products/312582121
+312582288,Tesco Finest Jalapeno & Vintage Cheddar Bloomer 400G,2.35,400,11.3,45.2,261,1044,https://www.tesco.com/groceries/en-GB/products/312582288
+312695097,Tesco Finest Vintage Cheddar Boule 400G,2.35,400,11.2,44.8,256,1024,https://www.tesco.com/groceries/en-GB/products/312695097
+312696568,Mr Kipling Signature Double Chocolate Brownie Cake Bites 10 pack,2.25,100,4.6,4.6,0,0,https://www.tesco.com/groceries/en-GB/products/312696568
+312707125,Patak's 4 Flame Baked Mini Naan Breads,1.5,100,8.7,8.7,288,288,https://www.tesco.com/groceries/en-GB/products/312707125
+312711626,Tesco Cheese Bloomer,2.1,100,10.7,10.7,249,249,https://www.tesco.com/groceries/en-GB/products/312711626
+312716137,LazyDay Salted Caramel Crispies Rice Crisped Squares 150g,3.25,150,4.3,6.45,0,0,https://www.tesco.com/groceries/en-GB/products/312716137
+312722158,Tesco Finest Kalamata & Halkidiki Olive Batard 400G,2.35,400,8.3,33.2,241,964,https://www.tesco.com/groceries/en-GB/products/312722158
+312827789,Patak's Flame Baked Mini Naans - Garlic & Coriander 4 Pack,1.5,100,8.5,8.5,297,297,https://www.tesco.com/groceries/en-GB/products/312827789
+312835324,Tesco Finest Stonebaked Seeded Multigrain Bloomer 600G,2.5,600,11,66,256,1536,https://www.tesco.com/groceries/en-GB/products/312835324
+312838321,Patak's Garlic & Coriander Naans 2 Pack,1.85,100,8.3,8.3,287,287,https://www.tesco.com/groceries/en-GB/products/312838321
+312838344,Al'fez Lebanese Style Flatbreads Flame Baked 180G,2.25,180,11,19.8,290,522,https://www.tesco.com/groceries/en-GB/products/312838344
+312840916,Tesco Lightly Seeded White Bread Loaf 800g,1,800,9,72,252,2016,https://www.tesco.com/groceries/en-GB/products/312840916
+312850017,Patak's Flame Baked Plain Naans 2 Pack,1.85,100,8.3,8.3,290,290,https://www.tesco.com/groceries/en-GB/products/312850017
+312983712,Mr Kipling Signature Caramel Chocolate Brownie Cake Bites 10 pack,2.25,100,3.8,3.8,0,0,https://www.tesco.com/groceries/en-GB/products/312983712
+312985747,Patak's Flame Baked Peshwari Naans 2 Pack,1.85,100,7.5,7.5,314,314,https://www.tesco.com/groceries/en-GB/products/312985747
+312987155,Tesco Finest Cranberry Raisin & Cashew Bloomer,2.35,100,10.8,10.8,297,297,https://www.tesco.com/groceries/en-GB/products/312987155
+313170457,Warburtons Gluten Free Crumpets 4 Pack,2.75,100,4,4,0,0,https://www.tesco.com/groceries/en-GB/products/313170457
+313187795,Tesco Brown Sourdough 400G,2.1,400,8,32,202,808,https://www.tesco.com/groceries/en-GB/products/313187795
+313502521,Tesco Finest Free From Hot Cross Buns - Chocolate Orange 4 Pack,3,100,4.7,4.7,249,249,https://www.tesco.com/groceries/en-GB/products/313502521
+313601381,Warburtons Gluten Free Cinnamon & Raisin Sliced Fruity Buns 4 Pack,2.95,100,5.3,5.3,0,0,https://www.tesco.com/groceries/en-GB/products/313601381
+313613349,Tesco Indian Style Roti Flatbreads - Flame Baked,1.3,100,7.4,7.4,274,274,https://www.tesco.com/groceries/en-GB/products/313613349
+313613954,Cadbury Mini Rolls Chocolate Orange Cakes 5 Pack,2.5,100,4.7,4.7,0,0,https://www.tesco.com/groceries/en-GB/products/313613954
+313738236,Warburtons Soft Wholemeal Pitta Breads 4 Pack,1.1,100,11.9,11.9,0,0,https://www.tesco.com/groceries/en-GB/products/313738236
+313740820,Irwin's Together Cinnamon & Raisin Toasty Loaf 400G,2.1,400,7,28,0,0,https://www.tesco.com/groceries/en-GB/products/313740820
+313742138,Tesco Greek Style Folded Flatbreads 4 Pack 340g,1.45,340,8.7,29.58,272,924.8,https://www.tesco.com/groceries/en-GB/products/313742138
+313744833,Jason's Sourdough White Ciabattin Bread with Grains & Seeds 580g,2.2,580,10.7,62.06,0,0,https://www.tesco.com/groceries/en-GB/products/313744833
+313749807,Tesco Finest Buttermilk Pancakes with Maple Syrup 4 Pack,1.75,100,6.3,6.3,272,272,https://www.tesco.com/groceries/en-GB/products/313749807
+313751444,Warburtons Crumpet Thins 8 pack,1.4,100,6.4,6.4,0,0,https://www.tesco.com/groceries/en-GB/products/313751444
+313755123,Cadbury Dairy Milk Caramel Mini Cookies X14,3,100,5,5,0,0,https://www.tesco.com/groceries/en-GB/products/313755123
+313756427,Jason's Everyday Tiger Rolls with Sourdough 4 Pack,1.65,320,9.2,29.44,0,0,https://www.tesco.com/groceries/en-GB/products/313756427
+313757553,Jason's Everyday Sourdough White Rolls 4 Pack,1.65,320,10,32,0,0,https://www.tesco.com/groceries/en-GB/products/313757553
+313758477,Jason's Recipe No 09 Wholemeal Sourdough Ciabattin Bread 580g,2.2,580,11.7,67.86,0,0,https://www.tesco.com/groceries/en-GB/products/313758477
+313831880,Bluey Celebration Cake with Raspberry Jam,14.5,100,2.7,2.7,0,0,https://www.tesco.com/groceries/en-GB/products/313831880
+313833287,Soreen Easter Lemon Mini Loaves 5 Pack 150g,1.5,150,7.9,11.85,0,0,https://www.tesco.com/groceries/en-GB/products/313833287
+313837545,Jason's Recipe No 08 White Sourdough Ciabattin Bread 580g,2.2,580,10.1,58.58,0,0,https://www.tesco.com/groceries/en-GB/products/313837545
+313851527,Warburtons Soft White Pitta Breads 4 Pack,1.1,100,10.9,10.9,0,0,https://www.tesco.com/groceries/en-GB/products/313851527
+313949539,St Pierre Burger Buns 4 pack,2.5,100,8.8,8.8,0,0,https://www.tesco.com/groceries/en-GB/products/313949539
+313952460,Just Love Vanilla Confetti Sponge Cake Traybake,6.5,100,1.7,1.7,0,0,https://www.tesco.com/groceries/en-GB/products/313952460
+313969072,Abra-ca-Debora Original Dutch Style Pancakes 6 Pack 405g,2.3,405,5.7,23.09,260,1053,https://www.tesco.com/groceries/en-GB/products/313969072
+314093224,Tesco Finest Sliced Green Olive & Rosemary Sourdough Bread 400g,2,400,7.2,28.8,241,964,https://www.tesco.com/groceries/en-GB/products/314093224
+314102549,Tesco Free From Chocolate Cake Slices 5 Pack,3.2,100,6.2,6.2,414,414,https://www.tesco.com/groceries/en-GB/products/314102549
+314106113,Tesco Finest Triple Chocolate Hot Cross Buns 4 Pack,2,100,7.9,7.9,325,325,https://www.tesco.com/groceries/en-GB/products/314106113
+314120389,The Delicious Dessert Company 2 Millionaires Yum Yums,2.55,100,4.4,4.4,443,443,https://www.tesco.com/groceries/en-GB/products/314120389
+314299183,Tesco Finest Peach & Almond Danish 2 Pack,2.65,100,5.9,5.9,337,337,https://www.tesco.com/groceries/en-GB/products/314299183
+314318006,Cadbury Crunchie Celebration Chocolate Cake,13,100,4.3,4.3,0,0,https://www.tesco.com/groceries/en-GB/products/314318006
+314319322,Tesco Belgian Buns 2 Pack,1.8,100,5.8,5.8,367,367,https://www.tesco.com/groceries/en-GB/products/314319322
+314320705,Soreen Lift Bars - Blueberry 4 Pack 168g,2.25,168,7.8,13.1,0,0,https://www.tesco.com/groceries/en-GB/products/314320705
+314435380,Tesco Finest Chocolate Cake 16 Servings,18,100,4.6,4.6,434,434,https://www.tesco.com/groceries/en-GB/products/314435380
+314436632,The Delicious Dessert Company Raspberry Funfetti Yum Yums 2 Pack,2.55,100,3.6,3.6,424,424,https://www.tesco.com/groceries/en-GB/products/314436632
+314576840,Soreen Lift Bars - Raspberry & Vanilla 4 Pack 168g,2.25,168,7.9,13.27,0,0,https://www.tesco.com/groceries/en-GB/products/314576840
+314588958,Tesco Finest Red Leicester & West Country Cheddar Sourdough Bread 400G,2,400,10,40,262,1048,https://www.tesco.com/groceries/en-GB/products/314588958
+314592336,Tesco Raspberry Jam Trifle Buns 2 Pack,1.8,77,5.4,4.16,369,284.13,https://www.tesco.com/groceries/en-GB/products/314592336
+314594893,Tesco 40 Chocolate Brownie Bites,4.1,100,5.3,5.3,394,394,https://www.tesco.com/groceries/en-GB/products/314594893
+314597095,Tesco All Butter Mini Croissants 6 pack,2.5,100,7.9,7.9,421,421,https://www.tesco.com/groceries/en-GB/products/314597095
+314685526,St Pierre Croissants 6 pack,2.25,100,6.6,6.6,0,0,https://www.tesco.com/groceries/en-GB/products/314685526
+314689522,Tesco Finest Belgian Triple Chocolate Muffins 2 Pack,2,100,6.3,6.3,453,453,https://www.tesco.com/groceries/en-GB/products/314689522
+314690116,Tesco Cinnamon Buns 2 Pack,1.8,100,6.2,6.2,371,371,https://www.tesco.com/groceries/en-GB/products/314690116
+314690554,Tesco Finest White Chocolate & Raspberry Cake 16 Servings,18,100,2.5,2.5,447,447,https://www.tesco.com/groceries/en-GB/products/314690554
+314692644,Tesco Free From Croissants 2 pack,2.75,100,4,4,356,356,https://www.tesco.com/groceries/en-GB/products/314692644
+314704603,St Michel Choco Waffle 6 Pack 180G,2.65,180,6.4,11.52,0,0,https://www.tesco.com/groceries/en-GB/products/314704603
+314705775,St Pierre Pain Au Chocolat 6 pack,2.25,100,7.8,7.8,0,0,https://www.tesco.com/groceries/en-GB/products/314705775
+314829790,Tesco Finest Lemon Cake 16 Servings,18,100,2.2,2.2,452,452,https://www.tesco.com/groceries/en-GB/products/314829790
+314838519,Tesco Golden Unicorn Cake - Vanilla and Raspberry,16.5,100,3,3,442,442,https://www.tesco.com/groceries/en-GB/products/314838519
+314838548,Tesco Finest Victoria Sponge Muffins 2 Pack,2,100,5.2,5.2,414,414,https://www.tesco.com/groceries/en-GB/products/314838548
+314841359,Tesco Chocolate Tray Bake - Belgian Chocolate Curls,9,100,3.7,3.7,438,438,https://www.tesco.com/groceries/en-GB/products/314841359
+314845326,Modern Baker Superloaf 400g,2.35,400,10,40,0,0,https://www.tesco.com/groceries/en-GB/products/314845326
+314941713,Tesco Finest Free From Sticky Toffee Muffins 2 Pack,2.75,100,3.9,3.9,406,406,https://www.tesco.com/groceries/en-GB/products/314941713
+314951062,St Michel Chocolate Muffin 6 Pack 180g,2.65,180,6.8,12.24,0,0,https://www.tesco.com/groceries/en-GB/products/314951062
+314955461,Tesco Vanilla Tray Bake,9,100,2.9,2.9,418,418,https://www.tesco.com/groceries/en-GB/products/314955461
+315061284,Tesco Finest Banoffee Tarts 2 Pack,2.9,100,4.4,4.4,461,461,https://www.tesco.com/groceries/en-GB/products/315061284
+315239766,Daelmans Authentic Dutch Caramel Stroopwafels 8 Pack 230g,2.15,230,3,6.9,0,0,https://www.tesco.com/groceries/en-GB/products/315239766
+315333654,Genius Deliciously Gluten Free Blueberry Pancakes 6 pack,2.35,100,3.2,3.2,259,259,https://www.tesco.com/groceries/en-GB/products/315333654
+315344497,BFree 2 Gluten Free Spiced Crt Cakes 170G,3.5,170,3,5.1,422,717.4,https://www.tesco.com/groceries/en-GB/products/315344497
+315377705,Tesco Seeded Sourdough 400G,2.1,400,8.2,32.8,230,920,https://www.tesco.com/groceries/en-GB/products/315377705
+315389432,Tesco Free From Vanilla Traybake,6,100,2.7,2.7,470,470,https://www.tesco.com/groceries/en-GB/products/315389432
+315457882,Hershey's Cookies 'n' Creme Filled Crepes 6 Pack 192g,2.1,192,4.5,8.64,0,0,https://www.tesco.com/groceries/en-GB/products/315457882
+315461703,Tesco Free From Brioche Burger Buns 4 pack,2.75,100,4.5,4.5,221,221,https://www.tesco.com/groceries/en-GB/products/315461703
+315468673,Cadbury Mini Egg Choc Cakes 6 pack,3,100,4.3,4.3,0,0,https://www.tesco.com/groceries/en-GB/products/315468673
+315567095,Tesco Finest Mini Hot Cross Buns 9 pack,2,100,6.9,6.9,273,273,https://www.tesco.com/groceries/en-GB/products/315567095
+315582744,Tesco White Soft Rolls 6 Pack,1,100,8.8,8.8,243,243,https://www.tesco.com/groceries/en-GB/products/315582744
+315582963,Tesco Finest Strawberries & Clotted Cream Hot Cross Buns 4 Pack,2,100,8.5,8.5,284,284,https://www.tesco.com/groceries/en-GB/products/315582963
+315737418,Promise Gluten Free Wholesome Brown Sliced Bread Loaf 480g,3.25,480,2.1,10.08,0,0,https://www.tesco.com/groceries/en-GB/products/315737418
+315747487,Tesco White Large Baps 4 Pack,0.95,100,8.7,8.7,236,236,https://www.tesco.com/groceries/en-GB/products/315747487
+315752152,Tesco White Finger Rolls 6 Pack,1,100,8.5,8.5,238,238,https://www.tesco.com/groceries/en-GB/products/315752152
+315763202,Whaoo! Chocolate Filled Crepes 6 Pack 192g,1.95,192,0,0,459,0,https://www.tesco.com/groceries/en-GB/products/315763202
+315843851,Jason's Protein Sourdough Sunflower Seeded Bread 580g,2.75,580,20.3,117.74,0,0,https://www.tesco.com/groceries/en-GB/products/315843851
+315854279,Tesco Finest 4 Cheddar & Red Leicester Hot Cross Buns,2,100,12.2,12.2,271,271,https://www.tesco.com/groceries/en-GB/products/315854279
+315962433,Tesco Finest Seeded Roll,0.6,100,12,12,272,272,https://www.tesco.com/groceries/en-GB/products/315962433
+315968907,Clay Oven Bakery Artisan Flame Baked Pizza Bases 2 pack,2.95,440,7.9,34.76,247,1086.8,https://www.tesco.com/groceries/en-GB/products/315968907
+315976238,Cadbury Creme Egg Easter Chocolate Cake Bars 5 pack,2,100,4.2,4.2,0,0,https://www.tesco.com/groceries/en-GB/products/315976238
+316059263,Tesco Chocolate Filled Crepes 6 pack,2.1,192,6.1,11.71,476,913.92,https://www.tesco.com/groceries/en-GB/products/316059263
+316076582,Tesco Finest Strawberries & Cream Cake,18,100,2.9,2.9,435,435,https://www.tesco.com/groceries/en-GB/products/316076582
+316077045,Warburtons Gluten Free Soft White Pitta Breads 4 Pack,3,100,5.9,5.9,0,0,https://www.tesco.com/groceries/en-GB/products/316077045
+316080484,"Tesco Party Cupcakes - Vanilla, Chocolate, Raspberry 12 Pack",7.5,100,4.2,4.2,475,475,https://www.tesco.com/groceries/en-GB/products/316080484
+316182968,Tesco Finest 9 Mini Tropical Cupcakes,5,100,3.4,3.4,435,435,https://www.tesco.com/groceries/en-GB/products/316182968
+316429822,Deli Kitchen Sliced Focaccia Flatbreads 4 Pack 300g,1.9,300,10,30,0,0,https://www.tesco.com/groceries/en-GB/products/316429822
+316444193,Hovis Premium Burger Buns 4 Pack,1.5,100,8.5,8.5,0,0,https://www.tesco.com/groceries/en-GB/products/316444193
+316543041,Tesco Finest Ciabatta Roll,0.6,100,8.5,8.5,285,285,https://www.tesco.com/groceries/en-GB/products/316543041
+316634832,Hovis Premium Hot Dog Rolls 4 Pack,1.5,100,8.5,8.5,0,0,https://www.tesco.com/groceries/en-GB/products/316634832
+316639176,Tesco Chocolate Chip Brioche Rolls 8 Pack,1.65,0,8.3,0,374,0,https://www.tesco.com/groceries/en-GB/products/316639176
+316645675,Tesco Finest Vintage Cheese Roll,0.6,100,11.5,11.5,260,260,https://www.tesco.com/groceries/en-GB/products/316645675
+316647886,Tesco Finest White Stonebaked Boule 400g,2.35,400,8.4,33.6,230,920,https://www.tesco.com/groceries/en-GB/products/316647886
+316655939,Tesco Cheese & Herb Sub Rolls 4 Pack,1.55,100,10.4,10.4,264,264,https://www.tesco.com/groceries/en-GB/products/316655939
+316793510,Tesco Finest 4 White Rolls,1.35,100,8.2,8.2,241,241,https://www.tesco.com/groceries/en-GB/products/316793510
+316802386,Tesco Finest White Loaf 800g,1.5,800,8.1,64.8,229,1832,https://www.tesco.com/groceries/en-GB/products/316802386
+316947335,Deli Kitchen Lebanese Style Flatbreads 2 pack,1.5,100,10.7,10.7,0,0,https://www.tesco.com/groceries/en-GB/products/316947335
+317042488,Hovis Farmhouse Batch 800g,1.65,800,8.1,64.8,0,0,https://www.tesco.com/groceries/en-GB/products/317042488
+317067326,Tesco Finest Limited Edition Cheese & Chutney Bloomer 400g,2.35,400,8.2,32.8,237,948,https://www.tesco.com/groceries/en-GB/products/317067326
+317070391,Tesco Bake at home Ciabatta Loaf 250g,2,250,7.7,19.25,273,682.5,https://www.tesco.com/groceries/en-GB/products/317070391
+317183263,Tesco Bake at Home Ciabatta Rolls 4 pack,1.4,240,7.5,18,283,679.2,https://www.tesco.com/groceries/en-GB/products/317183263
+317183430,Tesco Finest Bake at Home White Bloomer with Sourdough 400g,2.5,400,6.9,27.6,253,1012,https://www.tesco.com/groceries/en-GB/products/317183430
+317184849,Tesco Millionaire Mini Bites 250g,3.75,250,4,10,461,1152.5,https://www.tesco.com/groceries/en-GB/products/317184849
+317191846,The Gym Kitchen High Protein Maple Pancakes 4 pack,2,100,13.2,13.2,0,0,https://www.tesco.com/groceries/en-GB/products/317191846
+317199665,Tesco Double Chocolate Brownie Mini Bites 230g,3.75,230,5.7,13.11,430,989,https://www.tesco.com/groceries/en-GB/products/317199665
+317205567,Tesco Finest Limited Edition Apple & Blackcurrant Crumble Cake 10 Servings,6.25,100,2.7,2.7,377,377,https://www.tesco.com/groceries/en-GB/products/317205567
+317209459,Tesco Finest Seeded Sourdough Loaf 800g,4,800,9.3,74.4,215,1720,https://www.tesco.com/groceries/en-GB/products/317209459
+317285592,Tesco Over the Rainbow Cake,13,100,2.7,2.7,428,428,https://www.tesco.com/groceries/en-GB/products/317285592
+317290320,Tesco Finest White Sourdough Loaf 800g,4,800,9.5,76,235,1880,https://www.tesco.com/groceries/en-GB/products/317290320
+317291716,Tesco Mermaid Cake Serves 16,16.5,100,1.5,1.5,454,454,https://www.tesco.com/groceries/en-GB/products/317291716
+317293858,Tesco Finest Carrot Loaf Cake 6 Servings,3,33,4.9,1.62,398,131.34,https://www.tesco.com/groceries/en-GB/products/317293858
+317301113,Bonne Maman Petits Muffins - Vanilla 235g,3,235,4.9,11.52,0,0,https://www.tesco.com/groceries/en-GB/products/317301113
+317303670,Tesco Decorate Your Own Vanilla Traybake 24 Servings,14,100,2.2,2.2,456,456,https://www.tesco.com/groceries/en-GB/products/317303670
+317306957,Tesco Finest Spelt and Rye Loaf 800g,4,800,7.4,59.2,214,1712,https://www.tesco.com/groceries/en-GB/products/317306957
+317307357,Tesco Double Chocolate Mini Rolls 295g,3.75,295,5.5,16.23,454,1339.3,https://www.tesco.com/groceries/en-GB/products/317307357
+317309370,Mr Kipling Sticky Toffee Loaf Cake 220g,1.6,220,3.7,8.14,0,0,https://www.tesco.com/groceries/en-GB/products/317309370
+317311533,BFree Gluten Free Soft White Wraps 4 x 42g (168g),3,42,15,6.3,224,94.08,https://www.tesco.com/groceries/en-GB/products/317311533
+317313554,Tesco Finest Sticky Toffee Cake 10 Servings,6.25,100,3.4,3.4,373,373,https://www.tesco.com/groceries/en-GB/products/317313554
+317314115,Warburtons Protein Soft Pittas 4 Pack,1.65,100,12.9,12.9,0,0,https://www.tesco.com/groceries/en-GB/products/317314115
+317398343,The Gym Kitchen High Protein Banana Pancakes 4 pack,2,100,12.4,12.4,0,0,https://www.tesco.com/groceries/en-GB/products/317398343
+317403160,Tesco Finest Ciabatta Rolls 4 Pack 360g,2.25,360,10.5,37.8,266,957.6,https://www.tesco.com/groceries/en-GB/products/317403160
+317407227,Tesco Bake at Home Mini Panini Style Rolls 4 pack,1.2,300,8.9,26.7,284,852,https://www.tesco.com/groceries/en-GB/products/317407227
+317422275,Warburtons Protein Flatbreads 4 Pack Sliced,1.75,100,13,13,0,0,https://www.tesco.com/groceries/en-GB/products/317422275
+317423239,Just Love Gluten Free Vanilla School Cakes 4 Pack,4.5,100,3,3,0,0,https://www.tesco.com/groceries/en-GB/products/317423239
+317424146,Warburtons Belgian Waffles with Pearl Sugar 4 pack,2.5,200,5.1,10.2,0,0,https://www.tesco.com/groceries/en-GB/products/317424146
+317532916,Tesco Tiger Bloomer Bread 800g,2,800,7.8,62.4,244,1952,https://www.tesco.com/groceries/en-GB/products/317532916
+317540808,Lyle's Golden Syrup Flapjacks 5 x 30g (150g),2.5,30,5,1.5,437,131.1,https://www.tesco.com/groceries/en-GB/products/317540808
+317548063,Heat and Eat Sea Salt & Pepper Baguette 3 Pack,1.6,100,9,9,246,246,https://www.tesco.com/groceries/en-GB/products/317548063
+317550612,Mr Kipling Strawberries & Cream French Fancies Cakes 8 Pack,3,100,2.3,2.3,0,0,https://www.tesco.com/groceries/en-GB/products/317550612
+317551968,Mr Kipling Chocolate & Fudge Loaf Cake 220g,1.6,220,4.4,9.68,0,0,https://www.tesco.com/groceries/en-GB/products/317551968
+317553701,Tesco Finest Free From Sicilian Lemon Curd Muffins 2 Pack,2.75,100,4.1,4.1,405,405,https://www.tesco.com/groceries/en-GB/products/317553701
+317556107,Tesco Finest Seeded Sourdough Sliced Loaf 800 Grams,4,100,9.3,9.3,215,215,https://www.tesco.com/groceries/en-GB/products/317556107
+317558707,Warburtons Belgian Waffle - Choc Chip 70g,1.15,70,5.7,3.99,0,0,https://www.tesco.com/groceries/en-GB/products/317558707
+317559277,Tesco Finest White Sourdough Sliced Loaf 800G,4,800,9.5,76,235,1880,https://www.tesco.com/groceries/en-GB/products/317559277
+317639557,Lyle's Golden Syrup Chocolate Flapjacks 5x30g,2.5,30,6.1,1.83,0,0,https://www.tesco.com/groceries/en-GB/products/317639557
+317642826,Hovis Farmhouse Batch 400g,1.25,400,8.1,32.4,0,0,https://www.tesco.com/groceries/en-GB/products/317642826
+317651585,Tesco Finest Belgian Chocolate & Orange Flavoured Brioche Kit 510g,3.5,510,7.8,39.78,389,1983.9,https://www.tesco.com/groceries/en-GB/products/317651585
+317651700,Tesco Finest Spelt and Rye Sliced Loaf 800G,4,800,7.4,59.2,214,1712,https://www.tesco.com/groceries/en-GB/products/317651700
+317652555,Soreen Sticky Toffee Loaf 260g,1.5,260,8,20.8,0,0,https://www.tesco.com/groceries/en-GB/products/317652555
+317657740,Tesco Finest Ciabatta Loaf 270g,2.2,270,10.1,27.27,267,720.9,https://www.tesco.com/groceries/en-GB/products/317657740
+317753021,Promise Gluten Free English Muffins 240g,3.75,240,2.6,6.24,0,0,https://www.tesco.com/groceries/en-GB/products/317753021
+317761846,Galaxy Cupcakes 9 pack,7.5,100,3.2,3.2,455,455,https://www.tesco.com/groceries/en-GB/products/317761846
+317860470,Schar Gluten Free Panini Rolls 150g,1.8,150,4.4,6.6,0,0,https://www.tesco.com/groceries/en-GB/products/317860470
+317862024,Mr Kipling Signature Collection Layer Cakes - Chocolate & Caramel 4 Pack,2.5,100,4.5,4.5,0,0,https://www.tesco.com/groceries/en-GB/products/317862024
+317966725,Tesco 6 Bruschetta Slices 180g,2,180,10.5,18.9,330,594,https://www.tesco.com/groceries/en-GB/products/317966725
+317989637,Tesco Finest Free From Fruit Loaf 380g,2.85,380,3.2,12.16,264,1003.2,https://www.tesco.com/groceries/en-GB/products/317989637
+317990972,Tesco Personalised White Chocolate Cookie Kit 510g,3.5,510,1.9,9.69,513,2616.3,https://www.tesco.com/groceries/en-GB/products/317990972
+318076291,Tesco Finest Fig Apricot & Cranberry Sourdough Loaf 500g,3.25,500,9,45,252,1260,https://www.tesco.com/groceries/en-GB/products/318076291
+318172021,Tesco Finest bake at home seeded bloomer with sourdough 400g,2.5,400,8.9,35.6,268,1072,https://www.tesco.com/groceries/en-GB/products/318172021
+318173112,Mr Kipling Strawberries & Cream Cake Tarts 4 pack,2,100,3.5,3.5,0,0,https://www.tesco.com/groceries/en-GB/products/318173112
+318174664,Tesco High Protein 4 Blueberry Protein Pancakes,1.75,100,15.7,15.7,238,238,https://www.tesco.com/groceries/en-GB/products/318174664
+318180564,Genius Gluten Free 4 Triple Chocolate Fudgy Brownies,3.5,100,4.9,4.9,0,0,https://www.tesco.com/groceries/en-GB/products/318180564
+318183463,Mr Kipling Caramelised Biscuit Viennese Whirls Cakes 6 pack,2,100,3.7,3.7,0,0,https://www.tesco.com/groceries/en-GB/products/318183463
+318184053,Mr Kipling Birthday Cake Tarts 4 pack,2,100,3.5,3.5,0,0,https://www.tesco.com/groceries/en-GB/products/318184053
+318193897,Tesco 5 Sugar Ring Doughnuts,1.3,100,6.8,6.8,382,382,https://www.tesco.com/groceries/en-GB/products/318193897
+318196661,Tesco bake at home Italian style herb rolls 240g,1.4,240,9.3,22.32,304,729.6,https://www.tesco.com/groceries/en-GB/products/318196661
+318279120,Mr Kipling Raspberry Lunchbox Cake Slices 4 pack,1.65,100,3.7,3.7,0,0,https://www.tesco.com/groceries/en-GB/products/318279120
+320384315,Mr Kipling Chocolate Orange Lunchbox Cake Slices 4 pack,1.65,100,4.1,4.1,0,0,https://www.tesco.com/groceries/en-GB/products/320384315
+320385544,Tesco Bake at Home Wholemeal rolls 240g,1.4,240,12.5,30,252,604.8,https://www.tesco.com/groceries/en-GB/products/320385544
+320386860,Mr Kipling Banana Lunchbox Cake Slices 4 pack,1.65,100,3.7,3.7,0,0,https://www.tesco.com/groceries/en-GB/products/320386860
+320409685,Tesco Free From Easter Cupcakes 4 Pack,3.5,100,0.7,0.7,463,463,https://www.tesco.com/groceries/en-GB/products/320409685
+320556302,Tesco Finest 2 Wild Garlic Naan Breads,2,100,7.4,7.4,283,283,https://www.tesco.com/groceries/en-GB/products/320556302
+320560613,SCHAR GLUTEN FREE MUFFIN CHOCO CHIPS 225G,3.3,225,4,9,0,0,https://www.tesco.com/groceries/en-GB/products/320560613
+320561094,Soreen Lift Apple & Mango 4 Pack 168g,2.25,168,7.7,12.94,0,0,https://www.tesco.com/groceries/en-GB/products/320561094
+320562801,Tesco Finest Olive Focaccia 170g,2.5,170,6.4,10.88,278,472.6,https://www.tesco.com/groceries/en-GB/products/320562801
+320659745,Tesco Finest Tomato Focaccia 170g,2.5,170,6.4,10.88,268,455.6,https://www.tesco.com/groceries/en-GB/products/320659745
+320667107,Tesco Finest Focaccia Plain 135g,2.25,135,7.2,9.72,323,436.05,https://www.tesco.com/groceries/en-GB/products/320667107
+320672607,We Love Cake Free From Chocolate Orange Slices 4 pack 132g,2.45,132,3.8,5.02,419,553.08,https://www.tesco.com/groceries/en-GB/products/320672607
+320673013,Whaoo! 6 Chocolate and Banana Filled Crepes 192g,1.95,192,6,11.52,410,787.2,https://www.tesco.com/groceries/en-GB/products/320673013
+320795975,Tesco 2 Long Ferment Pizza Pockets,1.75,100,7.7,7.7,260,260,https://www.tesco.com/groceries/en-GB/products/320795975
+320800676,Tesco Finest 4 Crusty Rolls 300g,1.75,300,8.2,24.6,311,933,https://www.tesco.com/groceries/en-GB/products/320800676
+320800797,Tesco Finest Buttermilk Buns 4 Pack,1.8,100,10.4,10.4,275,275,https://www.tesco.com/groceries/en-GB/products/320800797
+320813338,Mission Protein Plant Powered Wraps 6 Pack,1.8,100,16.9,16.9,0,0,https://www.tesco.com/groceries/en-GB/products/320813338
+320814280,Tesco Finest Smoked Garlic and Kashmiri Chilli 2 Naan Breads,2,100,7.5,7.5,274,274,https://www.tesco.com/groceries/en-GB/products/320814280
+320815630,Tesco Finest 2 Methi Roti,1.5,100,8,8,317,317,https://www.tesco.com/groceries/en-GB/products/320815630
+320976041,Sonic The Hedgehog Shaped Celebration Cake,14,100,2.4,2.4,0,0,https://www.tesco.com/groceries/en-GB/products/320976041
+320976818,OAF Gluten Free White Softie 400g,3,400,3.2,12.8,205,820,https://www.tesco.com/groceries/en-GB/products/320976818
+320990806,Tesco Finest Pitta 2x80g,1,80,9.9,7.92,245,196,https://www.tesco.com/groceries/en-GB/products/320990806
+321031392,Tesco Chocolate Fudge Mini Bites 196g,3.75,196,6.6,12.94,482,944.72,https://www.tesco.com/groceries/en-GB/products/321031392
+321032385,Warburtons Gluten Free 4 Soft Brown Pittas,3,100,7.9,7.9,0,0,https://www.tesco.com/groceries/en-GB/products/321032385
+321042765,St Pierre 2 All Butter Croissants,2.3,100,7.2,7.2,0,0,https://www.tesco.com/groceries/en-GB/products/321042765
+321049193,Tesco Finest Halkidiki Olive Focaccia Panini 2 Pack,1.6,100,7.6,7.6,279,279,https://www.tesco.com/groceries/en-GB/products/321049193
+321053976,Tesco Football Cake,12,100,3.5,3.5,427,427,https://www.tesco.com/groceries/en-GB/products/321053976
+321107211,Tesco Finest White Sourdough Baguette 400g,2,400,9.4,37.6,239,956,https://www.tesco.com/groceries/en-GB/products/321107211
+321114438,Tesco Cheese Topped Roll 300g,1.6,300,12.5,37.5,262,786,https://www.tesco.com/groceries/en-GB/products/321114438
+321130643,Whaoo! Mini Chocolate Chip Brioche Buns 6 Pack 210g,2,210,8.9,18.69,344,722.4,https://www.tesco.com/groceries/en-GB/products/321130643
+321211784,Nutella Chocolate & Hazelnut Ring Donut 2 Pack,2.65,100,0,0,0,0,https://www.tesco.com/groceries/en-GB/products/321211784
+321223712,Promise Gluten Free Sourdough soft White rolls 260g,3.7,260,1.5,3.9,0,0,https://www.tesco.com/groceries/en-GB/products/321223712
+321225629,Disney Princess Garland Cake,14,100,2,2,0,0,https://www.tesco.com/groceries/en-GB/products/321225629
+321227178,Cadbury Milk Chocolate Caramel Mini Rolls Cakes 10 pack,3.95,100,4.8,4.8,0,0,https://www.tesco.com/groceries/en-GB/products/321227178
+321232908,Guinness Chocolate Gift Cake,6.5,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/321232908
+321321688,Nadiya Aromatic Spiced Banoffee Caramel Loaf,4.5,100,2.8,2.8,0,0,https://www.tesco.com/groceries/en-GB/products/321321688
+321322895,Jus Rol Cinnamon Swirl Kit 300g,3,300,4.6,13.8,401,1203,https://www.tesco.com/groceries/en-GB/products/321322895
+321323369,Mr Kipling Breakfast Bakes Chocolate Chip Snack Cakes 4 pack,2.5,100,4.8,4.8,0,0,https://www.tesco.com/groceries/en-GB/products/321323369
+321332018,New York Bakery Lighter Sliced Bagels 5 pack,1.9,100,9.6,9.6,0,0,https://www.tesco.com/groceries/en-GB/products/321332018
+321333236,Tesco Strawberry & Clotted Cream Flavour Swiss Roll,2.1,100,3.5,3.5,353,353,https://www.tesco.com/groceries/en-GB/products/321333236
+321337330,Warburtons Brioche Burger Buns 4pk,2.5,100,8.8,8.8,0,0,https://www.tesco.com/groceries/en-GB/products/321337330
+321338513,Tesco Finest Rosemary and Sea Salt Focaccia Panini 2 Pack,1.6,100,8.4,8.4,285,285,https://www.tesco.com/groceries/en-GB/products/321338513
+321343783,Tesco Finest Red Velvet Celebration Cake,18,100,3.1,3.1,435,435,https://www.tesco.com/groceries/en-GB/products/321343783
+321344344,Cadbury Caramel Chocolate Celebration Cake,13,100,4.7,4.7,0,0,https://www.tesco.com/groceries/en-GB/products/321344344
+321345406,Tesco Rose Bouquet Cake,16.5,3,3.9,0.12,429,12.87,https://www.tesco.com/groceries/en-GB/products/321345406
+321345896,MARS The Ultimate Chocolate Traybake,10,100,4.6,4.6,0,0,https://www.tesco.com/groceries/en-GB/products/321345896
+321347646,Warburtons Wholegrain & Rye Bread with Sourdough 400g,1.5,400,12.2,48.8,0,0,https://www.tesco.com/groceries/en-GB/products/321347646
+321348887,New York Bakery Everything Bagel 5 pack,1.9,100,9.7,9.7,0,0,https://www.tesco.com/groceries/en-GB/products/321348887
+321522364,New York Bakery Protein Boost Sliced Bagels 5 pack,1.9,100,15.5,15.5,0,0,https://www.tesco.com/groceries/en-GB/products/321522364
+321522894,Warburtons Protein Muffins 4pk,1.5,100,12.7,12.7,0,0,https://www.tesco.com/groceries/en-GB/products/321522894
+321526803,Tesco Finest Blueberry Muffin,1.5,100,3.7,3.7,344,344,https://www.tesco.com/groceries/en-GB/products/321526803
+321531042,Mission Wholemeal Tortilla Wraps 6 Pack 367g,1.8,367,8.3,30.46,0,0,https://www.tesco.com/groceries/en-GB/products/321531042
+321531105,Warburtons Chocolate Mini Pancakes 12 Pack,1.85,100,7.1,7.1,0,0,https://www.tesco.com/groceries/en-GB/products/321531105
+321533201,OGGS Mega Birthday Cupcakes 9pk,9,100,2.2,2.2,0,0,https://www.tesco.com/groceries/en-GB/products/321533201
+321533985,Deli Kitchen 2 Flame Baked Indian Naan Breads 400g,2,400,8,32,0,0,https://www.tesco.com/groceries/en-GB/products/321533985
+321538639,Tesco Lemon Swiss Roll,2.1,100,2.6,2.6,361,361,https://www.tesco.com/groceries/en-GB/products/321538639
+321539990,Tesco Finest Blueberry Muffin 2 pack,2,100,3.7,3.7,344,344,https://www.tesco.com/groceries/en-GB/products/321539990
+321542305,Mr Kipling Blueberry Breakfast Bakes Snack Cakes 4 pack,2.5,100,4.1,4.1,0,0,https://www.tesco.com/groceries/en-GB/products/321542305
+321542812,Warburtons Seeds & Grains Bread with Sourdough 400g,1.5,400,11.2,44.8,0,0,https://www.tesco.com/groceries/en-GB/products/321542812
+321545757,OAF Gluten Free White Sour D'oh 370g,3.75,370,2.9,10.73,201,743.7,https://www.tesco.com/groceries/en-GB/products/321545757
+321545775,"Deli Kitchen Italian ""Pinsa"" Style Flatbread x1",2.5,100,9.4,9.4,0,0,https://www.tesco.com/groceries/en-GB/products/321545775
+321548190,Wildfarmed Sliced Seeded Bread 550g,2.25,550,11.7,64.35,0,0,https://www.tesco.com/groceries/en-GB/products/321548190
+321654858,Tesco Double Chocolate Flavour Swiss Roll,2.1,100,3.6,3.6,386,386,https://www.tesco.com/groceries/en-GB/products/321654858
+321655638,Mrs Crimble's 6 Double Choc Macaroons 195g,2,195,4.3,8.38,492,959.4,https://www.tesco.com/groceries/en-GB/products/321655638
+321655713,Nadiya Bazillionaire Brookies Slices 176g,3.25,176,5.3,9.33,0,0,https://www.tesco.com/groceries/en-GB/products/321655713
+321657924,Tesco Finest Red Velvet Cake 405g,3.85,405,3.5,14.17,429,1737.45,https://www.tesco.com/groceries/en-GB/products/321657924
+321658572,Warburtons Soft White Bread with Sourdough 400g,1.5,400,9.7,38.8,0,0,https://www.tesco.com/groceries/en-GB/products/321658572
+321659133,Jason's White Ciabattin Sourdough 900g,3.3,900,10.1,90.9,0,0,https://www.tesco.com/groceries/en-GB/products/321659133
+321659260,"Tesco Finest Apple, Fig & Spiced Custard Danish 2 pack",2.65,100,5.5,5.5,331,331,https://www.tesco.com/groceries/en-GB/products/321659260
+321663588,Tesco 6 High Protein Tortillas,1.5,100,16.9,16.9,297,297,https://www.tesco.com/groceries/en-GB/products/321663588
+321668387,Mr Kipling Caramel Tarts Cake 4 Pack,2,100,3.6,3.6,0,0,https://www.tesco.com/groceries/en-GB/products/321668387
+321671958,Nutella Muffins 2 Pack,2.65,100,0,0,0,0,https://www.tesco.com/groceries/en-GB/products/321671958
+321672813,Nadiya Spiced Cherry Bakewell Loaf,4.5,100,3.7,3.7,0,0,https://www.tesco.com/groceries/en-GB/products/321672813
+321675009,Brioche Pasquier 8 Pancakes chocolate chip 280g,2.5,280,5,14,0,0,https://www.tesco.com/groceries/en-GB/products/321675009
+321676435,MINECRAFT Celebration Cake,14,100,2.9,2.9,0,0,https://www.tesco.com/groceries/en-GB/products/321676435
+321677710,Promise Gluten Free Chocolate Ganache Artisan Buns 180G,3.85,180,3.6,6.48,484,871.2,https://www.tesco.com/groceries/en-GB/products/321677710
+321682467,Genius Rocky Roads with Wild Strawberry Candy Kittens 4 pack,4,100,2.7,2.7,0,0,https://www.tesco.com/groceries/en-GB/products/321682467
+321682640,Juvela OAF Gluten Free 2 Pizza Base Slices 220g,2.75,220,2.1,4.62,244,536.8,https://www.tesco.com/groceries/en-GB/products/321682640
+321683276,OAF Gluten Free Seedie Sour D'oh 370g,3.75,370,3.6,13.32,208,769.6,https://www.tesco.com/groceries/en-GB/products/321683276
+321763631,Wildfarmed 4 White Bread Rolls 276g,1.8,276,9.4,25.94,0,0,https://www.tesco.com/groceries/en-GB/products/321763631
+321763850,Hovis Farmhouse Batch Wholemeal Bread with Oats 800g,1.65,800,10.9,87.2,0,0,https://www.tesco.com/groceries/en-GB/products/321763850
+321766023,Studio Bakery - The Matilda Cake - Chocolate,16,100,3.7,3.7,0,0,https://www.tesco.com/groceries/en-GB/products/321766023
+321767811,Jason's Creations Fruited Loaf Sourdough 400g,2.5,400,8.4,33.6,0,0,https://www.tesco.com/groceries/en-GB/products/321767811
+321768286,Lazy Day Chocolate Tiffin 150g,2.8,150,2.9,4.35,0,0,https://www.tesco.com/groceries/en-GB/products/321768286
+321774514,Hovis Signature White 800g,1.65,800,8.4,67.2,0,0,https://www.tesco.com/groceries/en-GB/products/321774514
+321774831,Tesco Free From Sliced Seeded Bread 550g,1.95,550,5.4,29.7,224,1232,https://www.tesco.com/groceries/en-GB/products/321774831
+321776420,New York Bakery NYC Salted Caramel & Pecan Cookies 4 pack,4,100,5.9,5.9,0,0,https://www.tesco.com/groceries/en-GB/products/321776420
+321778337,Jason's Sourdough Crumpets 380g,1.8,380,5.9,22.42,0,0,https://www.tesco.com/groceries/en-GB/products/321778337
+321781465,Hovis White 'n' Fibre Sliced Bread 800g,1.65,800,9,72,0,0,https://www.tesco.com/groceries/en-GB/products/321781465
+321785023,Jason's Creations Olive & Basil Sourdough 400g,2.5,400,8.7,34.8,0,0,https://www.tesco.com/groceries/en-GB/products/321785023
+321786990,Jason's Seeded Protein Rolls 320g,1.85,320,17.8,56.96,0,0,https://www.tesco.com/groceries/en-GB/products/321786990
+321787234,Hovis Buttermilk Sub Rolls 4 Pack,2,100,10.2,10.2,0,0,https://www.tesco.com/groceries/en-GB/products/321787234
+321828613,Tesco Free From Seeded Rolls 4 Pack,1.75,100,6.4,6.4,242,242,https://www.tesco.com/groceries/en-GB/products/321828613
+321832423,Tesco Free From 5 Oaty Bakes 150g,2.55,150,5.3,7.95,424,636,https://www.tesco.com/groceries/en-GB/products/321832423
+321836010,OGGS Victoria Sponge Cakes 4pk,4.1,100,3.2,3.2,0,0,https://www.tesco.com/groceries/en-GB/products/321836010
+321846465,Tesco Free From Tiger Rolls 260g,2.85,260,2.4,6.24,265,689,https://www.tesco.com/groceries/en-GB/products/321846465
+321848134,Tesco Finest Sticky Toffee Muffins 2 Pack,2,100,4.4,4.4,361,361,https://www.tesco.com/groceries/en-GB/products/321848134
+321848255,Tesco Choco Crownie Swirls 255g,4.5,255,7.6,19.38,385,981.75,https://www.tesco.com/groceries/en-GB/products/321848255
+321852762,TESCO FREE FROM STRIPEY CATERPILLAR CAKE,8.5,100,4.5,4.5,435,435,https://www.tesco.com/groceries/en-GB/products/321852762
+321948315,Tesco 6 Burrito Wraps,1.5,100,7.5,7.5,295,295,https://www.tesco.com/groceries/en-GB/products/321948315
+321949205,Tesco Mini Corn Soft Shell Tacos 12 Pack,1.2,300,8.3,24.9,292,876,https://www.tesco.com/groceries/en-GB/products/321949205
+321957425,Ms Molly's Chocolate Celebration Cake,5.25,100,5,5,412,412,https://www.tesco.com/groceries/en-GB/products/321957425
+321957713,"OGGS Rich, Velvety Chocolate Fudge Cake",12.5,100,3.9,3.9,0,0,https://www.tesco.com/groceries/en-GB/products/321957713
+321959694,Tesco Free From White Rolls 4 Pk,1.75,100,4.4,4.4,216,216,https://www.tesco.com/groceries/en-GB/products/321959694
+321961287,Tesco Finest Date & Brazilian Coffee Bloomer,2.35,100,8.1,8.1,245,245,https://www.tesco.com/groceries/en-GB/products/321961287
+321968130,OGGS Zesty Lemon Cakes 4pk,4.1,100,3,3,0,0,https://www.tesco.com/groceries/en-GB/products/321968130
+322045996,Ms Molly's Madeira Celebration Cake,5.25,100,3.9,3.9,410,410,https://www.tesco.com/groceries/en-GB/products/322045996
+322046782,Tesco 2 Garlic & Coriander Naan Breads,2.5,100,5.7,5.7,242,242,https://www.tesco.com/groceries/en-GB/products/322046782
+322049519,Tesco 2 Garlic and Coriander Naans,1.5,100,7.6,7.6,281,281,https://www.tesco.com/groceries/en-GB/products/322049519
+322052682,Tesco Free From Brown Bread 550g,1.95,550,4.5,24.75,206,1133,https://www.tesco.com/groceries/en-GB/products/322052682
+322057193,Tesco Finest Victoria Sponge Cake,3.85,90,4.6,4.14,422,379.8,https://www.tesco.com/groceries/en-GB/products/322057193
+322061014,Deli Kitchen Protein Crumpets 4 Pack,1.5,100,9.8,9.8,0,0,https://www.tesco.com/groceries/en-GB/products/322061014
+322067095,Brioche Pasquier 6 Beignets Chocolate & Hazelnut 270g,2.2,270,5.6,15.12,0,0,https://www.tesco.com/groceries/en-GB/products/322067095
+322145906,Tesco Chocolate Cornflake Clusters 150g,3,150,7.3,10.95,463,694.5,https://www.tesco.com/groceries/en-GB/products/322145906
+322148638,Mr Kipling Cherry Bakewell Mini Cake Bites 220g,3.75,220,3.8,8.36,0,0,https://www.tesco.com/groceries/en-GB/products/322148638
+322154331,Tesco Free From White Bread 550g,1.95,550,4.1,22.55,203,1116.5,https://www.tesco.com/groceries/en-GB/products/322154331
+322239341,Mr Kipling Millionaires Chocolate Caramel Shortcake Mini Cake Bites 254g,3.75,254,5.1,12.95,0,0,https://www.tesco.com/groceries/en-GB/products/322239341
+322244720,OGGS Mini Chocolate Cupcakes 9pk NEW,3.95,100,3.4,3.4,0,0,https://www.tesco.com/groceries/en-GB/products/322244720
+322257716,Jason's Sourdough Grains & Seeds Ciabattin 900g,3.3,900,10.7,96.3,0,0,https://www.tesco.com/groceries/en-GB/products/322257716
+322259392,Tesco Finest Blueberry and Lemon Panettone  750g,12.5,750,6.4,48,362,2715,https://www.tesco.com/groceries/en-GB/products/322259392
+322259524,Tesco Finest Rosemary Focaccia with Cornish Sea Salt 280g,3.5,280,8.8,24.64,296,828.8,https://www.tesco.com/groceries/en-GB/products/322259524
+322264016,Tesco Finest Belgian Milk Chocolate Cookies 4 Pack,2.25,100,5.7,5.7,457,457,https://www.tesco.com/groceries/en-GB/products/322264016
+322318518,We Love Cake 4 Cinnamon Swirl Cake Slices 120g,2.45,120,3.3,3.96,449,538.8,https://www.tesco.com/groceries/en-GB/products/322318518
+322325890,Promise Gluten Free Halkidiki Olive Bread 400g,4.35,400,2.7,10.8,0,0,https://www.tesco.com/groceries/en-GB/products/322325890
+322328247,The Pizza Company Garlic Pizzabread 247g,10,247,8.3,20.5,283,699.01,https://www.tesco.com/groceries/en-GB/products/322328247
+322329615,Tesco Chocolate and Caramel Tear and Share,3.5,100,6.3,6.3,320,320,https://www.tesco.com/groceries/en-GB/products/322329615
+322347132,Mr Kipling Chocolate Caramel Crispy Mini Cake Bites 186g,3.75,186,5,9.3,0,0,https://www.tesco.com/groceries/en-GB/products/322347132
+322347800,The Waffle Kitchen Chocolate & Hazelnut Flavour Filled Toasting Waffles 272g,1.75,272,6.6,17.95,498,1354.56,https://www.tesco.com/groceries/en-GB/products/322347800
+322348436,Genius Gluten Free Naturally Genius Five Seed Loaf 430g,3.25,430,5.3,22.79,230,989,https://www.tesco.com/groceries/en-GB/products/322348436
+322426730,Wicked Celebration Cake,16.5,100,2.9,2.9,0,0,https://www.tesco.com/groceries/en-GB/products/322426730
+322431153,Tesco Finest Belgian Triple Chocolate Cookies 4 Pack,2.25,100,5.7,5.7,461,461,https://www.tesco.com/groceries/en-GB/products/322431153
+322432463,Mr Kipling Double Chocolate Mini Cake Bites 205g,3.75,205,4.9,10.04,0,0,https://www.tesco.com/groceries/en-GB/products/322432463
+322439905,Genius  Gluten Free Naturally Genius Tiger Bloomer 400g,3.75,400,4.3,17.2,212,848,https://www.tesco.com/groceries/en-GB/products/322439905
+322440275,SWIZZELS Love Hearts Gift cake,6.5,100,2.6,2.6,0,0,https://www.tesco.com/groceries/en-GB/products/322440275
+322442324,OGGS Mini Vanilla Cupcakes 9pk NEW,3.95,100,2.6,2.6,0,0,https://www.tesco.com/groceries/en-GB/products/322442324
+322443381,Tesco Finest Belgian White Chocolate Cookie 4 Pack,2.25,100,5.4,5.4,464,464,https://www.tesco.com/groceries/en-GB/products/322443381
+322444339,BFree Gluten Free Tiger Rolls 4 Rolls 240g,3.5,240,2.5,6,279,669.6,https://www.tesco.com/groceries/en-GB/products/322444339
+322446015,Juvela OAF Gluten Free Tandoori Squares 225g,2.8,225,4,9,253,569.25,https://www.tesco.com/groceries/en-GB/products/322446015
+322449098,Tesco Finest Jumbo Oat and Flame Raisin Cookies 4 Pack,2.25,100,5.2,5.2,397,397,https://www.tesco.com/groceries/en-GB/products/322449098
+322450078,Mr Kipling Millionaire’s Chocolate Caramel Mini Cake Bites 220g,3.75,220,3.9,8.58,0,0,https://www.tesco.com/groceries/en-GB/products/322450078
+322452519,Tesco Free From White Tortilla Wraps 4 pack 160g,2.55,160,10,16,196,313.6,https://www.tesco.com/groceries/en-GB/products/322452519
+322530767,Hovis Sourdough Seeded 450g,2.1,450,10.3,46.35,0,0,https://www.tesco.com/groceries/en-GB/products/322530767
+322530888,Juvela OAF Gluten Free Cheese and Herb Super Softie 2 Sub Rolls,2.95,100,3.7,3.7,232,232,https://www.tesco.com/groceries/en-GB/products/322530888
+322537529,Bonne Maman Chocolate Pecan Brownies 175g,2.5,175,5,8.75,0,0,https://www.tesco.com/groceries/en-GB/products/322537529
+322543591,Juvela OAF Gluten Free Garlicky Squares 225g,2.8,225,4.2,9.45,271,609.75,https://www.tesco.com/groceries/en-GB/products/322543591
+322547022,BOSH! Carrot Cake 400g,4,400,3.1,12.4,0,0,https://www.tesco.com/groceries/en-GB/products/322547022
+322553435,BFree Gluten Free Mediterranean Wrap 4 pack 168g,3.5,168,15,25.2,237,398.16,https://www.tesco.com/groceries/en-GB/products/322553435
+322554670,Tesco Finest Belgian Triple Chocolate Shortbread 4 Pack,2.25,100,5.8,5.8,506,506,https://www.tesco.com/groceries/en-GB/products/322554670
+322555087,JUVELA OAF Gluten Free White Super Softie 2 Sub Rolls,2.95,100,3.2,3.2,221,221,https://www.tesco.com/groceries/en-GB/products/322555087
+322559457,MRS CRIMBLE'S 6 Lemon French Madeleine 180g,2.75,180,4.3,7.74,0,0,https://www.tesco.com/groceries/en-GB/products/322559457
+322559624,Lazyday 4 mini Vic the Vegan Caterpillar Cakes 160g,3.85,160,3.4,5.44,0,0,https://www.tesco.com/groceries/en-GB/products/322559624
+322636994,Schar XL Ciabatta Pomodoro e Olio d'Oliva 170g,3,170,4,6.8,0,0,https://www.tesco.com/groceries/en-GB/products/322636994
+322653800,Schar Farmhouse Seeded Loaf 500g,3.8,500,7,35,273,1365,https://www.tesco.com/groceries/en-GB/products/322653800
+322662991,Hovis Sourdough White 450g,2.1,450,8.9,40.05,0,0,https://www.tesco.com/groceries/en-GB/products/322662991
+322756022,Tesco Flapjack Bites 280g,2.95,280,5.4,15.12,0,0,https://www.tesco.com/groceries/en-GB/products/322756022
+322763203,"Warburtons High Fibre 12 Pulses, Seeds and Grains Protein Power 500g",1.8,500,15.9,79.5,0,0,https://www.tesco.com/groceries/en-GB/products/322763203
+322839950,Patak's Mini Naan Dippers 180g,2.2,180,8.1,14.58,274,493.2,https://www.tesco.com/groceries/en-GB/products/322839950
+322995389,Warburtons 9 Seeds and Grains Fibre Fix 500g,1.75,500,12.4,62,0,0,https://www.tesco.com/groceries/en-GB/products/322995389
+322995412,Tesco Finest White Sourdough Loaf 400g,2.75,400,9.5,38,235,940,https://www.tesco.com/groceries/en-GB/products/322995412
+323007125,Tesco Finest 4 Marbled Neapolitan Hot Cross Buns,2,100,8.3,8.3,310,310,https://www.tesco.com/groceries/en-GB/products/323007125
+323141523,Warburtons 7 Seeds & Grains Fibre Fix 4 Soft Sliced Rolls,1.85,100,11.7,11.7,0,0,https://www.tesco.com/groceries/en-GB/products/323141523
+323161015,Studio Bakery Matilda chocolate cake with Love,10,100,3.9,3.9,0,0,https://www.tesco.com/groceries/en-GB/products/323161015
+323164070,PlayStation Celebration Cake,15,100,2.6,2.6,0,0,https://www.tesco.com/groceries/en-GB/products/323164070
+323305238,Celebrations Tear and Share 14 cupcakes,16,100,3.1,3.1,0,0,https://www.tesco.com/groceries/en-GB/products/323305238
+323331206,STUDIO BAKERY letterbox brownies,10,100,4.9,4.9,0,0,https://www.tesco.com/groceries/en-GB/products/323331206
+323332228,The Delicious Dessert Company 2 Cinna-Yum Yums,2.55,100,4.2,4.2,0,0,https://www.tesco.com/groceries/en-GB/products/323332228
+323422519,Studio Bakery The Matilda and Friends cake,16,100,3.4,3.4,0,0,https://www.tesco.com/groceries/en-GB/products/323422519
+323435579,Minecraft 9 Chocolate cupcakes,6,100,3.6,3.6,0,0,https://www.tesco.com/groceries/en-GB/products/323435579
+323435619,STUDIO BAKERY The Matilda Cake Cookies and Cream Limited Edition,16,100,4.1,4.1,0,0,https://www.tesco.com/groceries/en-GB/products/323435619
+323487701,Tesco Brown Bloomer 600g,2,600,8.6,51.6,227,1362,https://www.tesco.com/groceries/en-GB/products/323487701
+323653925,Little Big Cake Paint the town Red Velvet cake Bento box,14,100,3.3,3.3,0,0,https://www.tesco.com/groceries/en-GB/products/323653925
+323660133,Mission Carb Balance Original Tortillas 4 wraps 200g,1.8,200,14.7,29.4,0,0,https://www.tesco.com/groceries/en-GB/products/323660133
+325239512,MILKY WAY CROISSANT 4 x 48 g,2.5,48,6,2.88,0,0,https://www.tesco.com/groceries/en-GB/products/325239512
+325735024,Chocolate Brownies,14.4,100,5,5,0,0,https://www.tesco.com/groceries/en-GB/products/325735024
+326197394,Organic Wheat Tortilla Wraps 240g (Amaizin),3,240,0,0,0,0,https://www.tesco.com/groceries/en-GB/products/326197394
+326197401,Organic Extra Fibre Tortilla Wraps 240g (Amaizin),2.59,240,0,0,0,0,https://www.tesco.com/groceries/en-GB/products/326197401
