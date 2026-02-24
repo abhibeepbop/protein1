@@ -70,8 +70,8 @@ function HomeScreen({ navigation }) {
           <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[16px] text-white w-[100px]">I need to hit</Text>
           <View className="flex-1 items-center">
             <TextInput
-              style={{ fontFamily: 'Funnel_Display' }}
-              className="bg-[#FFFFFF] rounded-2xl px-4 py-2 text-[16px] text-white text-center w-24"
+              style={{ fontFamily: 'Funnel_Display', color: '#000' }}
+              className="bg-[#FFFFFF] rounded-2xl px-4 py-2 text-[16px] text-black  text-center w-24"
               keyboardType="numeric"
               value={calories}
               onChangeText={setCalories}
@@ -84,8 +84,8 @@ function HomeScreen({ navigation }) {
           <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[16px] text-white w-[100px]">with</Text>
           <View className="flex-1 items-center">
             <TextInput
-              style={{ fontFamily: 'Funnel_Display' }}
-              className="bg-[#FFFFFF] rounded-2xl px-4 py-2 text-[16px] text-white text-center w-24"
+              style={{ fontFamily: 'Funnel_Display', color: '#000' }}
+              className="bg-[#FFFFFF] rounded-2xl px-4 py-2 text-[16px] text-black text-center w-24"
               keyboardType="numeric"
               value={protein}
               onChangeText={setProtein}
@@ -98,8 +98,8 @@ function HomeScreen({ navigation }) {
           <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[16px] text-white w-[100px]">on a</Text>
           <View className="flex-1 items-center">
             <TextInput
-              style={{ fontFamily: 'Funnel_Display' }}
-              className="bg-[#FFFFFF] rounded-2xl px-4 py-2 text-[16px] text-white text-center w-24"
+              style={{ fontFamily: 'Funnel_Display', color: '#000' }}
+              className="bg-[#FFFFFF] rounded-2xl px-4 py-2 text-[16px] text-black text-center w-24"
               keyboardType="numeric"
               value={budget}
               onChangeText={setBudget}
