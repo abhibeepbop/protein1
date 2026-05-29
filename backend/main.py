@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Dict, Any
 import json
 import os
+import difflib
 from langchain_openai import ChatOpenAI # Switched to Chat model for better JSON
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
@@ -30,6 +31,13 @@ try:
 except FileNotFoundError:
     food_data = {"tier1": [], "tier2": [], "tier3": []}
 
+# Name-keyed lookup so we can enrich basket items with per-item nutrition
+food_lookup = {
+    item["name"].lower(): item
+    for tier_items in food_data.values()
+    for item in tier_items
+}
+
 # Using ChatOpenAI (gpt-4o-mini is cheaper and better at JSON than the old OpenAI class)
 llm = ChatOpenAI(model="gpt-4o-mini", openai_api_key=OPENAI_API_KEY)
 
@@ -42,10 +50,14 @@ def generate_basket(
     
     # Combine all food data
     candidate_foods = food_data.get("tier1", []) + food_data.get("tier2", []) + food_data.get("tier3", [])
-    
-    # We pass the full JSON of the foods (names, prices, macros) so the AI can actually calculate
-    # We'll take the first 50 to keep it within reason
-    foods_context = json.dumps(candidate_foods[:50])
+
+    # Strip to only what the AI needs — saves ~75% tokens per item, allowing 150 items for same cost as 50
+    # Tier is kept so the AI can prioritise quality (tier 1 > tier 2 > tier 3)
+    slim_foods = [
+        {"name": p["name"], "price": p["price"], "protein": p["proteinTotal"], "calories": p["caloriesTotal"], "tier": p["tier"]}
+        for p in candidate_foods[:150]
+    ]
+    foods_context = json.dumps(slim_foods)
 
     weekly_calories_target = calories * 7
     weekly_protein_target = protein * 7
@@ -58,6 +70,8 @@ def generate_basket(
         ("system", "You are an elite nutritionist and chef. You always output valid JSON."),
         ("human", """
         Given the following list of foods with their nutritional data and prices: {foods_context}
+        Each food has: name, price (£ per unit), protein (g per unit), calories (per unit), tier (1=best quality, 2=good, 3=ultra-processed).
+        Prefer tier 1 foods. Use tier 2 when needed. Avoid tier 3 unless nothing else fits.
         
         Create a weekly shopping basket for a user with these targets:
         - Weekly Budget: £{budget}
@@ -65,7 +79,9 @@ def generate_basket(
         - Weekly Protein: {weekly_protein_target}g
 
         Rules:
+        0. CRITICAL: You must copy item names EXACTLY as they appear in the list above. Do not rephrase, shorten, or modify any name in any way.
         1. You CAN and SHOULD suggest multiple quantities of an item if needed (e.g., 3x Chicken Mince).
+        1a. Each basket item must have a "category" field. Use exactly one of these four values: "meat_poultry", "fruits_veg", "staples", "dairy". Assign the most appropriate category based on the item name.
         2. Do not select only breakfast foods. Ensure the basket contains ingredients for breakfast, lunch, and dinner. Include at least one staple for each meal (e.g., oats or cereal for breakfast, rice or wraps for lunch/dinner, etc.).
         3. Ensure the combination makes for a realistic, healthy, and balanced diet. Make sure that the combination of items is viable enought that the user can make simple meals out of them (e.g., chicken + rice + veg, not just 7 chicken breasts or chicken burritos or anything simple like that.).
         4. Pick oats and peas only once. 
@@ -103,7 +119,7 @@ def generate_basket(
         Output strictly in this JSON format:
         {{
             "basket": [
-                {{"name": "Food Name", "quantity": 2, "subtotal_price": 4.50}}
+                {{"name": "Food Name", "quantity": 2, "subtotal_price": 4.50, "category": "meat_poultry"}}
             ],
             "totals": {{
                 "total_calories": 0,
@@ -128,6 +144,39 @@ def generate_basket(
         "weekly_protein_target": weekly_protein_target,
         "budget": budget
     })
+
+    # Enrich each basket item — override AI-calculated price with real DB price × quantity,
+    # and add per-item protein/calorie data from the database
+    all_lookup_keys = list(food_lookup.keys())
+    for basket_item in result.get("basket", []):
+        name_lower = basket_item["name"].lower()
+        product = food_lookup.get(name_lower)
+
+        # Fuzzy fallback if exact match fails
+        if not product:
+            close = difflib.get_close_matches(name_lower, all_lookup_keys, n=1, cutoff=0.85)
+            if close:
+                product = food_lookup[close[0]]
+
+        qty = basket_item.get("quantity", 1)
+        if product:
+            basket_item["subtotal_price"] = round(product["price"] * qty, 2)
+            basket_item["protein_g"] = round(product["proteinTotal"] * qty, 1)
+            basket_item["calories"] = round(product["caloriesTotal"] * qty)
+        else:
+            basket_item["protein_g"] = None
+            basket_item["calories"] = None
+
+    # Recalculate totals from real per-item values — never trust the AI's totals
+    basket = result.get("basket", [])
+    real_spend = round(sum(i.get("subtotal_price") or 0 for i in basket), 2)
+    real_protein = round(sum(i.get("protein_g") or 0 for i in basket), 1)
+    real_calories = round(sum(i.get("calories") or 0 for i in basket))
+    result["totals"] = {
+        "total_calories": real_calories,
+        "total_protein": real_protein,
+        "total_spend": real_spend,
+    }
 
     return {
         "user_targets": {

@@ -36,10 +36,34 @@ export default function App() {
   );
 }
 
+const API_URL = 'http://192.168.1.154:8000';
+
 function HomeScreen({ navigation }) {
   const [calories, setCalories] = useState('');
   const [protein, setProtein] = useState('');
   const [budget, setBudget] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleGenerate = async () => {
+    if (!calories || !protein || !budget) {
+      setError('Please fill in all fields.');
+      return;
+    }
+    setError('');
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `${API_URL}/generate-basket?calories=${calories}&protein=${protein}&budget=${budget}`
+      );
+      const data = await res.json();
+      navigation.navigate('Basket', { basketData: data });
+    } catch (e) {
+      setError('Could not reach the server. Is the backend running?');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <SafeAreaView className="flex-1 bg-[#272727]">
@@ -109,11 +133,17 @@ function HomeScreen({ navigation }) {
         </View>
         {/* Generate button */}
         <View className="items-center mt-4 mb-8">
+          {error ? (
+            <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[#E85D5D] text-sm mb-3">{error}</Text>
+          ) : null}
           <TouchableOpacity
-            className="bg-[#E85D5D] rounded-2xl px-6 py-3"
-            onPress={() => navigation.navigate('Basket')}
+            className={`rounded-2xl px-6 py-3 ${loading ? 'bg-[#a83a3a]' : 'bg-[#E85D5D]'}`}
+            onPress={handleGenerate}
+            disabled={loading}
           >
-            <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-[16px]">Generate</Text>
+            <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-[16px]">
+              {loading ? 'Generating...' : 'Generate'}
+            </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
