@@ -1,6 +1,10 @@
 # Environment variables — never commit secrets
 .env
 
+# FAISS index files (large generated binaries, rebuild with embed_foods.py)
+backend/food_index.faiss
+backend/food_index_items.json
+
 # Python
 __pycache__/
 *.pyc

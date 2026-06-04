@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, SafeAreaView, ActivityIndicator } from 'react-native';
+import { supabase } from './lib/supabase';
 
 type Category = 'meat_poultry' | 'fruits_veg' | 'staples' | 'dairy';
 
@@ -38,6 +39,52 @@ export default function Basket({ navigation, route }: { navigation: any; route: 
   const [checked, setChecked] = useState<Record<number, boolean>>({});
   const toggle = (i: number) => setChecked(prev => ({ ...prev, [i]: !prev[i] }));
 
+  const [saving, setSaving] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  const handleSave = async () => {
+    setSaving(true);
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+
+      const { data: basketRow, error: basketError } = await supabase
+        .from('baskets')
+        .insert({
+          user_id: user.id,
+          calories_target: basketData.user_targets.weekly_calories,
+          protein_target: basketData.user_targets.weekly_protein,
+          budget: basketData.user_targets.budget,
+          total_spend: totals.total_spend,
+          total_protein: totals.total_protein,
+          total_calories: totals.total_calories,
+        })
+        .select()
+        .single();
+
+      if (basketError) throw basketError;
+
+      const items = basket.map(item => ({
+        basket_id: basketRow.id,
+        name: item.name,
+        quantity: item.quantity,
+        subtotal_price: item.subtotal_price,
+        protein_g: item.protein_g,
+        calories: item.calories,
+        category: item.category,
+      }));
+
+      const { error: itemsError } = await supabase.from('basket_items').insert(items);
+      if (itemsError) throw itemsError;
+
+      setSaved(true);
+    } catch (e) {
+      console.error('Save failed:', e);
+    } finally {
+      setSaving(false);
+    }
+  };
+
   const today = new Date();
   const dateStr = `${String(today.getDate()).padStart(2, '0')}.${String(today.getMonth() + 1).padStart(2, '0')}.${String(today.getFullYear()).slice(2)}`;
 
@@ -62,8 +109,17 @@ export default function Basket({ navigation, route }: { navigation: any; route: 
             Basket for {dateStr}
           </Text>
         </View>
-        <TouchableOpacity style={{ backgroundColor: '#E85D5D', borderRadius: 20, paddingHorizontal: 16, paddingVertical: 8 }}>
-          <Text style={{ fontFamily: 'Funnel_Display', color: 'white', fontSize: 13 }}>save basket</Text>
+        <TouchableOpacity
+          onPress={handleSave}
+          disabled={saving || saved}
+          style={{ backgroundColor: saved ? '#2e7d32' : '#E85D5D', borderRadius: 20, paddingHorizontal: 16, paddingVertical: 8, minWidth: 90, alignItems: 'center' }}
+        >
+          {saving
+            ? <ActivityIndicator size="small" color="white" />
+            : <Text style={{ fontFamily: 'Funnel_Display', color: 'white', fontSize: 13 }}>
+                {saved ? 'saved ✓' : 'save basket'}
+              </Text>
+          }
         </TouchableOpacity>
       </View>
 

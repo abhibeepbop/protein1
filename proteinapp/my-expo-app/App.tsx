@@ -1,47 +1,61 @@
-import { View, Text, TextInput, TouchableOpacity, SafeAreaView, ScrollView, Image, Button} from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, SafeAreaView, ScrollView, Image } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import * as Font from 'expo-font';
-import Basket from './basket';
-
-
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-const Stack = createNativeStackNavigator();
+import { Session } from '@supabase/supabase-js';
+import { supabase } from './lib/supabase';
+import Basket from './basket';
+import AuthScreen from './screens/AuthScreen';
 
 import './global.css';
 
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
+  const [session, setSession] = useState<Session | null>(null);
 
   useEffect(() => {
     Font.loadAsync({
       'Funnel_Display': require('./assets/Fira_Code,Funnel_Display,Space_Mono/Funnel_Display/FunnelDisplay-VariableFont_wght.ttf'),
     }).then(() => setFontsLoaded(true));
+
+    // Get initial session
+    supabase.auth.getSession().then(({ data: { session } }) => setSession(session));
+
+    // Listen for auth changes (login / logout)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
-  if (!fontsLoaded) {
-    return null; // or a loading spinner
-  }
+  if (!fontsLoaded) return null;
+
+  // Not logged in — show auth screen
+  if (!session) return <AuthScreen />;
 
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home">{(props) => <HomeScreen {...props} session={session} />}</Stack.Screen>
         <Stack.Screen name="Basket" component={Basket} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const API_URL = 'http://192.168.1.154:8000';
+const API_URL = 'https://protein1-production.up.railway.app';
 
-function HomeScreen({ navigation }) {
+function HomeScreen({ navigation, session }: { navigation: any; session: any }) {
   const [calories, setCalories] = useState('');
   const [protein, setProtein] = useState('');
   const [budget, setBudget] = useState('');
+  const [preferences, setPreferences] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -53,9 +67,9 @@ function HomeScreen({ navigation }) {
     setError('');
     setLoading(true);
     try {
-      const res = await fetch(
-        `${API_URL}/generate-basket?calories=${calories}&protein=${protein}&budget=${budget}`
-      );
+      let url = `${API_URL}/generate-basket?calories=${calories}&protein=${protein}&budget=${budget}`;
+      if (preferences.trim()) url += `&preferences=${encodeURIComponent(preferences.trim())}`;
+      const res = await fetch(url);
       const data = await res.json();
       navigation.navigate('Basket', { basketData: data });
     } catch (e) {
@@ -75,7 +89,7 @@ function HomeScreen({ navigation }) {
         </View>
         {/* Welcome text */}
         <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-center text-lg mb-8 text-[24px]">
-          Welcome user1234
+          Welcome {session?.user?.email?.split('@')[0] ?? 'there'}
         </Text>
         {/* Food circle illustration */}
         <View className="items-center mb-8">
@@ -130,6 +144,22 @@ function HomeScreen({ navigation }) {
             />
           </View>
           <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[16px] text-white w-[100px] text-right">budget</Text>
+        </View>
+        {/* Preferences input */}
+        <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[17px] text-white mb-4 font-normal">
+          any preferences?
+        </Text>
+        <View className="bg-[#363636] rounded-2xl px-4 py-4 mb-4">
+          <TextInput
+            style={{ fontFamily: 'Funnel_Display', color: '#fff' }}
+            className="text-[14px] text-white"
+            placeholder="e.g. more beef, Mediterranean recipes, no fish..."
+            placeholderTextColor="#888"
+            value={preferences}
+            onChangeText={setPreferences}
+            multiline
+            numberOfLines={3}
+          />
         </View>
         {/* Generate button */}
         <View className="items-center mt-4 mb-8">
