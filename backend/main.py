@@ -7,14 +7,16 @@ import difflib
 import numpy as np
 import faiss
 from pulp import LpProblem, LpVariable, LpMinimize, lpSum, value, PULP_CBC_CMD, LpStatus
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from dotenv import load_dotenv
 
 load_dotenv()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "your-key-here")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")  # Still used for FAISS embeddings locally
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 app = FastAPI()
 
@@ -57,7 +59,7 @@ except Exception as e:
     print(f"FAISS index not found, using default selection ({e})")
 
 # --- LLM ---
-llm = ChatOpenAI(model="gpt-4o-mini", openai_api_key=OPENAI_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY)
 
 
 def _has_reliable_nutrition(item: dict) -> bool:
