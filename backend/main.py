@@ -76,33 +76,33 @@ _base_pool = list({
     item["name"]: item
     for item in all_foods_flat
     if item.get("tier") == 1 and _has_reliable_nutrition(item)
-}.values())[:50]
+}.values())[:40]
 
 
 def get_candidate_foods(preferences: str) -> list:
     """
-    Always return a balanced 100-item pool:
-      - 50 items from the fixed tier-1 base (staples, veg, meat, dairy)
-      - 50 items from FAISS matching the user's preferences, filtered to tier 1 & 2 only
+    Always return a balanced 60-item pool:
+      - 40 items from the fixed tier-1 base (staples, veg, meat, dairy)
+      - 20 items from FAISS matching the user's preferences, filtered to tier 1 & 2 only
     Deduplication ensures no item appears twice.
-    Falls back to first 150 items if FAISS index isn't built yet.
+    Falls back to first 60 items if FAISS index isn't built yet.
     """
     if not USE_FAISS:
-        return all_foods_flat[:150]
+        return all_foods_flat[:60]
 
     query = preferences.strip() if preferences.strip() else "high protein lean meat fish eggs vegetables wholegrains dairy"
     query_vector = np.array([embeddings_model.embed_query(query)], dtype=np.float32)
     faiss.normalize_L2(query_vector)
 
     # Retrieve more than needed so we have room to filter out tier 3
-    _, indices = faiss_index.search(query_vector, 200)
+    _, indices = faiss_index.search(query_vector, 100)
     faiss_results = [
         indexed_items[i]
         for i in indices[0]
         if i < len(indexed_items)
         and indexed_items[i].get("tier", 3) in (1, 2)
         and _has_reliable_nutrition(indexed_items[i])
-    ][:50]
+    ][:20]
 
     # Merge: base first, then FAISS results, deduplicated by name
     seen = {item["name"] for item in _base_pool}
