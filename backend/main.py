@@ -59,7 +59,7 @@ except Exception as e:
     print(f"FAISS index not found, using default selection ({e})")
 
 # --- LLM ---
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=GOOGLE_API_KEY)
 
 
 def _has_reliable_nutrition(item: dict) -> bool:
