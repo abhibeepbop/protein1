@@ -7,6 +7,7 @@ from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 FOODTIERS_PATH = os.path.join(os.path.dirname(__file__), "foodtiers.json")
 INDEX_PATH = os.path.join(os.path.dirname(__file__), "food_index.faiss")
 ITEMS_PATH = os.path.join(os.path.dirname(__file__), "food_index_items.json")
@@ -35,9 +36,8 @@ def build_index():
 
     texts = [make_text(item) for item in all_items]
 
-    embeddings_model = OpenAIEmbeddings(model="text-embedding-3-small")
+    embeddings_model = OpenAIEmbeddings(model="text-embedding-3-small", openai_api_key=OPENAI_API_KEY)
 
-    # Embed in batches of 500 to stay within rate limits
     batch_size = 500
     all_embeddings = []
     for i in range(0, len(texts), batch_size):
@@ -47,8 +47,6 @@ def build_index():
         print(f"  Embedded {min(i + batch_size, len(texts))}/{len(texts)} items...")
 
     vectors = np.array(all_embeddings, dtype=np.float32)
-
-    # Normalise so inner-product == cosine similarity
     faiss.normalize_L2(vectors)
 
     index = faiss.IndexFlatIP(vectors.shape[1])
