@@ -41,6 +41,7 @@ export default function Basket({ navigation, route }: { navigation: any; route: 
 
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
 
   const handleSave = async () => {
     setSaving(true);
@@ -80,6 +81,7 @@ export default function Basket({ navigation, route }: { navigation: any; route: 
       setSaved(true);
     } catch (e) {
       console.error('Save failed:', e);
+      setSaveError('Save failed — please try again');
     } finally {
       setSaving(false);
     }
@@ -122,6 +124,9 @@ export default function Basket({ navigation, route }: { navigation: any; route: 
           }
         </TouchableOpacity>
       </View>
+      {saveError ? (
+        <Text style={{ color: '#E85D5D', fontFamily: 'Funnel_Display', fontSize: 12, textAlign: 'center', paddingBottom: 6 }}>{saveError}</Text>
+      ) : null}
 
       {/* Item list */}
       <ScrollView style={{ flex: 1, paddingHorizontal: 16 }} contentContainerStyle={{ paddingBottom: 16 }}>

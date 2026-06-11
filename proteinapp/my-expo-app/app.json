@@ -2,6 +2,7 @@
   "expo": {
     "name": "my-expo-app",
     "slug": "my-expo-app",
+    "scheme": "proteinapp",
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"
@@ -11,7 +12,8 @@
     },
     "plugins": [
       "expo-font",
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-web-browser"
     ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",

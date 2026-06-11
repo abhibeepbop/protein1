@@ -9,6 +9,7 @@ import { Session } from '@supabase/supabase-js';
 import { supabase } from './lib/supabase';
 import Basket from './basket';
 import AuthScreen from './screens/AuthScreen';
+import SavedBasketsScreen from './screens/SavedBasketsScreen';
 
 import './global.css';
 
@@ -23,10 +24,8 @@ export default function App() {
       'Funnel_Display': require('./assets/Fira_Code,Funnel_Display,Space_Mono/Funnel_Display/FunnelDisplay-VariableFont_wght.ttf'),
     }).then(() => setFontsLoaded(true));
 
-    // Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => setSession(session));
 
-    // Listen for auth changes (login / logout)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
     });
@@ -36,7 +35,6 @@ export default function App() {
 
   if (!fontsLoaded) return null;
 
-  // Not logged in — show auth screen
   if (!session) return <AuthScreen />;
 
   return (
@@ -44,6 +42,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home">{(props) => <HomeScreen {...props} session={session} />}</Stack.Screen>
         <Stack.Screen name="Basket" component={Basket} />
+        <Stack.Screen name="SavedBaskets" component={SavedBasketsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -83,10 +82,16 @@ function HomeScreen({ navigation, session }: { navigation: any; session: any }) 
     <SafeAreaView className="flex-1 bg-[#272727]">
       <StatusBar style="light" />
       <ScrollView className="flex-1 px-6 pt-12">
-        {/* Top icon */}
-        <View className="w-10 h-10 bg-[#E85D5D] rounded-full items-center justify-center mb-6">
-          <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-lg"></Text>
+        {/* Top row: icon + sign out */}
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
+          <View className="w-10 h-10 bg-[#E85D5D] rounded-full items-center justify-center">
+            <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-lg"></Text>
+          </View>
+          <TouchableOpacity onPress={() => supabase.auth.signOut()}>
+            <Text style={{ fontFamily: 'Funnel_Display', color: '#888', fontSize: 13 }}>sign out</Text>
+          </TouchableOpacity>
         </View>
+
         {/* Welcome text */}
         <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-center text-lg mb-8 text-[24px]">
           Welcome {session?.user?.email?.split('@')[0] ?? 'there'}
@@ -161,10 +166,10 @@ function HomeScreen({ navigation, session }: { navigation: any; session: any }) 
             numberOfLines={3}
           />
         </View>
-        {/* Generate button */}
-        <View className="items-center mt-4 mb-8">
+        {/* Buttons */}
+        <View className="items-center mt-4 mb-8" style={{ gap: 12 }}>
           {error ? (
-            <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[#E85D5D] text-sm mb-3">{error}</Text>
+            <Text style={{ fontFamily: 'Funnel_Display' }} className="text-[#E85D5D] text-sm">{error}</Text>
           ) : null}
           <TouchableOpacity
             className={`rounded-2xl px-6 py-3 ${loading ? 'bg-[#a83a3a]' : 'bg-[#E85D5D]'}`}
@@ -174,6 +179,9 @@ function HomeScreen({ navigation, session }: { navigation: any; session: any }) 
             <Text style={{ fontFamily: 'Funnel_Display' }} className="text-white text-[16px]">
               {loading ? 'Generating...' : 'Generate'}
             </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('SavedBaskets')}>
+            <Text style={{ fontFamily: 'Funnel_Display', color: '#888', fontSize: 14 }}>view past baskets</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
