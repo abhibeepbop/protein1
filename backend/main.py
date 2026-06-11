@@ -41,7 +41,7 @@ food_lookup = {
 
 all_foods_flat = [item for tier_items in food_data.values() for item in tier_items]
 
-# --- FAISS semantic index ---
+# --- FAISS ---
 INDEX_PATH = os.path.join(os.path.dirname(__file__), "food_index.faiss")
 ITEMS_PATH = os.path.join(os.path.dirname(__file__), "food_index_items.json")
 
@@ -59,13 +59,53 @@ except Exception as e:
 # --- LLM ---
 llm = ChatOpenAI(model="gpt-5.4-mini-2026-03-17", openai_api_key=OPENAI_API_KEY)
 
+# --- Category system ---
+CATEGORY_KEYWORDS = {
+    'chicken':      ['chicken'],
+    'beef_pork':    ['beef', 'pork', 'mince', 'steak', 'lamb'],
+    'turkey':       ['turkey'],
+    'fish':         ['tuna', 'salmon', 'mackerel', 'cod', 'fish', 'sardine', 'haddock', 'prawn'],
+    'eggs':         ['egg'],
+    'peas_beans':   ['peas', 'bean', 'lentil', 'chickpea'],
+    'vegetables':   ['broccoli', 'carrot', 'spinach', 'tomato', 'cucumber', 'pepper', 'onion',
+                     'courgette', 'cabbage', 'kale', 'sweet potato', 'mixed veg', 'vegetables',
+                     'sweetcorn', 'mushroom', 'lettuce', 'celery'],
+    'oats':         ['oat', 'porridge'],
+    'rice':         ['rice'],
+    'pasta':        ['pasta', 'penne', 'spaghetti', 'macaroni', 'noodle'],
+    'bread':        ['bread', 'wrap', 'tortilla'],
+    'dairy_yogurt': ['yogurt', 'yoghurt'],
+    'dairy_cheese': ['cheese', 'cottage'],
+    'dairy_milk':   ['milk'],
+    'fruit':        ['apple', 'banana', 'berr', 'orange', 'mango', 'pineapple'],
+}
+
+PROTEIN_CATS = {'chicken', 'beef_pork', 'turkey', 'fish', 'eggs'}
+VEG_CATS = {'vegetables', 'peas_beans', 'fruit'}
+STAPLE_CATS = {'oats', 'rice', 'pasta', 'bread'}
+DAIRY_CATS = {'dairy_yogurt', 'dairy_cheese', 'dairy_milk'}
+STAPLE_KEYWORDS = ['oat', 'porridge', 'bread', 'wrap', 'tortilla', 'pitta', 'bagel']
+
+# Maps LP internal categories → frontend category strings
+_LP_TO_FRONTEND = {
+    'chicken': 'meat_poultry', 'beef_pork': 'meat_poultry',
+    'turkey': 'meat_poultry', 'fish': 'meat_poultry', 'eggs': 'meat_poultry',
+    'vegetables': 'fruits_veg', 'peas_beans': 'fruits_veg', 'fruit': 'fruits_veg',
+    'oats': 'staples', 'rice': 'staples', 'pasta': 'staples', 'bread': 'staples',
+    'dairy_yogurt': 'dairy', 'dairy_cheese': 'dairy', 'dairy_milk': 'dairy',
+    'other': 'staples',
+}
+
+
+def _get_category(name: str) -> str:
+    name_lower = name.lower()
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        if any(kw in name_lower for kw in keywords):
+            return cat
+    return 'other'
+
 
 def _has_reliable_nutrition(item: dict) -> bool:
-    """Filter out items with unreliable nutrition data:
-    - weight=100 items that aren't actually 100g packs (per-100g pricing scraped as weight)
-    - items with zero calories (data error)
-    - items with more than 5000 calories (e.g. 5kg rice bags) — too large for a weekly basket
-    """
     if item.get("caloriesTotal", 0) < 50:
         return False
     if item.get("caloriesTotal", 0) > 5000:
@@ -75,40 +115,15 @@ def _has_reliable_nutrition(item: dict) -> bool:
     name_lower = item.get("name", "").lower()
     return "100g" in name_lower or "100 g" in name_lower
 
+
 def _build_base_pool(items: list) -> list:
     """Build a category-balanced base pool from tier-1 items."""
-    CATEGORY_KEYWORDS = {
-        'chicken':      ['chicken'],
-        'beef_pork':    ['beef', 'pork', 'mince', 'steak', 'lamb'],
-        'turkey':       ['turkey'],
-        'fish':         ['tuna', 'salmon', 'mackerel', 'cod', 'fish', 'sardine', 'haddock', 'prawn'],
-        'eggs':         ['egg'],
-        'peas_beans':   ['peas', 'bean', 'lentil', 'chickpea'],
-        'vegetables':   ['broccoli', 'carrot', 'spinach', 'tomato', 'cucumber', 'pepper', 'onion',
-                         'courgette', 'cabbage', 'kale', 'sweet potato', 'mixed veg', 'vegetables',
-                         'sweetcorn', 'mushroom', 'lettuce', 'celery'],
-        'oats':         ['oat', 'porridge'],
-        'rice':         ['rice'],
-        'pasta':        ['pasta', 'penne', 'spaghetti', 'macaroni', 'noodle'],
-        'bread':        ['bread', 'wrap', 'tortilla'],
-        'dairy_yogurt': ['yogurt', 'yoghurt'],
-        'dairy_cheese': ['cheese', 'cottage'],
-        'dairy_milk':   ['milk'],
-        'fruit':        ['apple', 'banana', 'berr', 'orange', 'mango', 'pineapple'],
-    }
     LIMITS = {
         'chicken': 15, 'beef_pork': 12, 'turkey': 5, 'fish': 12,
         'eggs': 5, 'peas_beans': 8, 'vegetables': 15, 'oats': 3,
         'rice': 8, 'pasta': 8, 'bread': 6, 'dairy_yogurt': 5,
         'dairy_cheese': 5, 'dairy_milk': 4, 'fruit': 6, 'other': 10,
     }
-
-    def get_category(item):
-        name_lower = item['name'].lower()
-        for cat, keywords in CATEGORY_KEYWORDS.items():
-            if any(kw in name_lower for kw in keywords):
-                return cat
-        return 'other'
 
     counts = {cat: 0 for cat in LIMITS}
     selected = []
@@ -117,7 +132,7 @@ def _build_base_pool(items: list) -> list:
     for item in items:
         if item['name'] in seen:
             continue
-        cat = get_category(item)
+        cat = _get_category(item['name'])
         if counts.get(cat, 0) < LIMITS.get(cat, 5):
             selected.append(item)
             seen.add(item['name'])
@@ -125,7 +140,8 @@ def _build_base_pool(items: list) -> list:
 
     return selected
 
-# Category-balanced base pool — tier 1 items + tier 2 for bread/wraps (bread is mostly tier 2)
+
+# Category-balanced base pool — tier 1 + tier 2 bread/wraps
 _tier1_reliable = [
     item for item in all_foods_flat
     if item.get("tier") == 1 and _has_reliable_nutrition(item)
@@ -139,13 +155,7 @@ _base_pool = _build_base_pool(_tier1_reliable + _tier2_bread)
 
 
 def get_candidate_foods(preferences: str) -> list:
-    """
-    Always return a balanced 100-item pool:
-      - 60 items from the fixed tier-1 base (staples, veg, meat, dairy)
-      - 40 items from FAISS matching the user's preferences, filtered to tier 1 & 2 only
-    Deduplication ensures no item appears twice.
-    Falls back to first 100 items if FAISS index isn't built yet.
-    """
+    """Return a balanced pool: base pool + FAISS preference-matched items."""
     if not USE_FAISS:
         print("[FAISS] NOT active — using first 100 items from foodtiers.json")
         return all_foods_flat[:100]
@@ -159,35 +169,12 @@ def get_candidate_foods(preferences: str) -> list:
 
     query_vector = np.array([embeddings_model.embed_query(query)], dtype=np.float32)
     faiss.normalize_L2(query_vector)
-
     _, indices = faiss_index.search(query_vector, 150)
 
-    # Cap each category in FAISS results for diversity
     FAISS_CAT_LIMITS = {
         "vegetables": 5, "peas_beans": 3, "fruit": 3,
         "oats": 2, "rice": 2, "pasta": 2, "bread": 2,
     }
-    VEG_KEYWORDS     = ["broccoli","carrot","spinach","tomato","cucumber","pepper","onion",
-                        "courgette","cabbage","kale","sweet potato","mixed veg","vegetable",
-                        "sweetcorn","mushroom","lettuce","celery","leek","bean sprout","beetroot",
-                        "greens","beans","watercress"]
-    PEAS_KEYWORDS    = ["peas","lentil","chickpea"]
-    FRUIT_KEYWORDS   = ["apple","banana","berr","orange","mango","pineapple","grape","melon","strawberr"]
-    OAT_KEYWORDS     = ["oat","porridge"]
-    RICE_KEYWORDS    = ["rice"]
-    PASTA_KEYWORDS   = ["pasta","penne","spaghetti","macaroni","noodle"]
-    BREAD_KEYWORDS   = ["bread","wrap","tortilla","pitta","bagel"]
-
-    def faiss_category(name: str) -> str:
-        n = name.lower()
-        if any(k in n for k in VEG_KEYWORDS):   return "vegetables"
-        if any(k in n for k in PEAS_KEYWORDS):  return "peas_beans"
-        if any(k in n for k in FRUIT_KEYWORDS): return "fruit"
-        if any(k in n for k in OAT_KEYWORDS):   return "oats"
-        if any(k in n for k in RICE_KEYWORDS):  return "rice"
-        if any(k in n for k in PASTA_KEYWORDS): return "pasta"
-        if any(k in n for k in BREAD_KEYWORDS): return "bread"
-        return "other"
 
     faiss_counts = {}
     faiss_results = []
@@ -199,13 +186,13 @@ def get_candidate_foods(preferences: str) -> list:
         item = indexed_items[i]
         if item.get("tier", 3) not in (1, 2) or not _has_reliable_nutrition(item):
             continue
-        cat = faiss_category(item["name"])
+        cat = _get_category(item["name"])
         limit = FAISS_CAT_LIMITS.get(cat, 40)
         if faiss_counts.get(cat, 0) < limit:
             faiss_results.append(item)
             faiss_counts[cat] = faiss_counts.get(cat, 0) + 1
 
-    print(f"[FAISS] Returned {len(faiss_results)} preference-matched items (category capped):")
+    print(f"[FAISS] Returned {len(faiss_results)} preference-matched items")
     for item in faiss_results:
         print(f"  - {item['name']} (tier {item['tier']})")
 
@@ -221,7 +208,6 @@ def get_candidate_foods(preferences: str) -> list:
 
 
 def _lookup_product(name: str) -> dict | None:
-    """Look up a food item by name in the DB with fuzzy fallback."""
     all_keys = list(food_lookup.keys())
     product = food_lookup.get(name.lower())
     if not product:
@@ -231,170 +217,165 @@ def _lookup_product(name: str) -> dict | None:
     return product if product and product.get("caloriesTotal", 0) > 0 else None
 
 
-def _build_items_data(items: list) -> tuple[list, list]:
-    """Convert basket items to LP data format, separating unresolved items."""
-    resolved, unresolved = [], []
-    for item in items:
-        product = _lookup_product(item["name"])
-        if product:
-            resolved.append({
-                "item": item,
-                "price": product["price"],
-                "protein": product["proteinTotal"],
-                "calories": product["caloriesTotal"],
-            })
-        else:
-            unresolved.append(item)
-    return resolved, unresolved
+def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein: int, budget: float) -> list:
+    """
+    Phase 1: LP selects items AND quantities from the full candidate pool.
+    qty[i] ∈ {0, 1, 2} — items with qty=0 are excluded. Never goes infeasible
+    because the LP can always satisfy constraints by picking the right mix.
+    Objective: minimise cost.
+    """
+    items = [item for item in candidate_pool if _has_reliable_nutrition(item)]
+    n = len(items)
+    cats = [_get_category(item['name']) for item in items]
 
+    # Max total quantities per LP category (prevents buying 10 chicken packs)
+    CATEGORY_MAX_QTY = {
+        'chicken': 8, 'beef_pork': 6, 'turkey': 4, 'fish': 6,
+        'eggs': 4, 'peas_beans': 4, 'vegetables': 10, 'oats': 2,
+        'rice': 4, 'pasta': 4, 'bread': 3, 'dairy_yogurt': 4,
+        'dairy_cheese': 4, 'dairy_milk': 4, 'fruit': 6, 'other': 6,
+    }
 
-def _run_lp(items_data: list, budget_limit: float, cal_target: float = 0,
-            prot_target: float = 0, budget_min: float = 0) -> bool:
-    """Run LP on items_data and update quantities in place. Returns True if optimal."""
-    if not items_data:
-        return True
-    n = len(items_data)
-    prob = LpProblem("stage", LpMinimize)
-    qty = [LpVariable(f"q{i}", lowBound=1, upBound=2, cat="Integer") for i in range(n)]
-    prob += lpSum(items_data[i]["price"] * qty[i] for i in range(n))
-    if cal_target > 0:
-        prob += lpSum(items_data[i]["calories"] * qty[i] for i in range(n)) >= cal_target
-    if prot_target > 0:
-        prob += lpSum(items_data[i]["protein"] * qty[i] for i in range(n)) >= prot_target
-    prob += lpSum(items_data[i]["price"] * qty[i] for i in range(n)) <= budget_limit
-    if budget_min > 0:
-        prob += lpSum(items_data[i]["price"] * qty[i] for i in range(n)) >= budget_min
+    print(f"[LP] Running on pool of {n} items | targets: {weekly_calories} cal, {weekly_protein}g protein, £{budget}")
+
+    prob = LpProblem("basket_select", LpMinimize)
+
+    # qty[i] ∈ {0, 1, 2}; staples capped at 1 (nobody needs 2 bags of oats)
+    qty = []
+    for i, item in enumerate(items):
+        is_staple = any(kw in item['name'].lower() for kw in STAPLE_KEYWORDS)
+        ub = 1 if is_staple else 2
+        qty.append(LpVariable(f"q{i}", lowBound=0, upBound=ub, cat="Integer"))
+
+    # Objective: minimise cost
+    prob += lpSum(items[i]["price"] * qty[i] for i in range(n))
+
+    # Calorie band: 97–103% of target
+    prob += lpSum(items[i]["caloriesTotal"] * qty[i] for i in range(n)) >= weekly_calories * 0.97
+    prob += lpSum(items[i]["caloriesTotal"] * qty[i] for i in range(n)) <= weekly_calories * 1.03
+
+    # Protein: must hit target
+    prob += lpSum(items[i]["proteinTotal"] * qty[i] for i in range(n)) >= weekly_protein
+
+    # Budget: hard ceiling
+    prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) <= budget
+
+    # Minimum spend (forces variety — can't hit 80% budget with one item)
+    prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) >= budget * 0.80
+
+    # Animal protein: at least 50% of protein target from meat/fish/eggs
+    animal_idx = [i for i in range(n) if cats[i] in PROTEIN_CATS]
+    if animal_idx:
+        prob += lpSum(items[i]["proteinTotal"] * qty[i] for i in animal_idx) >= weekly_protein * 0.5
+
+    # Variety minimums — at least some qty from each food group
+    protein_idx = [i for i in range(n) if cats[i] in PROTEIN_CATS]
+    veg_idx     = [i for i in range(n) if cats[i] in VEG_CATS]
+    staple_idx  = [i for i in range(n) if cats[i] in STAPLE_CATS]
+    dairy_idx   = [i for i in range(n) if cats[i] in DAIRY_CATS]
+
+    if protein_idx: prob += lpSum(qty[i] for i in protein_idx) >= 3
+    if veg_idx:     prob += lpSum(qty[i] for i in veg_idx) >= 2
+    if staple_idx:  prob += lpSum(qty[i] for i in staple_idx) >= 1
+    if dairy_idx:   prob += lpSum(qty[i] for i in dairy_idx) >= 1
+
+    # Per-category max quantities
+    for cat, max_qty in CATEGORY_MAX_QTY.items():
+        cat_idx = [i for i in range(n) if cats[i] == cat]
+        if cat_idx:
+            prob += lpSum(qty[i] for i in cat_idx) <= max_qty
+
     prob.solve(PULP_CBC_CMD(msg=0))
-    if LpStatus[prob.status] == "Optimal":
-        for i, data in enumerate(items_data):
-            data["item"]["quantity"] = max(1, int(round(value(qty[i]))))
-        return True
-    return False
+    status = LpStatus[prob.status]
+    print(f"[LP] Status: {status}")
+
+    basket = []
+    for i, item in enumerate(items):
+        q = int(round(value(qty[i])))
+        if q > 0:
+            basket.append({**item, "quantity": q, "lp_category": cats[i]})
+
+    print(f"[LP] Selected {len(basket)} items")
+    return basket
 
 
-def optimize_quantities(ai_basket: list, weekly_calories: int, weekly_protein: int, budget: float) -> list:
+def ai_curate_basket(lp_basket: list, candidate_pool: list, preferences: str) -> list:
     """
-    Three-stage LP pipeline:
-      Stage 1 — Meat/poultry: hit 70% of protein target (soft — falls back to 50% if needed)
-      Stage 2 — Staples/veg: hit remaining calories with remaining budget
-      Stage 3 — Dairy: use leftover budget on dairy items
+    Phase 2: AI swaps up to 30% of items to match user preferences.
+    Quantities are fixed — only item identity can change.
+    Same-category swaps only.
     """
-    STAPLE_CAP_KEYWORDS = ["oat", "porridge", "bread", "wrap", "tortilla", "pitta", "bagel"]
+    if not preferences or not preferences.strip():
+        return lp_basket
 
-    # Split AI basket by category
-    meat_items    = [i for i in ai_basket if i.get("category") == "meat_poultry"]
-    staples_items = [i for i in ai_basket if i.get("category") in ("staples", "fruits_veg")]
-    dairy_items   = [i for i in ai_basket if i.get("category") == "dairy"]
-    other_items   = [i for i in ai_basket if i.get("category") not in
-                     ("meat_poultry", "staples", "fruits_veg", "dairy")]
+    max_swaps = max(1, int(len(lp_basket) * 0.3))
 
-    # ── Stage 1: Meat ─────────────────────────────────────────────
-    meat_data, meat_unresolved = _build_items_data(meat_items)
-    prot_target_meat = weekly_protein * 0.7
-    meat_budget = budget * 0.65
+    basket_names = {item["name"] for item in lp_basket}
+    basket_cats = {item.get("lp_category", "other") for item in lp_basket}
 
-    print(f"\n[STAGE 1 - MEAT] {len(meat_data)} items | protein target: {round(prot_target_meat)}g | budget: £{round(meat_budget,2)}")
-    if not _run_lp(meat_data, budget_limit=meat_budget, prot_target=prot_target_meat):
-        print("[STAGE 1] Relaxing to 50% protein")
-        if not _run_lp(meat_data, budget_limit=meat_budget, prot_target=weekly_protein * 0.5):
-            print("[STAGE 1] Could not solve — keeping AI quantities")
+    # Build swap alternatives: pool items not in basket, grouped by LP category
+    alternatives: dict[str, list] = {}
+    for item in candidate_pool:
+        if not _has_reliable_nutrition(item):
+            continue
+        cat = _get_category(item["name"])
+        if cat in basket_cats and item["name"] not in basket_names:
+            if cat not in alternatives:
+                alternatives[cat] = []
+            if len(alternatives[cat]) < 8:
+                alternatives[cat].append({"name": item["name"], "price": round(item["price"], 2)})
 
-    # Cap oats/porridge at qty=1 in meat stage (shouldn't be here but safety net)
-    for d in meat_data:
-        if any(kw in d["item"]["name"].lower() for kw in STAPLE_CAP_KEYWORDS):
-            d["item"]["quantity"] = 1
+    basket_summary = [
+        {"name": item["name"], "quantity": item["quantity"], "category": item.get("lp_category", "other")}
+        for item in lp_basket
+    ]
 
-    meat_spend    = sum(d["price"] * d["item"].get("quantity", 1) for d in meat_data)
-    meat_calories = sum(d["calories"] * d["item"].get("quantity", 1) for d in meat_data)
-    meat_protein  = sum(d["protein"] * d["item"].get("quantity", 1) for d in meat_data)
-    print(f"[STAGE 1] Spend: £{round(meat_spend,2)} | Calories: {round(meat_calories)} | Protein: {round(meat_protein,1)}g")
+    parser = JsonOutputParser()
 
-    # ── Stage 2: Staples & Veg ────────────────────────────────────
-    remaining_budget   = budget - meat_spend
-    remaining_calories = max(weekly_calories - meat_calories, 0)
-    staples_data, staples_unresolved = _build_items_data(staples_items)
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", "You are a food curator. Make small preference-based swaps to a shopping basket. Never change quantities. Output valid JSON only."),
+        ("human", f"""Current basket (quantities fixed — do not change):
+{json.dumps(basket_summary, indent=2)}
 
-    print(f"[STAGE 2 - STAPLES/VEG] {len(staples_data)} items | cal target: {round(remaining_calories)} | budget: £{round(remaining_budget,2)}")
-    if not _run_lp(staples_data, budget_limit=remaining_budget * 0.85,
-                   cal_target=remaining_calories, budget_min=remaining_budget * 0.4):
-        print("[STAGE 2] Relaxing constraints")
-        if not _run_lp(staples_data, budget_limit=remaining_budget * 0.85,
-                       cal_target=remaining_calories * 0.8):
-            print("[STAGE 2] Could not solve — keeping AI quantities")
+User preferences: {preferences.strip()}
 
-    # Cap oats/porridge at qty=1
-    for d in staples_data:
-        if any(kw in d["item"]["name"].lower() for kw in STAPLE_CAP_KEYWORDS):
-            d["item"]["quantity"] = 1
+Swap up to {max_swaps} items to better match preferences.
+Rules:
+- Same category only (chicken → chicken, veg → veg, etc.)
+- Replacement must come from the alternatives list below
+- Never change quantities
 
-    staples_spend    = sum(d["price"] * d["item"].get("quantity", 1) for d in staples_data)
-    staples_calories = sum(d["calories"] * d["item"].get("quantity", 1) for d in staples_data)
-    print(f"[STAGE 2] Spend: £{round(staples_spend,2)} | Calories: {round(staples_calories)}")
+Available alternatives by category:
+{json.dumps(alternatives, indent=2)}
 
-    # ── Stage 3: Dairy ────────────────────────────────────────────
-    remaining_budget_2 = remaining_budget - staples_spend
-    dairy_data, dairy_unresolved = _build_items_data(dairy_items)
+Output JSON:
+{{"swaps": [{{"from": "exact item name", "to": "exact item name"}}]}}
+If no swaps needed: {{"swaps": []}}""")
+    ])
 
-    print(f"[STAGE 3 - DAIRY] {len(dairy_data)} items | budget: £{round(remaining_budget_2,2)}")
-    if not _run_lp(dairy_data, budget_limit=remaining_budget_2,
-                   budget_min=remaining_budget_2 * 0.5):
-        if not _run_lp(dairy_data, budget_limit=remaining_budget_2):
-            print("[STAGE 3] Could not solve — keeping AI quantities")
+    chain = prompt | llm | parser
+    result = chain.invoke({})
 
-    dairy_spend = sum(d["price"] * d["item"].get("quantity", 1) for d in dairy_data)
-    print(f"[STAGE 3] Spend: £{round(dairy_spend,2)}")
+    swaps = result.get("swaps", [])[:max_swaps]
+    print(f"[AI] {len(swaps)} swap(s): {[(s['from'], '->', s['to']) for s in swaps]}")
 
-    # ── Stage 4: Smart gap fill ───────────────────────────────────
-    total_spend    = meat_spend + staples_spend + dairy_spend
-    total_calories = (meat_calories + staples_calories +
-                      sum(d["calories"] * d["item"].get("quantity", 1) for d in dairy_data))
-    total_protein  = (meat_protein +
-                      sum(d["protein"] * d["item"].get("quantity", 1) for d in staples_data) +
-                      sum(d["protein"] * d["item"].get("quantity", 1) for d in dairy_data))
-    leftover_budget = budget - total_spend
-    calorie_gap  = weekly_calories - total_calories
-    protein_gap  = weekly_protein - total_protein
-
-    print(f"[STAGE 4 - GAP FILL] Leftover: £{round(leftover_budget,2)} | Cal gap: {round(calorie_gap)} | Protein gap: {round(protein_gap,1)}g")
-
-    if leftover_budget > 1:
-        if calorie_gap > weekly_calories * 0.05:
-            # Bump up quantities of highest-calorie staples already in basket
-            print(f"[STAGE 4] Calorie gap {round(calorie_gap)} kcal — increasing staple quantities")
-            cal_sorted = sorted(staples_data, key=lambda d: d["calories"], reverse=True)
-            for d in cal_sorted:
-                if calorie_gap <= 0 or leftover_budget < d["price"]:
-                    break
-                name_lower = d["item"]["name"].lower()
-                if any(kw in name_lower for kw in STAPLE_CAP_KEYWORDS):
-                    continue  # never bump oats above qty=1
-                current_qty = d["item"].get("quantity", 1)
-                if current_qty < 3:
-                    d["item"]["quantity"] = current_qty + 1
-                    calorie_gap -= d["calories"]
-                    leftover_budget -= d["price"]
-                    print(f"[STAGE 4] {d['item']['name']} → qty {current_qty + 1}")
-
-        elif protein_gap > weekly_protein * 0.05:
-            # Bump up quantities of highest-protein meat already in basket
-            print(f"[STAGE 4] Protein gap {round(protein_gap)}g — increasing meat quantities")
-            prot_sorted = sorted(meat_data, key=lambda d: d["protein"], reverse=True)
-            for d in prot_sorted:
-                if protein_gap <= 0 or leftover_budget < d["price"]:
-                    break
-                current_qty = d["item"].get("quantity", 1)
-                if current_qty < 3:
-                    d["item"]["quantity"] = current_qty + 1
-                    protein_gap -= d["protein"]
-                    leftover_budget -= d["price"]
-                    print(f"[STAGE 4] {d['item']['name']} → qty {current_qty + 1}")
+    swap_map = {s["from"]: s["to"] for s in swaps}
+    new_basket = []
+    for item in lp_basket:
+        if item["name"] in swap_map:
+            new_name = swap_map[item["name"]]
+            new_product = _lookup_product(new_name)
+            if new_product:
+                cat = _get_category(new_name)
+                new_basket.append({**item, "name": new_name, "lp_category": cat})
+                print(f"[AI] Swapped: {item['name']} → {new_name}")
+            else:
+                print(f"[AI] Swap target '{new_name}' not found in DB — keeping original")
+                new_basket.append(item)
         else:
-            print("[STAGE 4] No significant gap — budget unspent is fine")
+            new_basket.append(item)
 
-    return ([d["item"] for d in meat_data] + meat_unresolved +
-            [d["item"] for d in staples_data] + staples_unresolved +
-            [d["item"] for d in dairy_data] + dairy_unresolved +
-            other_items)
+    return new_basket
 
 
 @app.get("/generate-basket")
@@ -402,136 +383,59 @@ def generate_basket(
     calories: int = Query(..., description="Target calories per day"),
     protein: int = Query(..., description="Target protein per day (g)"),
     budget: float = Query(..., description="Budget in GBP"),
-    preferences: Optional[str] = Query("", description="User dietary preferences e.g. 'more beef' or 'Mediterranean'")
+    preferences: Optional[str] = Query("", description="User dietary preferences"),
 ) -> Dict[str, Any]:
 
-    candidate_foods = get_candidate_foods(preferences or "")
+    weekly_calories = calories * 7
+    weekly_protein = protein * 7
 
+    # Phase 1: get candidate pool
+    candidate_pool = get_candidate_foods(preferences or "")
 
-    slim_foods = [
-        {"name": p["name"], "price": p["price"], "protein": p["proteinTotal"], "calories": p["caloriesTotal"], "tier": p["tier"]}
-        for p in candidate_foods
-    ]
-    foods_context = json.dumps(slim_foods)
+    # Phase 2: LP selects items and quantities
+    basket = lp_select_basket(candidate_pool, weekly_calories, weekly_protein, budget)
 
-    weekly_calories_target = calories * 7
-    weekly_protein_target = protein * 7
+    # Phase 3: AI curates (swaps up to 30% for preferences)
+    basket = ai_curate_basket(basket, candidate_pool, preferences or "")
 
-    parser = JsonOutputParser()
-
-    preferences_line = f"\n        User preferences: {preferences.strip()}\n        Keep these preferences in mind when selecting items." if preferences and preferences.strip() else ""
-
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", """You are a world-class chef and nutritionist building a weekly meal plan for a real person.
-Your primary job is to think like a chef — pick ingredients that work together as complete, delicious meals.
-Think breakfast, lunch and dinner for 7 days. Every protein needs a carb and a vegetable to make a proper meal.
-You always output valid JSON."""),
-        ("human", f"""
-        You have the following ingredients available (from a Tesco database):
-        {{foods_context}}
-        Each item has: name, price (£), protein (g per pack), calories (per pack), tier (1=whole food, 2=lightly processed, 3=ultra-processed).
-        Always prefer tier 1. Use tier 2 if needed. Avoid tier 3.
-        {preferences_line}
-
-        Build a weekly shopping basket that hits these targets:
-        - Weekly Budget: £{{budget}}
-        - Weekly Calories: {{weekly_calories_target}} kcal
-        - Weekly Protein: {{weekly_protein_target}}g
-
-        THINK LIKE A CHEF FIRST:
-        Before picking items, think about what meals you are making this week. For example:
-        - If you pick chicken breast → you need rice or pasta + a vegetable to cook with it
-        - If you pick beef mince → you need pasta or wraps + a vegetable
-        - If you pick tuna → you need pasta or wraps + something to go with it
-        - If you pick eggs → you need oats or bread for a proper breakfast
-        - If you pick salmon → you need rice or potatoes + a green veg
-        Pick ingredients that work together and make real meals people would enjoy.
-        Never pick the same vegetable in two forms (e.g. fresh broccoli AND frozen broccoli — pick one).
-
-        THINK LIKE A HUMAN:
-        Would a real person actually eat all of this in one week? Even if the numbers fit, be realistic.
-        6kg of potatoes is not realistic. 1-2kg of a single vegetable is plenty for a week.
-        Spread calories across a variety of foods — do not over-buy one ingredient just to hit the numbers.
-
-        HARD CONSTRAINTS (the system enforces these mathematically — your quantities must satisfy them):
-        0. NAMES: Copy item names EXACTLY as written. Do not change a single character.
-        1. BUDGET: Total spend must not exceed £{{budget}}. This is a hard limit.
-        2. CALORIES: Your basket total must land between 97% and 103% of {{weekly_calories_target}} kcal ({{weekly_calories_target}} ± 3%). Calculate: sum of (calories × quantity) for every item.
-        3. PROTEIN: Hit the protein target. Up to 20% over is fine. At least 60% of protein must come from meat, fish or eggs — not from grains or vegetables.
-        4. ONE TYPE PER CATEGORY: Pick only ONE oat product, ONE rice product, ONE bread product, ONE yogurt product, ONE type of peas. Do not buy the same thing from two brands.
-        5. CATEGORIES: Every item needs a category — "meat_poultry", "fruits_veg", "staples", or "dairy". Include all four categories every time.
-
-        Output strictly in this JSON format:
-        {{{{
-            "basket": [
-                {{{{"name": "Food Name", "quantity": 2, "subtotal_price": 4.50, "category": "meat_poultry"}}}}
-            ],
-            "totals": {{{{
-                "total_calories": 0,
-                "total_protein": 0,
-                "total_spend": 0
-            }}}},
-            "comparison": {{{{
-                "calories_diff": "diff vs target",
-                "protein_diff": "diff vs target",
-                "budget_remaining": 0
-            }}}}
-        }}}}
-        """)
-    ])
-
-    chain = prompt | llm | parser
-
-    result = chain.invoke({
-        "foods_context": foods_context,
-        "weekly_calories_target": weekly_calories_target,
-        "weekly_protein_target": weekly_protein_target,
-        "budget": budget,
-    })
-
-    # LP: tighten quantities to hit calorie/protein targets (upBound=2 keeps it realistic)
-    result["basket"] = optimize_quantities(
-        result.get("basket", []),
-        weekly_calories_target,
-        weekly_protein_target,
-        budget,
-    )
-
-    # Enrich each basket item with real DB prices and nutrition
+    # Enrich with real DB prices and nutrition
     all_lookup_keys = list(food_lookup.keys())
-    for basket_item in result.get("basket", []):
-        name_lower = basket_item["name"].lower()
+    for item in basket:
+        name_lower = item["name"].lower()
         product = food_lookup.get(name_lower)
-
         if not product:
             close = difflib.get_close_matches(name_lower, all_lookup_keys, n=1, cutoff=0.85)
             if close:
                 product = food_lookup[close[0]]
 
-        qty = basket_item.get("quantity", 1)
-        if product:
-            basket_item["subtotal_price"] = round(product["price"] * qty, 2)
-            basket_item["protein_g"] = round(product["proteinTotal"] * qty, 1)
-            basket_item["calories"] = round(product["caloriesTotal"] * qty)
-        else:
-            print(f"[LOOKUP MISS] '{basket_item['name']}' — nutrition will be null")
-            basket_item["protein_g"] = None
-            basket_item["calories"] = None
+        qty = item.get("quantity", 1)
+        lp_cat = item.get("lp_category", "other")
+        item["category"] = _LP_TO_FRONTEND.get(lp_cat, "staples")
 
-    # Recalculate totals from real per-item values
-    basket = result.get("basket", [])
-    result["totals"] = {
+        if product:
+            item["subtotal_price"] = round(product["price"] * qty, 2)
+            item["protein_g"] = round(product["proteinTotal"] * qty, 1)
+            item["calories"] = round(product["caloriesTotal"] * qty)
+        else:
+            print(f"[LOOKUP MISS] '{item['name']}' — nutrition will be null")
+            item["subtotal_price"] = None
+            item["protein_g"] = None
+            item["calories"] = None
+
+    # Recalculate totals
+    totals = {
         "total_calories": round(sum(i.get("calories") or 0 for i in basket)),
         "total_protein": round(sum(i.get("protein_g") or 0 for i in basket), 1),
         "total_spend": round(sum(i.get("subtotal_price") or 0 for i in basket), 2),
     }
 
+    cal_diff = totals["total_calories"] - weekly_calories
+    prot_diff = totals["total_protein"] - weekly_protein
+    spend_left = round(budget - totals["total_spend"], 2)
+
     print(f"\n{'='*50}")
-    print(f"[TARGETS]  Calories: {weekly_calories_target} kcal | Protein: {weekly_protein_target}g | Budget: £{budget}")
-    print(f"[OUTPUT]   Calories: {result['totals']['total_calories']} kcal | Protein: {result['totals']['total_protein']}g | Spend: £{result['totals']['total_spend']}")
-    cal_diff = result['totals']['total_calories'] - weekly_calories_target
-    prot_diff = result['totals']['total_protein'] - weekly_protein_target
-    spend_left = round(budget - result['totals']['total_spend'], 2)
+    print(f"[TARGETS]  Calories: {weekly_calories} kcal | Protein: {weekly_protein}g | Budget: £{budget}")
+    print(f"[OUTPUT]   Calories: {totals['total_calories']} kcal | Protein: {totals['total_protein']}g | Spend: £{totals['total_spend']}")
     print(f"[DIFF]     Calories: {'+' if cal_diff >= 0 else ''}{cal_diff} kcal | Protein: {'+' if prot_diff >= 0 else ''}{prot_diff}g | Budget remaining: £{spend_left}")
     print(f"[BASKET]   {len(basket)} items selected")
     for item in basket:
@@ -540,11 +444,19 @@ You always output valid JSON."""),
 
     return {
         "user_targets": {
-            "weekly_calories": weekly_calories_target,
-            "weekly_protein": weekly_protein_target,
+            "weekly_calories": weekly_calories,
+            "weekly_protein": weekly_protein,
             "budget": budget,
         },
-        "ai_selection": result,
+        "ai_selection": {
+            "basket": basket,
+            "totals": totals,
+            "comparison": {
+                "calories_diff": f"{'+' if cal_diff >= 0 else ''}{cal_diff} kcal",
+                "protein_diff": f"{'+' if prot_diff >= 0 else ''}{prot_diff}g",
+                "budget_remaining": spend_left,
+            },
+        },
     }
 
 
