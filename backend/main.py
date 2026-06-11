@@ -8,7 +8,7 @@ import numpy as np
 import faiss
 from pulp import LpProblem, LpVariable, LpMinimize, lpSum, value, PULP_CBC_CMD, LpStatus
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_core.output_parsers import JsonOutputParser
 from dotenv import load_dotenv
 
@@ -330,31 +330,28 @@ def ai_curate_basket(lp_basket: list, candidate_pool: list, preferences: str) ->
         for item in lp_basket
     ]
 
-    parser = JsonOutputParser()
-
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", "You are a food curator. Make small preference-based swaps to a shopping basket. Never change quantities. Output valid JSON only."),
-        ("human", f"""Current basket (quantities fixed — do not change):
+    messages = [
+        SystemMessage(content="You are a food curator. Make small preference-based swaps to a shopping basket. Never change quantities. Output valid JSON only."),
+        HumanMessage(content=f"""Current basket (quantities fixed — do not change):
 {json.dumps(basket_summary, indent=2)}
 
 User preferences: {preferences.strip()}
 
 Swap up to {max_swaps} items to better match preferences.
 Rules:
-- Same category only (chicken → chicken, veg → veg, etc.)
+- Same category only (chicken -> chicken, veg -> veg, etc.)
 - Replacement must come from the alternatives list below
 - Never change quantities
 
 Available alternatives by category:
 {json.dumps(alternatives, indent=2)}
 
-Output JSON:
-{{"swaps": [{{"from": "exact item name", "to": "exact item name"}}]}}
-If no swaps needed: {{"swaps": []}}""")
-    ])
+Output JSON: {{"swaps": [{{"from": "exact item name", "to": "exact item name"}}]}}
+If no swaps needed: {{"swaps": []}}"""),
+    ]
 
-    chain = prompt | llm | parser
-    result = chain.invoke({})
+    parser = JsonOutputParser()
+    result = parser.parse(llm.invoke(messages).content)
 
     swaps = result.get("swaps", [])[:max_swaps]
     print(f"[AI] {len(swaps)} swap(s): {[(s['from'], '->', s['to']) for s in swaps]}")
