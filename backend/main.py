@@ -69,7 +69,7 @@ CATEGORY_KEYWORDS = {
     'peas_beans':   ['peas', 'bean', 'lentil', 'chickpea'],
     'vegetables':   ['broccoli', 'carrot', 'spinach', 'tomato', 'cucumber', 'pepper', 'onion',
                      'courgette', 'cabbage', 'kale', 'sweet potato', 'mixed veg', 'vegetables',
-                     'sweetcorn', 'mushroom', 'lettuce', 'celery', 'potato'],
+                     'sweetcorn', 'mushroom', 'lettuce', 'celery'],
     'oats':         ['oat', 'porridge'],
     'rice':         ['rice'],
     'pasta':        ['pasta', 'penne', 'spaghetti', 'macaroni', 'noodle'],
@@ -250,8 +250,8 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
     # Objective: minimise cost
     prob += lpSum(items[i]["price"] * qty[i] for i in range(n))
 
-    # Calorie band: 99–103% of target
-    prob += lpSum(items[i]["caloriesTotal"] * qty[i] for i in range(n)) >= weekly_calories * 0.99
+    # Calorie band: 97–103% of target
+    prob += lpSum(items[i]["caloriesTotal"] * qty[i] for i in range(n)) >= weekly_calories * 0.97
     prob += lpSum(items[i]["caloriesTotal"] * qty[i] for i in range(n)) <= weekly_calories * 1.03
 
     # Protein: must hit target
@@ -260,8 +260,8 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
     # Budget: hard ceiling
     prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) <= budget
 
-    # Minimum spend (forces variety — can't hit 85% budget with one item)
-    prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) >= budget * 0.85
+    # Minimum spend (forces variety — can't hit 80% budget with one item)
+    prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) >= budget * 0.80
 
     # Animal protein: at least 50% of protein target from meat/fish/eggs
     animal_idx = [i for i in range(n) if cats[i] in PROTEIN_CATS]
@@ -295,27 +295,7 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
         if q > 0:
             basket.append({**item, "quantity": q, "lp_category": cats[i]})
 
-    # Post-process: deduplicate within each LP sub-category.
-    # If two items share a category (e.g. two breads, two tunas), keep only the
-    # one with the highest quantity; ties broken by higher protein.
-    DEDUP_CATS = {'oats', 'rice', 'pasta', 'bread', 'dairy_milk', 'dairy_yogurt'}
-    seen_dedup: dict[str, dict] = {}
-    for item in basket:
-        cat = item["lp_category"]
-        if cat not in DEDUP_CATS:
-            continue
-        prev = seen_dedup.get(cat)
-        if prev is None:
-            seen_dedup[cat] = item
-        elif item["quantity"] > prev["quantity"] or (
-            item["quantity"] == prev["quantity"] and item.get("proteinTotal", 0) > prev.get("proteinTotal", 0)
-        ):
-            prev["quantity"] = 0  # mark loser for removal
-            seen_dedup[cat] = item
-
-    basket = [item for item in basket if item.get("quantity", 0) > 0]
-
-    print(f"[LP] Selected {len(basket)} items (after sub-category dedup)")
+    print(f"[LP] Selected {len(basket)} items")
     return basket
 
 
