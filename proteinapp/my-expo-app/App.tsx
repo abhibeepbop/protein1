@@ -48,7 +48,7 @@ export default function App() {
   );
 }
 
-const API_URL = 'http://192.168.1.154:8000';
+const API_URL = 'https://protein1-production.up.railway.app';
 
 function HomeScreen({ navigation, session }: { navigation: any; session: any }) {
   const [calories, setCalories] = useState('');
