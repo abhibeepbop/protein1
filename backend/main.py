@@ -224,7 +224,16 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
     because the LP can always satisfy constraints by picking the right mix.
     Objective: minimise cost.
     """
-    items = [item for item in candidate_pool if _has_reliable_nutrition(item)]
+    # Deduplicate pool by name — duplicate entries cause LP to pick the same
+    # product twice at different prices, breaking the budget constraint.
+    seen_names: set[str] = set()
+    deduped_pool = []
+    for item in candidate_pool:
+        if item['name'] not in seen_names:
+            seen_names.add(item['name'])
+            deduped_pool.append(item)
+
+    items = [item for item in deduped_pool if _has_reliable_nutrition(item)]
     n = len(items)
     cats = [_get_category(item['name']) for item in items]
 
@@ -312,8 +321,10 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
             item["quantity"] == prev["quantity"]
             and item.get("proteinTotal", 0) > prev.get("proteinTotal", 0)
         ):
-            prev["quantity"] = 0
+            prev["quantity"] = 0  # old winner loses
             seen_dedup[cat] = item
+        else:
+            item["quantity"] = 0  # current item loses
 
     basket = [item for item in basket if item.get("quantity", 0) > 0]
 
