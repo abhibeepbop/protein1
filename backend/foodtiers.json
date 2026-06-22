@@ -79,32 +79,6 @@
       "tier": 1
     },
     {
-      "id": "322054265",
-      "name": "Scoff'd Chicken Breast Fillet Portions 1kg",
-      "price": 5.1,
-      "weight": 1000,
-      "protein100g": 31,
-      "proteinTotal": 310,
-      "calories100g": 149,
-      "caloriesTotal": 1490,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/322054265",
-      "tier": 1
-    },
-    {
-      "id": "295653357",
-      "name": "Tesco Chicken Drumsticks 1.5Kg",
-      "price": 4.75,
-      "weight": 1500,
-      "protein100g": 18.3,
-      "proteinTotal": 274.5,
-      "calories100g": 125,
-      "caloriesTotal": 1875,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/295653357",
-      "tier": 1
-    },
-    {
       "id": "310120234",
       "name": "Tesco Tuna Chunks In Sunflower Oil 400G",
       "price": 1.8,
@@ -193,45 +167,6 @@
       "caloriesTotal": 2685,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/275461706",
-      "tier": 1
-    },
-    {
-      "id": "299598237",
-      "name": "Bay Fishmongers White Fish Fillets 520G",
-      "price": 2.35,
-      "weight": 520,
-      "protein100g": 21.6,
-      "proteinTotal": 112.32,
-      "calories100g": 102,
-      "caloriesTotal": 530.4,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/299598237",
-      "tier": 1
-    },
-    {
-      "id": "295710843",
-      "name": "Tesco Chicken Breast Fillet 1Kg",
-      "price": 7,
-      "weight": 1000,
-      "protein100g": 28.3,
-      "proteinTotal": 283,
-      "calories100g": 138,
-      "caloriesTotal": 1380,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/295710843",
-      "tier": 1
-    },
-    {
-      "id": "302282232",
-      "name": "Butchers Choice Cooked Chicken Slices 340G",
-      "price": 2.09,
-      "weight": 340,
-      "protein100g": 23.7,
-      "proteinTotal": 80.58,
-      "calories100g": 115,
-      "caloriesTotal": 391,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/302282232",
       "tier": 1
     },
     {
@@ -495,32 +430,6 @@
       "tier": 1
     },
     {
-      "id": "316540107",
-      "name": "Halal Eat Chicken Breast Fillets 1kg",
-      "price": 7,
-      "weight": 1000,
-      "protein100g": 22.7,
-      "proteinTotal": 227,
-      "calories100g": 103,
-      "caloriesTotal": 1030,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/316540107",
-      "tier": 1
-    },
-    {
-      "id": "295710820",
-      "name": "Tesco Diced Chicken Breast Fillets 640G",
-      "price": 5.4,
-      "weight": 640,
-      "protein100g": 27.3,
-      "proteinTotal": 174.72,
-      "calories100g": 140,
-      "caloriesTotal": 896,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/295710820",
-      "tier": 1
-    },
-    {
       "id": "250172580",
       "name": "Tesco Garden Peas 1Kg",
       "price": 1.65,
@@ -557,19 +466,6 @@
       "caloriesTotal": 1092.5,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/292284222",
-      "tier": 1
-    },
-    {
-      "id": "272866077",
-      "name": "Tesco Simply Chicken Breast Joint 800G",
-      "price": 6.65,
-      "weight": 800,
-      "protein100g": 26.1,
-      "proteinTotal": 208.8,
-      "calories100g": 148,
-      "caloriesTotal": 1184,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/272866077",
       "tier": 1
     },
     {
@@ -625,19 +521,6 @@
       "tier": 1
     },
     {
-      "id": "317987677",
-      "name": "Aunt Bessie's Bacon Topped Boneless Chicken Joint 700g",
-      "price": 6.5,
-      "weight": 700,
-      "protein100g": 28.4,
-      "proteinTotal": 198.8,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/317987677",
-      "tier": 1
-    },
-    {
       "id": "260446011",
       "name": "Tesco Finest British Free-Range Corn-Fed Chicken Thighs & Drumsticks 1kg",
       "price": 6.05,
@@ -661,19 +544,6 @@
       "caloriesTotal": 168,
       "category": "food_cupboard",
       "url": "https://www.tesco.com/groceries/en-GB/products/322643207",
-      "tier": 1
-    },
-    {
-      "id": "290897709",
-      "name": "Tesco Chicken Breast Mini Fillets 500g",
-      "price": 4.1,
-      "weight": 500,
-      "protein100g": 24.9,
-      "proteinTotal": 124.5,
-      "calories100g": 113,
-      "caloriesTotal": 565,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/290897709",
       "tier": 1
     },
     {
@@ -934,19 +804,6 @@
       "caloriesTotal": 260,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/281838783",
-      "tier": 1
-    },
-    {
-      "id": "266244436",
-      "name": "Quorn Chicken Style Pieces 500G",
-      "price": 2.95,
-      "weight": 500,
-      "protein100g": 14,
-      "proteinTotal": 70,
-      "calories100g": 97,
-      "caloriesTotal": 485,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/266244436",
       "tier": 1
     },
     {
@@ -1272,19 +1129,6 @@
       "caloriesTotal": 324,
       "category": "frozen_foods",
       "url": "https://www.tesco.com/groceries/en-GB/products/282489773",
-      "tier": 1
-    },
-    {
-      "id": "271025014",
-      "name": "Tesco Butter Basted Frozen Turkey Breast Joint 780G",
-      "price": 11.5,
-      "weight": 780,
-      "protein100g": 29.8,
-      "proteinTotal": 232.44,
-      "calories100g": 167,
-      "caloriesTotal": 1302.6,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/271025014",
       "tier": 1
     },
     {
@@ -1795,19 +1639,6 @@
       "tier": 1
     },
     {
-      "id": "307747205",
-      "name": "Tesco Haddock Fillets 360G",
-      "price": 5,
-      "weight": 360,
-      "protein100g": 22,
-      "proteinTotal": 79.2,
-      "calories100g": 95,
-      "caloriesTotal": 342,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/307747205",
-      "tier": 1
-    },
-    {
       "id": "313168547",
       "name": "Tesco Large Garlic",
       "price": 0.5,
@@ -1899,19 +1730,6 @@
       "tier": 1
     },
     {
-      "id": "300109840",
-      "name": "Birds Eye Chicken Dippers 38 Pack 697g",
-      "price": 5.8,
-      "weight": 697,
-      "protein100g": 13,
-      "proteinTotal": 90.61,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/300109840",
-      "tier": 1
-    },
-    {
       "id": "256502509",
       "name": "Tilda Pure Basmati Rice 1Kg",
       "price": 5,
@@ -1922,19 +1740,6 @@
       "caloriesTotal": 0,
       "category": "food_cupboard",
       "url": "https://www.tesco.com/groceries/en-GB/products/256502509",
-      "tier": 1
-    },
-    {
-      "id": "313859997",
-      "name": "Birds Eye 44 Chicken Nuggets With Golden Wholegrain 695G",
-      "price": 6.25,
-      "weight": 695,
-      "protein100g": 14,
-      "proteinTotal": 97.3,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/313859997",
       "tier": 1
     },
     {
@@ -2016,19 +1821,6 @@
       "tier": 1
     },
     {
-      "id": "304416654",
-      "name": "Tesco Cooked Whole Shell Prawns 500G",
-      "price": 7.15,
-      "weight": 500,
-      "protein100g": 21.7,
-      "proteinTotal": 108.5,
-      "calories100g": 89,
-      "caloriesTotal": 445,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/304416654",
-      "tier": 1
-    },
-    {
       "id": "309747513",
       "name": "Tesco Boneless Salmon Fillets 4 Pack 520g",
       "price": 8.75,
@@ -2052,19 +1844,6 @@
       "caloriesTotal": 1200,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/288043116",
-      "tier": 1
-    },
-    {
-      "id": "301882975",
-      "name": "Tesco Cod Fillets 360G",
-      "price": 5,
-      "weight": 360,
-      "protein100g": 20.8,
-      "proteinTotal": 74.88,
-      "calories100g": 91,
-      "caloriesTotal": 327.6,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/301882975",
       "tier": 1
     },
     {
@@ -2208,19 +1987,6 @@
       "caloriesTotal": 615,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/301868365",
-      "tier": 1
-    },
-    {
-      "id": "304789079",
-      "name": "Tesco Smoked Haddock Fillets 360G",
-      "price": 5,
-      "weight": 360,
-      "protein100g": 19.7,
-      "proteinTotal": 70.92,
-      "calories100g": 79,
-      "caloriesTotal": 284.4,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/304789079",
       "tier": 1
     },
     {
@@ -2380,19 +2146,6 @@
       "tier": 1
     },
     {
-      "id": "302706337",
-      "name": "Tesco Wild Salmon Fillets 500G",
-      "price": 7.55,
-      "weight": 500,
-      "protein100g": 20,
-      "proteinTotal": 100,
-      "calories100g": 104,
-      "caloriesTotal": 520,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/302706337",
-      "tier": 1
-    },
-    {
       "id": "314946760",
       "name": "Tesco Spinach and Ricotta Chicken Breasts 360g",
       "price": 5.65,
@@ -2429,19 +2182,6 @@
       "caloriesTotal": 0,
       "category": "food_cupboard",
       "url": "https://www.tesco.com/groceries/en-GB/products/280418389",
-      "tier": 1
-    },
-    {
-      "id": "268093052",
-      "name": "Tesco Fish Pie Mix 400G",
-      "price": 5.6,
-      "weight": 400,
-      "protein100g": 17.8,
-      "proteinTotal": 71.2,
-      "calories100g": 71,
-      "caloriesTotal": 284,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/268093052",
       "tier": 1
     },
     {
@@ -2731,19 +2471,6 @@
       "tier": 1
     },
     {
-      "id": "255780854",
-      "name": "Tesco 4 Battered Chunky Cod Fillets 500G",
-      "price": 6.25,
-      "weight": 500,
-      "protein100g": 13.6,
-      "proteinTotal": 68,
-      "calories100g": 206,
-      "caloriesTotal": 1030,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/255780854",
-      "tier": 1
-    },
-    {
       "id": "317412327",
       "name": "Tesco Duck Breast Portions Cherry Balsamic Sauce 315g",
       "price": 6.1,
@@ -2780,19 +2507,6 @@
       "caloriesTotal": 198,
       "category": "frozen_foods",
       "url": "https://www.tesco.com/groceries/en-GB/products/282489669",
-      "tier": 1
-    },
-    {
-      "id": "317639641",
-      "name": "Crown Farms Big Bag Harina Raw King Prawns Size 41/90 1kg",
-      "price": 13,
-      "weight": 1000,
-      "protein100g": 13.6,
-      "proteinTotal": 136,
-      "calories100g": 64,
-      "caloriesTotal": 640,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/317639641",
       "tier": 1
     },
     {
@@ -3316,19 +3030,6 @@
       "tier": 1
     },
     {
-      "id": "265296387",
-      "name": "Tesco Cooked & Peeled Prawns 300G",
-      "price": 5.25,
-      "weight": 300,
-      "protein100g": 15.4,
-      "proteinTotal": 46.2,
-      "calories100g": 70,
-      "caloriesTotal": 210,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/265296387",
-      "tier": 1
-    },
-    {
       "id": "321959014",
       "name": "Tesco Hake Florentine 360g",
       "price": 5.9,
@@ -3339,19 +3040,6 @@
       "caloriesTotal": 457.2,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/321959014",
-      "tier": 1
-    },
-    {
-      "id": "303334677",
-      "name": "Tesco Finest Salmon Wellington 700G",
-      "price": 9.75,
-      "weight": 700,
-      "protein100g": 12.2,
-      "proteinTotal": 85.4,
-      "calories100g": 243,
-      "caloriesTotal": 1701,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/303334677",
       "tier": 1
     },
     {
@@ -3677,19 +3365,6 @@
       "caloriesTotal": 0,
       "category": "food_cupboard",
       "url": "https://www.tesco.com/groceries/en-GB/products/326133458",
-      "tier": 1
-    },
-    {
-      "id": "265418417",
-      "name": "Tesco Finest Jumbo Cooked King Prawns 225G",
-      "price": 5.25,
-      "weight": 225,
-      "protein100g": 18.8,
-      "proteinTotal": 42.3,
-      "calories100g": 81,
-      "caloriesTotal": 182.25,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/265418417",
       "tier": 1
     },
     {
@@ -4239,32 +3914,6 @@
       "tier": 1
     },
     {
-      "id": "320813309",
-      "name": "Birds Eye 4 Battered Cod Fillets 400g",
-      "price": 6.6,
-      "weight": 400,
-      "protein100g": 11,
-      "proteinTotal": 44,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/320813309",
-      "tier": 1
-    },
-    {
-      "id": "320987713",
-      "name": "Birds Eye 4 Battered Haddock Fillets 400g",
-      "price": 6.6,
-      "weight": 400,
-      "protein100g": 11,
-      "proteinTotal": 44,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/320987713",
-      "tier": 1
-    },
-    {
       "id": "321655039",
       "name": "Tesco Finest Smoked Jumbo King Prawns 180g",
       "price": 5.5,
@@ -4369,19 +4018,6 @@
       "tier": 1
     },
     {
-      "id": "291731507",
-      "name": "Tesco Raw King Prawns 170G",
-      "price": 3.4,
-      "weight": 170,
-      "protein100g": 12.9,
-      "proteinTotal": 21.93,
-      "calories100g": 60,
-      "caloriesTotal": 102,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/291731507",
-      "tier": 1
-    },
-    {
       "id": "308494588",
       "name": "Tesco Finest Sirloin Steak 454G",
       "price": 15.25,
@@ -4434,19 +4070,6 @@
       "tier": 1
     },
     {
-      "id": "323424828",
-      "name": "Youngs Chip Shop Cod Fillets 400g",
-      "price": 7.5,
-      "weight": 400,
-      "protein100g": 11.6,
-      "proteinTotal": 46.4,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/323424828",
-      "tier": 1
-    },
-    {
       "id": "309498605",
       "name": "Tesco Finest Thick Cut Sirloin Steak 350G",
       "price": 11.6,
@@ -4496,19 +4119,6 @@
       "caloriesTotal": 185,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/313756329",
-      "tier": 1
-    },
-    {
-      "id": "277744283",
-      "name": "Tesco Finest Jumbo Raw King Prawns 240g",
-      "price": 5.6,
-      "weight": 240,
-      "protein100g": 14,
-      "proteinTotal": 33.6,
-      "calories100g": 62,
-      "caloriesTotal": 148.8,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/277744283",
       "tier": 1
     },
     {
@@ -4574,19 +4184,6 @@
       "caloriesTotal": 198.8,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/303270573",
-      "tier": 1
-    },
-    {
-      "id": "316662032",
-      "name": "Tesco Finest North Atlantic Cooked Prawns 225G",
-      "price": 6,
-      "weight": 225,
-      "protein100g": 15.4,
-      "proteinTotal": 34.65,
-      "calories100g": 70,
-      "caloriesTotal": 157.5,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/316662032",
       "tier": 1
     },
     {
@@ -4954,19 +4551,6 @@
       "tier": 1
     },
     {
-      "id": "322047015",
-      "name": "White Rabbit Chicken & Chorizo Sourdough Gluten Free Pizza 324g",
-      "price": 4.5,
-      "weight": 324,
-      "protein100g": 6.9,
-      "proteinTotal": 22.36,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/322047015",
-      "tier": 1
-    },
-    {
       "id": "325795209",
       "name": "Minton & Donello Organic Puy Lentils 6 x 500g | Multi",
       "price": 24.49,
@@ -5250,19 +4834,6 @@
       "caloriesTotal": 76,
       "category": "general",
       "url": "https://www.tesco.com/groceries/en-GB/products/317858531",
-      "tier": 1
-    },
-    {
-      "id": "299955299",
-      "name": "Itsu Pork Gyozas 240G",
-      "price": 4.25,
-      "weight": 240,
-      "protein100g": 8.1,
-      "proteinTotal": 19.44,
-      "calories100g": 0,
-      "caloriesTotal": 0,
-      "category": "frozen_foods",
-      "url": "https://www.tesco.com/groceries/en-GB/products/299955299",
       "tier": 1
     },
     {
@@ -52156,6 +51727,435 @@
       "caloriesTotal": 690.75,
       "category": "food_cupboard",
       "url": "https://www.tesco.com/groceries/en-GB/products/312988851",
+      "tier": 2
+    },
+    {
+      "id": "322054265",
+      "name": "Scoff'd Chicken Breast Fillet Portions 1kg",
+      "price": 5.1,
+      "weight": 1000,
+      "protein100g": 31,
+      "proteinTotal": 310,
+      "calories100g": 149,
+      "caloriesTotal": 1490,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/322054265",
+      "tier": 2
+    },
+    {
+      "id": "295653357",
+      "name": "Tesco Chicken Drumsticks 1.5Kg",
+      "price": 4.75,
+      "weight": 1500,
+      "protein100g": 18.3,
+      "proteinTotal": 274.5,
+      "calories100g": 125,
+      "caloriesTotal": 1875,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/295653357",
+      "tier": 2
+    },
+    {
+      "id": "299598237",
+      "name": "Bay Fishmongers White Fish Fillets 520G",
+      "price": 2.35,
+      "weight": 520,
+      "protein100g": 21.6,
+      "proteinTotal": 112.32,
+      "calories100g": 102,
+      "caloriesTotal": 530.4,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/299598237",
+      "tier": 2
+    },
+    {
+      "id": "295710843",
+      "name": "Tesco Chicken Breast Fillet 1Kg",
+      "price": 7,
+      "weight": 1000,
+      "protein100g": 28.3,
+      "proteinTotal": 283,
+      "calories100g": 138,
+      "caloriesTotal": 1380,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/295710843",
+      "tier": 2
+    },
+    {
+      "id": "302282232",
+      "name": "Butchers Choice Cooked Chicken Slices 340G",
+      "price": 2.09,
+      "weight": 340,
+      "protein100g": 23.7,
+      "proteinTotal": 80.58,
+      "calories100g": 115,
+      "caloriesTotal": 391,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/302282232",
+      "tier": 2
+    },
+    {
+      "id": "316540107",
+      "name": "Halal Eat Chicken Breast Fillets 1kg",
+      "price": 7,
+      "weight": 1000,
+      "protein100g": 22.7,
+      "proteinTotal": 227,
+      "calories100g": 103,
+      "caloriesTotal": 1030,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/316540107",
+      "tier": 2
+    },
+    {
+      "id": "295710820",
+      "name": "Tesco Diced Chicken Breast Fillets 640G",
+      "price": 5.4,
+      "weight": 640,
+      "protein100g": 27.3,
+      "proteinTotal": 174.72,
+      "calories100g": 140,
+      "caloriesTotal": 896,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/295710820",
+      "tier": 2
+    },
+    {
+      "id": "272866077",
+      "name": "Tesco Simply Chicken Breast Joint 800G",
+      "price": 6.65,
+      "weight": 800,
+      "protein100g": 26.1,
+      "proteinTotal": 208.8,
+      "calories100g": 148,
+      "caloriesTotal": 1184,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/272866077",
+      "tier": 2
+    },
+    {
+      "id": "317987677",
+      "name": "Aunt Bessie's Bacon Topped Boneless Chicken Joint 700g",
+      "price": 6.5,
+      "weight": 700,
+      "protein100g": 28.4,
+      "proteinTotal": 198.8,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/317987677",
+      "tier": 2
+    },
+    {
+      "id": "290897709",
+      "name": "Tesco Chicken Breast Mini Fillets 500g",
+      "price": 4.1,
+      "weight": 500,
+      "protein100g": 24.9,
+      "proteinTotal": 124.5,
+      "calories100g": 113,
+      "caloriesTotal": 565,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/290897709",
+      "tier": 2
+    },
+    {
+      "id": "266244436",
+      "name": "Quorn Chicken Style Pieces 500G",
+      "price": 2.95,
+      "weight": 500,
+      "protein100g": 14,
+      "proteinTotal": 70,
+      "calories100g": 97,
+      "caloriesTotal": 485,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/266244436",
+      "tier": 2
+    },
+    {
+      "id": "271025014",
+      "name": "Tesco Butter Basted Frozen Turkey Breast Joint 780G",
+      "price": 11.5,
+      "weight": 780,
+      "protein100g": 29.8,
+      "proteinTotal": 232.44,
+      "calories100g": 167,
+      "caloriesTotal": 1302.6,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/271025014",
+      "tier": 2
+    },
+    {
+      "id": "307747205",
+      "name": "Tesco Haddock Fillets 360G",
+      "price": 5,
+      "weight": 360,
+      "protein100g": 22,
+      "proteinTotal": 79.2,
+      "calories100g": 95,
+      "caloriesTotal": 342,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/307747205",
+      "tier": 2
+    },
+    {
+      "id": "300109840",
+      "name": "Birds Eye Chicken Dippers 38 Pack 697g",
+      "price": 5.8,
+      "weight": 697,
+      "protein100g": 13,
+      "proteinTotal": 90.61,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/300109840",
+      "tier": 2
+    },
+    {
+      "id": "313859997",
+      "name": "Birds Eye 44 Chicken Nuggets With Golden Wholegrain 695G",
+      "price": 6.25,
+      "weight": 695,
+      "protein100g": 14,
+      "proteinTotal": 97.3,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/313859997",
+      "tier": 2
+    },
+    {
+      "id": "304416654",
+      "name": "Tesco Cooked Whole Shell Prawns 500G",
+      "price": 7.15,
+      "weight": 500,
+      "protein100g": 21.7,
+      "proteinTotal": 108.5,
+      "calories100g": 89,
+      "caloriesTotal": 445,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/304416654",
+      "tier": 2
+    },
+    {
+      "id": "301882975",
+      "name": "Tesco Cod Fillets 360G",
+      "price": 5,
+      "weight": 360,
+      "protein100g": 20.8,
+      "proteinTotal": 74.88,
+      "calories100g": 91,
+      "caloriesTotal": 327.6,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/301882975",
+      "tier": 2
+    },
+    {
+      "id": "304789079",
+      "name": "Tesco Smoked Haddock Fillets 360G",
+      "price": 5,
+      "weight": 360,
+      "protein100g": 19.7,
+      "proteinTotal": 70.92,
+      "calories100g": 79,
+      "caloriesTotal": 284.4,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/304789079",
+      "tier": 2
+    },
+    {
+      "id": "302706337",
+      "name": "Tesco Wild Salmon Fillets 500G",
+      "price": 7.55,
+      "weight": 500,
+      "protein100g": 20,
+      "proteinTotal": 100,
+      "calories100g": 104,
+      "caloriesTotal": 520,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/302706337",
+      "tier": 2
+    },
+    {
+      "id": "268093052",
+      "name": "Tesco Fish Pie Mix 400G",
+      "price": 5.6,
+      "weight": 400,
+      "protein100g": 17.8,
+      "proteinTotal": 71.2,
+      "calories100g": 71,
+      "caloriesTotal": 284,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/268093052",
+      "tier": 2
+    },
+    {
+      "id": "255780854",
+      "name": "Tesco 4 Battered Chunky Cod Fillets 500G",
+      "price": 6.25,
+      "weight": 500,
+      "protein100g": 13.6,
+      "proteinTotal": 68,
+      "calories100g": 206,
+      "caloriesTotal": 1030,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/255780854",
+      "tier": 2
+    },
+    {
+      "id": "317639641",
+      "name": "Crown Farms Big Bag Harina Raw King Prawns Size 41/90 1kg",
+      "price": 13,
+      "weight": 1000,
+      "protein100g": 13.6,
+      "proteinTotal": 136,
+      "calories100g": 64,
+      "caloriesTotal": 640,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/317639641",
+      "tier": 2
+    },
+    {
+      "id": "265296387",
+      "name": "Tesco Cooked & Peeled Prawns 300G",
+      "price": 5.25,
+      "weight": 300,
+      "protein100g": 15.4,
+      "proteinTotal": 46.2,
+      "calories100g": 70,
+      "caloriesTotal": 210,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/265296387",
+      "tier": 2
+    },
+    {
+      "id": "303334677",
+      "name": "Tesco Finest Salmon Wellington 700G",
+      "price": 9.75,
+      "weight": 700,
+      "protein100g": 12.2,
+      "proteinTotal": 85.4,
+      "calories100g": 243,
+      "caloriesTotal": 1701,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/303334677",
+      "tier": 2
+    },
+    {
+      "id": "265418417",
+      "name": "Tesco Finest Jumbo Cooked King Prawns 225G",
+      "price": 5.25,
+      "weight": 225,
+      "protein100g": 18.8,
+      "proteinTotal": 42.3,
+      "calories100g": 81,
+      "caloriesTotal": 182.25,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/265418417",
+      "tier": 2
+    },
+    {
+      "id": "320813309",
+      "name": "Birds Eye 4 Battered Cod Fillets 400g",
+      "price": 6.6,
+      "weight": 400,
+      "protein100g": 11,
+      "proteinTotal": 44,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/320813309",
+      "tier": 2
+    },
+    {
+      "id": "320987713",
+      "name": "Birds Eye 4 Battered Haddock Fillets 400g",
+      "price": 6.6,
+      "weight": 400,
+      "protein100g": 11,
+      "proteinTotal": 44,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/320987713",
+      "tier": 2
+    },
+    {
+      "id": "291731507",
+      "name": "Tesco Raw King Prawns 170G",
+      "price": 3.4,
+      "weight": 170,
+      "protein100g": 12.9,
+      "proteinTotal": 21.93,
+      "calories100g": 60,
+      "caloriesTotal": 102,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/291731507",
+      "tier": 2
+    },
+    {
+      "id": "323424828",
+      "name": "Youngs Chip Shop Cod Fillets 400g",
+      "price": 7.5,
+      "weight": 400,
+      "protein100g": 11.6,
+      "proteinTotal": 46.4,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/323424828",
+      "tier": 2
+    },
+    {
+      "id": "277744283",
+      "name": "Tesco Finest Jumbo Raw King Prawns 240g",
+      "price": 5.6,
+      "weight": 240,
+      "protein100g": 14,
+      "proteinTotal": 33.6,
+      "calories100g": 62,
+      "caloriesTotal": 148.8,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/277744283",
+      "tier": 2
+    },
+    {
+      "id": "316662032",
+      "name": "Tesco Finest North Atlantic Cooked Prawns 225G",
+      "price": 6,
+      "weight": 225,
+      "protein100g": 15.4,
+      "proteinTotal": 34.65,
+      "calories100g": 70,
+      "caloriesTotal": 157.5,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/316662032",
+      "tier": 2
+    },
+    {
+      "id": "322047015",
+      "name": "White Rabbit Chicken & Chorizo Sourdough Gluten Free Pizza 324g",
+      "price": 4.5,
+      "weight": 324,
+      "protein100g": 6.9,
+      "proteinTotal": 22.36,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/322047015",
+      "tier": 2
+    },
+    {
+      "id": "299955299",
+      "name": "Itsu Pork Gyozas 240G",
+      "price": 4.25,
+      "weight": 240,
+      "protein100g": 8.1,
+      "proteinTotal": 19.44,
+      "calories100g": 0,
+      "caloriesTotal": 0,
+      "category": "frozen_foods",
+      "url": "https://www.tesco.com/groceries/en-GB/products/299955299",
       "tier": 2
     }
   ],
