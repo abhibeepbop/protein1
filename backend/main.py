@@ -233,19 +233,22 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
         'chicken': 8, 'beef_pork': 6, 'turkey': 4, 'fish': 6,
         'eggs': 4, 'peas_beans': 4, 'vegetables': 10, 'oats': 2,
         'rice': 4, 'pasta': 4, 'bread': 3, 'dairy_yogurt': 4,
-        'dairy_cheese': 4, 'dairy_milk': 4, 'fruit': 6, 'other': 6,
+        'dairy_cheese': 4, 'dairy_milk': 4, 'fruit': 6, 'other': 2,
     }
+
+    # Exclude condiments and sauces — low calorie, low protein, waste of budget
+    EXCLUDE_KEYWORDS = ['mustard', 'ketchup', 'sauce', 'seasoning', 'dressing',
+                        'vinegar', 'mayo', 'syrup', 'jam', 'pickle', 'relish']
+    items = [item for item in items if not any(kw in item['name'].lower() for kw in EXCLUDE_KEYWORDS)]
+    cats = [_get_category(item['name']) for item in items]
+    n = len(items)
 
     print(f"[LP] Running on pool of {n} items | targets: {weekly_calories} cal, {weekly_protein}g protein, £{budget}")
 
     prob = LpProblem("basket_select", LpMinimize)
 
-    # qty[i] ∈ {0, 1, 2}; staples capped at 1 (nobody needs 2 bags of oats)
-    qty = []
-    for i, item in enumerate(items):
-        is_staple = any(kw in item['name'].lower() for kw in STAPLE_KEYWORDS)
-        ub = 1 if is_staple else 2
-        qty.append(LpVariable(f"q{i}", lowBound=0, upBound=ub, cat="Integer"))
+    # qty[i] ∈ {0, 1, 2} for all items
+    qty = [LpVariable(f"q{i}", lowBound=0, upBound=2, cat="Integer") for i in range(n)]
 
     # Objective: minimise cost
     prob += lpSum(items[i]["price"] * qty[i] for i in range(n))
@@ -260,8 +263,8 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
     # Budget: hard ceiling
     prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) <= budget
 
-    # Minimum spend (forces variety — can't hit 80% budget with one item)
-    prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) >= budget * 0.80
+    # Minimum spend (forces variety — can't hit 85% budget with one item)
+    prob += lpSum(items[i]["price"] * qty[i] for i in range(n)) >= budget * 0.85
 
     # Animal protein: at least 50% of protein target from meat/fish/eggs
     animal_idx = [i for i in range(n) if cats[i] in PROTEIN_CATS]
@@ -295,7 +298,26 @@ def lp_select_basket(candidate_pool: list, weekly_calories: int, weekly_protein:
         if q > 0:
             basket.append({**item, "quantity": q, "lp_category": cats[i]})
 
-    print(f"[LP] Selected {len(basket)} items")
+    # Dedup: for single-item categories, keep only the highest-qty item
+    DEDUP_CATS = {'oats', 'rice', 'pasta', 'bread', 'dairy_milk', 'dairy_yogurt'}
+    seen_dedup: dict[str, dict] = {}
+    for item in basket:
+        cat = item["lp_category"]
+        if cat not in DEDUP_CATS:
+            continue
+        prev = seen_dedup.get(cat)
+        if prev is None:
+            seen_dedup[cat] = item
+        elif item["quantity"] > prev["quantity"] or (
+            item["quantity"] == prev["quantity"]
+            and item.get("proteinTotal", 0) > prev.get("proteinTotal", 0)
+        ):
+            prev["quantity"] = 0
+            seen_dedup[cat] = item
+
+    basket = [item for item in basket if item.get("quantity", 0) > 0]
+
+    print(f"[LP] Selected {len(basket)} items (after dedup)")
     return basket
 
 
@@ -313,13 +335,19 @@ def ai_curate_basket(lp_basket: list, candidate_pool: list, preferences: str) ->
     basket_names = {item["name"] for item in lp_basket}
     basket_cats = {item.get("lp_category", "other") for item in lp_basket}
 
-    # Build swap alternatives: pool items not in basket, grouped by LP category
+    # Only allow swaps within protein categories — swapping staples (bread, flour,
+    # rice) destroys the LP's calorie guarantee since calorie density varies wildly.
+    # Protein items (chicken, beef, fish) have similar cal/pack profiles so swaps
+    # don't move the calorie total significantly.
+    swappable_cats = PROTEIN_CATS & basket_cats
+
+    # Build swap alternatives: pool items not in basket, protein categories only
     alternatives: dict[str, list] = {}
     for item in candidate_pool:
         if not _has_reliable_nutrition(item):
             continue
         cat = _get_category(item["name"])
-        if cat in basket_cats and item["name"] not in basket_names:
+        if cat in swappable_cats and item["name"] not in basket_names:
             if cat not in alternatives:
                 alternatives[cat] = []
             if len(alternatives[cat]) < 8:
@@ -328,6 +356,7 @@ def ai_curate_basket(lp_basket: list, candidate_pool: list, preferences: str) ->
     basket_summary = [
         {"name": item["name"], "quantity": item["quantity"], "category": item.get("lp_category", "other")}
         for item in lp_basket
+        if item.get("lp_category", "other") in swappable_cats
     ]
 
     messages = [
